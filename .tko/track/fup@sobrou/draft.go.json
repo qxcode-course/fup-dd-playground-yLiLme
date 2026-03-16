@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_18-02-04",
+            "content": "@@ -227,10 +227,8 @@\n %25.2f\n-%5Cn\n %22, s\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-16_18-02-33",
+            "content": "@@ -180,12 +180,8 @@\n rou=\n-din-\n ((p1\n@@ -201,16 +201,20 @@\n (p3*v3))\n+-din\n %0A%0Afmt.Pr\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-16_18-02-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p1, p2, p3 float64\n    var v1, v2, v3, din, sobrou float64\n    \nfmt.Scan(&p1, &p2, &p3)\nfmt.Scan(&v1, &v2, &v3)\nfmt.Scan(&din)\n\nsobrou=din-((p1*v1)+(p2*v2)+(p3*v3))\n\nfmt.Printf(\"%.2f\\n\", sobrou)\n\n\n}\n",
+            "lines": "16"
+        }
+    ]
+}

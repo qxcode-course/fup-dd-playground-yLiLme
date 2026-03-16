@@ -1,0 +1,69 @@
+2026-03-16 16:58:49, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-03-16 16:59:01, EXEC, v:1, k:sandbox@user_001, mode:LOCK, rate:0, size:5
+2026-03-16 17:01:42, MOVE, v:1, k:sandbox@user_001, mode:BACK
+2026-03-16 17:02:42, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:02:43, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-16 17:03:50, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-16 17:06:21, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-16 17:06:23, EXEC, v:1, k:fup@tres, mode:FULL, rate:0, size:5
+2026-03-16 17:08:47, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-16 17:08:48, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:08:50, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:08:51, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:09:50, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:10:43, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:10:47, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:11:17, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:11:25, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:12:25, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:12:34, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:13:21, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:13:21, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:13:27, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:16:39, MOVE, v:1, k:fup@resto, mode:DOWN
+2026-03-16 17:16:41, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-16 17:17:06, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-16 17:17:09, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:19:57, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:23:30, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:23:54, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-16 17:24:59, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-16 17:25:18, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:26:37, MOVE, v:1, k:fup@tres, mode:DOWN
+2026-03-16 17:28:53, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-16 17:28:56, EXEC, v:1, k:fup@tres, mode:FULL, rate:0
+2026-03-16 17:29:46, EXEC, v:1, k:fup@tres, mode:FULL, rate:100, size:8
+2026-03-16 17:29:58, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-16 17:31:14, SELF, v:1, k:fup@tres, self:1, rate:100, study:5
+2026-03-16 17:36:25, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-16 17:36:27, EXEC, v:1, k:fup@resto, mode:FULL, rate:100, size:11
+2026-03-16 17:36:40, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-16 17:37:08, SELF, v:1, k:fup@resto, self:1, rate:100
+2026-03-16 17:37:11, MOVE, v:1, k:fup@media, mode:DOWN
+2026-03-16 17:37:12, MOVE, v:1, k:fup@media, mode:PICK
+2026-03-16 17:40:53, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:9
+2026-03-16 17:41:06, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:9
+2026-03-16 17:41:16, EXEC, v:1, k:fup@media, mode:FULL, rate:0
+2026-03-16 17:41:27, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:9
+2026-03-16 17:42:52, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:9
+2026-03-16 17:43:09, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:9
+2026-03-16 17:44:21, EXEC, v:1, k:fup@media, mode:FULL, rate:0
+2026-03-16 17:45:45, EXEC, v:1, k:fup@media, mode:FULL, rate:0
+2026-03-16 17:47:13, EXEC, v:1, k:fup@media, mode:FULL, rate:0
+2026-03-16 17:47:37, EXEC, v:1, k:fup@media, mode:FULL, rate:0
+2026-03-16 17:48:18, EXEC, v:1, k:fup@media, mode:FULL, rate:0
+2026-03-16 17:48:34, EXEC, v:1, k:fup@media, mode:FULL, rate:0
+2026-03-16 17:48:51, EXEC, v:1, k:fup@media, mode:FULL, rate:0
+2026-03-16 17:48:55, MOVE, v:1, k:fup@media, mode:BACK
+2026-03-16 17:49:21, MOVE, v:1, k:fup@media, mode:PICK
+2026-03-16 17:49:22, EXEC, v:1, k:fup@media, mode:FULL, rate:0
+2026-03-16 17:50:20, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:10
+2026-03-16 17:50:43, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:9
+2026-03-16 17:51:03, EXEC, v:1, k:fup@media, mode:FULL, rate:100, size:9
+2026-03-16 17:51:21, MOVE, v:1, k:fup@media, mode:BACK
+2026-03-16 17:51:37, SELF, v:1, k:fup@media, self:1, rate:100
+2026-03-16 17:51:41, MOVE, v:1, k:fup@sobrou, mode:DOWN
+2026-03-16 17:51:50, MOVE, v:1, k:fup@sobrou, mode:PICK
+2026-03-16 18:02:04, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:0, size:16
+2026-03-16 18:02:33, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:0, size:16
+2026-03-16 18:02:59, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:100, size:16
