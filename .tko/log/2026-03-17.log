@@ -1,3 +1,10 @@
 2026-03-17 16:52:47, MOVE, v:1, k:fup@sobrou, mode:DOWN
 2026-03-17 16:52:54, MOVE, v:1, k:fup@sobrou, mode:PICK
 2026-03-17 16:53:25, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:100
+2026-03-17 16:55:13, MOVE, v:1, k:fup@sobrou, mode:BACK
+2026-03-17 16:55:34, SELF, v:1, k:fup@sobrou, self:1, rate:100, study:7
+2026-03-17 16:55:37, MOVE, v:1, k:fup@segundos, mode:DOWN
+2026-03-17 16:55:38, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-17 17:10:28, EXEC, v:1, k:fup@segundos, mode:FULL, size:17, fail:COMP
+2026-03-17 17:10:41, EXEC, v:1, k:fup@segundos, mode:FULL, rate:0, size:17
+2026-03-17 17:10:52, EXEC, v:1, k:fup@segundos, mode:FULL, rate:100, size:17

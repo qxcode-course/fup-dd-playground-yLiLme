@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_17-10-28",
+            "content": "@@ -60,16 +60,20 @@\n , rs, rt\n+, rm\n  int64%0A%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-17_17-10-41",
+            "content": "@@ -200,10 +200,8 @@\n d:%25d\n-%5Cn\n %22, h\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-17_17-10-52",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var t, h, m, s, rs, rt int64\n\n    fmt.Scan(&t)\n\n    h=t/3600\n    rt=t%3600 //o que sobra pra m e s\n    m=rt/60\n    rs=rt%60\n    s=rs\n\n    fmt.Printf(\"%d:%d:%d\\n\", h, m, s)\n\n}",
+            "lines": "17"
+        }
+    ]
+}
