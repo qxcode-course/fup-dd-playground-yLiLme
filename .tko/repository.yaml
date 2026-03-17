@@ -20,6 +20,9 @@ tasks:
   fup@resto: '{self:1, rate:100}'
   fup@media: '{self:1, rate:100}'
   fup@sobrou: '{self:1, rate:100, study:7}'
+  fup@segundos: '{self:1, rate:100}'
+  fup@celsius: '{self:1, rate:100}'
+  fup@pintando: '{self:1, rate:100}'
 flags:
   painel: 0
   quests: 2
@@ -28,4 +31,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@segundos
+selected: fup@bala

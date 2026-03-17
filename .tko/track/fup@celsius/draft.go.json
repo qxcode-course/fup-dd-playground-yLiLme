@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_17-18-12",
+            "content": "@@ -115,18 +115,11 @@\n rint\n-f(%22%25.6f%22, \n+ln(\n f)%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-17_17-18-35",
+            "content": "@@ -122,10 +122,8 @@\n %25.6f\n-%5Cn\n %22, f\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-17_17-18-41",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var c, f float64\n\n    fmt.Scan(&c)\n\n        f=1.8*c+32\n    \n    fmt.Printf(\"%.6f\\n\", f)\n    \n}\n",
+            "lines": "13"
+        }
+    ]
+}

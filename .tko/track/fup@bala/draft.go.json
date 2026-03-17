@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_18-01-12",
+            "content": "@@ -18,16 +18,30 @@\n rt %22fmt%22\n+%0Aimport %22math%22\n %0A%0Afunc m\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-17_18-01-18",
+            "content": "@@ -22,22 +22,8 @@\n fmt%22\n-%0Aimport %22math%22\n %0A%0Afu\n@@ -130,20 +130,20 @@\n x=(x\n-2-x1\n+1-x2\n )*(x\n-2-x1\n+1-x2\n )%0A  \n@@ -153,20 +153,20 @@\n y=(y\n-2-y1\n+1-y2\n )*(y\n-2-y1\n+1-y2\n )%0A%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_18-04-15",
+            "content": "@@ -18,16 +18,30 @@\n rt %22fmt%22\n+%0Aimport %22math%22\n %0A%0Afunc m\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-17_18-04-20",
+            "content": "@@ -22,22 +22,8 @@\n fmt%22\n-%0Aimport %22math%22\n %0A%0Afu\n@@ -73,14 +73,8 @@\n  Dxy\n-, Dxy2\n  flo\n@@ -181,32 +181,8 @@\n x+yy\n-%0A    Dxy2=math.Sqrt(Dxy)\n %0A%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_18-05-01",
+            "content": "@@ -85,18 +85,20 @@\n y, Dxy, \n-XY\n+Dxy2\n  float64\n@@ -202,18 +202,20 @@\n +yy%0A    \n-XY\n+Dxy2\n =math.Sq\n@@ -254,10 +254,11 @@\n f%22, \n-XY\n+Dxy\n )%0A%0A%7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-17_18-05-32",
+            "content": "@@ -247,10 +247,8 @@\n %25.2f\n-%5Cn\n %22, X\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-17_18-05-41",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n    var x1, y1, x2, y2, xx, yy, Dxy, XY float64\n\n        fmt.Scan(&x1, &y1, &x2, &y2)\n\n    xx=(x2-x1)*(x2-x1)\n    yy=(y2-y1)*(y2-y1)\n\n    Dxy=xx+yy\n    XY=math.Sqrt(Dxy)\n\n        fmt.Printf(\"%.2f\\n\", XY)\n\n}",
+            "lines": "18"
+        }
+    ]
+}

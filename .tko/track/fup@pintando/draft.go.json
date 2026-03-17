@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_17-41-41",
+            "content": "@@ -70,16 +70,20 @@\n  l2, l3,\n+ pp,\n  p float\n@@ -142,20 +142,11 @@\n     \n-a=math.Sqrt(\n+pp=\n p*(p\n@@ -159,16 +159,35 @@\n l2*p-l3)\n+%0A    a=math.Sqrt(pp\n )%0A%0A    f\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-17_17-42-30",
+            "content": "@@ -157,18 +157,14 @@\n p-l1\n-)*(\n+*\n p-l2\n-)*(\n+*\n p-l3\n@@ -195,11 +195,10 @@\n %5Cn%22, a)%0A\n-%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-17_17-47-28",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n    var a, l1, l2, l3, p float64\n\n    fmt.Scan(&l1, &l2, &l3)\n\n    p=(l1+l2+l3)/2\n    a=math.Sqrt(p*(p-l1)*(p-l2)*(p-l3))\n\n    fmt.Printf(\"%.2f\\n\", a)\n\n}\n",
+            "lines": "15"
+        }
+    ]
+}
