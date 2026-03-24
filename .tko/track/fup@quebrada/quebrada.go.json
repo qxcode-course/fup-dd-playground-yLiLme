@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_17-09-41",
+            "content": "@@ -120,16 +120,18 @@\n intf(%22%25d\n+%5Cn\n  %25d%22, ri\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-09-53",
+            "content": "@@ -124,10 +124,9 @@\n (%22%25d\n-%5Cn\n+ \n %25d%22,\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-10-06",
+            "content": "@@ -55,15 +55,18 @@\n rd, \n-d\n+ri\n  int64\n+%0A%09\n %0A%0A%09f\n@@ -87,12 +87,12 @@\n n2)%0A\n-%09\n %0A%09\n-d\n+ri\n =n1/\n@@ -104,12 +104,41 @@\n d=n1%25n2%0A\n+%0A\n %09\n+fmt.Printf(%22%25d%5Cn%25d%22, ri, rd)\n %0A%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_17-38-08",
+            "content": "@@ -5,16 +5,17 @@\n age main\n+ \n %0Aimport \n@@ -23,22 +23,8 @@\n fmt%22\n-%0Aimport %22math%22\n %0A%0Afu\n@@ -36,37 +36,35 @@\n in()\n- \n %7B%0A\n-    var a, b\n+%09var n1, n2\n , r\n+d\n , \n-r\n d int64%0A\n     \n@@ -63,32 +63,10 @@\n t64%0A\n-    var rf float64%0A%0A    \n+%0A%09\n fmt.\n@@ -75,121 +75,38 @@\n an(&\n-a, &b)%0A    r=a/b%0A    rd=a%25b%0A    rf=math.Mod(float64(a),float64(b))%0A    %0A    fmt.Printf(%22%25d%5Cn%25d%5Cn%25.2f%22, r, rd, rf)%0A%7D\n+n1, &n2)%0A%09%0A%09d=n1/n2%0A%09rd=n1%25n2%0A%09\n %0A%0A\n+%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_17-40-36",
+            "content": "@@ -62,17 +62,17 @@\n r a, b, \n-d\n+r\n , rd int\n@@ -119,10 +119,33 @@\n &b)%0A\n-%0A%09\n+    r=a/b%0A    rd=a%25b%0A    \n rf=m\n@@ -179,29 +179,8 @@\n b))%0A\n-    d=a/b%0A    rd=a%25b%0A\n     \n@@ -211,17 +211,17 @@\n n%25.2f%22, \n-d\n+r\n , rd, rf\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_17-47-24",
+            "content": "@@ -119,35 +119,10 @@\n &b)%0A\n+%0A\n %09\n-%0A    d=a/b%0A    rd=a%25b%0A    \n rf=m\n@@ -152,16 +152,37 @@\n t64(b))%0A\n+    d=a/b%0A    rd=a%25b%0A\n     %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-24_17-52-58",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n    var a, b, d, rd int64\n    var rf float64\n\n    fmt.Scan(&a, &b)\n\t\n    d=a/b\n    rd=a%b\n    rf=math.Mod(float64(a),float64(b))\n    \n    fmt.Printf(\"%d\\n%d\\n%.2f\", d, rd, rf)\n}\n\n",
+            "lines": "17"
+        }
+    ]
+}
