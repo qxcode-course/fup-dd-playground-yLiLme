@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-51-59",
+            "content": "@@ -73,10 +73,8 @@\n  int\n-64\n %0A   \n@@ -223,15 +223,10 @@\n )%0A    %7D%0A\n-    %0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_17-54-45",
+            "content": "@@ -58,26 +58,19 @@\n m2, \n-num11, num22\n+vabs\n , vabs\n+p\n  int\n@@ -109,63 +109,8 @@\n 2)%0A%0A\n-        if num1%3C0%7B%0A            num11=num1*(-1)%0A        \n     \n@@ -122,143 +122,63 @@\n num1\n-1\n -num2%0A\n-            println(vabs)%0A        %7D else if num2%3C0 %7B%0A                num22=num2*(-1)%0A                vabs=num1-num22%0A   \n+%0A    if vabs%3C0 %7B%0A        vabsp=vabs*(-1)%0A\n         \n     \n@@ -173,39 +173,29 @@\n         \n-     \n print\n-ln\n (vabs\n+p\n )%0A\n-    \n     %7D el\n@@ -203,97 +203,8 @@\n e %7B%0A\n-            num11=num1*(-1)%0A            num22=num2*(-1)%0A            vabs=num11-num22%0A    \n     \n@@ -216,21 +216,15 @@\n rint\n-ln\n (vabs)%0A\n-    \n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_18-00-14",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var num1, num2, num11, num22, vabs int64\n    \n    fmt.Scan(&num1, &num2)\n\n        if num1<0{\n            num11=num1*(-1)\n            vabs=num11-num2\n            println(vabs)\n        } else if num2<0 {\n                num22=num2*(-1)\n                vabs=num1-num22\n                println(vabs)\n        } else {\n            num11=num1*(-1)\n            num22=num2*(-1)\n            vabs=num11-num22\n            println(vabs)\n        }\n    \n}\n",
+            "lines": "24"
+        }
+    ]
+}

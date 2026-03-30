@@ -1,6 +1,5 @@
 package main
 import "fmt"
-import "math"
 
 func main() {
     var a, b, d, rd int64
@@ -10,8 +9,8 @@ func main() {
 	
     d=a/b
     rd=a%b
-    rf=math.Mod(float64(a),float64(b))
-    
+    rf=float64(a)/float64(b)
+
     fmt.Printf("%d\n%d\n%.2f", d, rd, rf)
 }
 

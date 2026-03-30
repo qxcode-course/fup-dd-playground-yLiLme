@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_18-12-54",
+            "content": "@@ -72,23 +72,10 @@\n n(&a\n-)%0A    fmt.Scan(\n+, \n &b)%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-30_18-13-23",
+            "content": "@@ -68,18 +68,31 @@\n .Scan(&a\n-, \n+)%0A    fmt.Scan(\n &b)%0A%0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-30_18-17-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int64\n\n    fmt.Scan(&a, &b)\n\n    if a>b {\n        print(a)\n    } else if b>a {\n        print(b)\n    } else {\n        print(a)\n    }\n}\n",
+            "lines": "15"
+        }
+    ]
+}

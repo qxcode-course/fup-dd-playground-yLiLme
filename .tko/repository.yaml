@@ -13,8 +13,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if1
 - fup@base
+- fup@if1
 tasks:
   fup@tres: '{self:1, rate:100, study:5}'
   fup@resto: '{self:1, rate:100}'
@@ -25,11 +25,10 @@ tasks:
   fup@pintando: '{self:1, rate:100}'
   fup@bala: '{self:1, rate:100}'
 flags:
-  panel: 0
+  panel: 3
   inbox: 0
-  show_panel: 0
-  tasks: 0
+  show_panel: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@quebrada
+selected: fup@impar
