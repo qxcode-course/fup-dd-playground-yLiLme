@@ -1,0 +1,38 @@
+2026-04-10 22:50:41, MOVE, v:1, k:fup@quebrada, mode:PICK
+2026-04-10 22:50:45, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:0, size:16
+2026-04-10 22:50:55, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:100, size:16
+2026-04-10 22:51:26, MOVE, v:1, k:fup@quebrada, mode:BACK
+2026-04-10 22:51:32, MOVE, v:1, k:fup@operacoes, mode:PICK
+2026-04-10 22:57:13, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0, size:19
+2026-04-10 22:58:38, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0, size:19
+2026-04-10 23:00:33, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:0, size:17
+2026-04-10 23:00:41, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:100, size:17
+2026-04-10 23:01:07, MOVE, v:1, k:fup@operacoes, mode:BACK
+2026-04-10 23:01:47, SELF, v:1, k:fup@pintando, self:1, rate:100
+2026-04-10 23:02:05, SELF, v:1, k:fup@celsius, self:1, rate:100
+2026-04-10 23:02:32, MOVE, v:1, k:fup@abs, mode:PICK
+2026-04-10 23:02:47, EXEC, v:1, k:fup@abs, mode:FULL, rate:0
+2026-04-10 23:26:33, EXEC, v:1, k:fup@abs, mode:FULL, rate:50, size:22
+2026-04-10 23:27:51, EXEC, v:1, k:fup@abs, mode:FULL, rate:50
+2026-04-10 23:28:58, EXEC, v:1, k:fup@abs, mode:FULL, rate:100, size:17
+2026-04-10 23:32:23, MOVE, v:1, k:fup@abs, mode:BACK
+2026-04-10 23:32:33, SELF, v:1, k:fup@abs, self:1, rate:100
+2026-04-10 23:32:38, MOVE, v:1, k:fup@max, mode:PICK
+2026-04-10 23:34:07, EXEC, v:1, k:fup@max, mode:FULL, rate:0, size:14
+2026-04-10 23:34:35, EXEC, v:1, k:fup@max, mode:FULL, rate:100, size:14
+2026-04-10 23:34:55, MOVE, v:1, k:fup@max, mode:BACK
+2026-04-10 23:35:04, SELF, v:1, k:fup@max, self:1, rate:100
+2026-04-10 23:35:08, MOVE, v:1, k:fup@ou, mode:DOWN
+2026-04-10 23:35:09, MOVE, v:1, k:fup@ou, mode:PICK
+2026-04-10 23:37:29, EXEC, v:1, k:fup@ou, mode:FULL, rate:100, size:14
+2026-04-10 23:37:48, MOVE, v:1, k:fup@ou, mode:BACK
+2026-04-10 23:38:04, SELF, v:1, k:fup@ou, self:1, rate:100
+2026-04-10 23:38:12, MOVE, v:1, k:fup@positivo, mode:DOWN
+2026-04-10 23:38:14, MOVE, v:1, k:fup@positivo, mode:PICK
+2026-04-10 23:39:56, EXEC, v:1, k:fup@positivo, mode:FULL, rate:20, size:14
+2026-04-10 23:40:13, EXEC, v:1, k:fup@positivo, mode:FULL, rate:80, size:14
+2026-04-10 23:40:30, EXEC, v:1, k:fup@positivo, mode:FULL, rate:100, size:14
+2026-04-10 23:40:46, MOVE, v:1, k:fup@positivo, mode:BACK
+2026-04-10 23:40:53, SELF, v:1, k:fup@positivo, self:1, rate:100
+2026-04-10 23:41:34, MOVE, v:1, k:fup@multiplo, mode:DOWN
+2026-04-10 23:41:36, MOVE, v:1, k:fup@multiplo, mode:PICK

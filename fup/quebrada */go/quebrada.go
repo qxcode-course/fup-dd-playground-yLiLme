@@ -11,6 +11,6 @@ func main() {
     rd=a%b
     rf=float64(a)/float64(b)
 
-    fmt.Printf("%d\n%d\n%.2f", d, rd, rf)
+    fmt.Printf("%d\n%d\n%.2f\n", d, rd, rf)
 }
 

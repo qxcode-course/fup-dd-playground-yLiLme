@@ -32,8 +32,18 @@
         },
         {
             "label": "2026-03-24_17-52-58",
-            "content": "package main\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n    var a, b, d, rd int64\n    var rf float64\n\n    fmt.Scan(&a, &b)\n\t\n    d=a/b\n    rd=a%b\n    rf=math.Mod(float64(a),float64(b))\n    \n    fmt.Printf(\"%d\\n%d\\n%.2f\", d, rd, rf)\n}\n\n",
+            "content": "@@ -18,16 +18,30 @@\n rt %22fmt%22\n+%0Aimport %22math%22\n %0A%0Afunc m\n@@ -145,16 +145,25 @@\n %0A    rf=\n+math.Mod(\n float64(\n@@ -164,17 +164,17 @@\n oat64(a)\n-/\n+,\n float64(\n@@ -175,17 +175,22 @@\n oat64(b)\n+)\n %0A\n+    \n %0A    fmt\n",
             "lines": "17"
+        },
+        {
+            "label": "2026-04-10_22-50-45",
+            "content": "@@ -182,18 +182,16 @@\n %25d%5Cn%25.2f\n-%5Cn\n %22, d, rd\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_22-50-55",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var a, b, d, rd int64\n    var rf float64\n\n    fmt.Scan(&a, &b)\n\t\n    d=a/b\n    rd=a%b\n    rf=float64(a)/float64(b)\n\n    fmt.Printf(\"%d\\n%d\\n%.2f\\n\", d, rd, rf)\n}\n\n",
+            "lines": "16"
         }
     ]
 }

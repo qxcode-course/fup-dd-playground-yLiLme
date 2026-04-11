@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-03-30_18-06-12",
-            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n  \n}\n",
+            "content": "@@ -40,186 +40,7 @@\n %7B%0A  \n-var a, b, s, sub, m, d, rd int64%0A  var df float64%0A%09fmt.Scan(&a, &b)%0A%0A%09s=a+b%0A%09sub=a-b%0A%09m=a*b%0A%09d=a/b%0A%09rd=a%25b%0A%0A%09df=float64(d)%0A%0A%09fmt.Printf(%22%25d%5Cn%25d%5Cn%25d%5Cn%25.2f%5Cn%25d%22, s, sub, m, df, rd)%0A\n %0A%7D%0A\n",
             "lines": "6"
+        },
+        {
+            "label": "2026-04-10_22-57-13",
+            "content": "@@ -133,38 +133,37 @@\n *b%0A%09\n-%09df=float64(d)%0A%0A%09d=a/b%0A%09rd=a%25b\n+d=a/b%0A%09rd=a%25b%0A%0A%09df=float64(d)\n %0A%0A%09f\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-10_22-58-38",
+            "content": "@@ -56,16 +56,19 @@\n  sub, m,\n+ d,\n  rd int6\n@@ -76,16 +76,17 @@\n %0A  var d\n+f\n  float64\n@@ -129,17 +129,19 @@\n %09m=a*b%0A%09\n-d\n+%09df\n =float64\n@@ -145,21 +145,18 @@\n t64(\n-a)/float64(b)\n+d)%0A%0A%09d=a/b\n %0A%09rd\n@@ -205,21 +205,22 @@\n s, sub, m, d\n+f\n , rd)%0A%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-10_23-00-33",
+            "content": "@@ -191,18 +191,16 @@\n %25.2f%5Cn%25d\n-%5Cn\n %22, s, su\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-10_23-00-41",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n  var a, b, s, sub, m, rd int64\n  var d float64\n\tfmt.Scan(&a, &b)\n\n\ts=a+b\n\tsub=a-b\n\tm=a*b\n\td=float64(a)/float64(b)\n\trd=a%b\n\n\tfmt.Printf(\"%d\\n%d\\n%d\\n%.2f\\n%d\\n\", s, sub, m, d, rd)\n\n}\n",
+            "lines": "17"
         }
     ]
 }

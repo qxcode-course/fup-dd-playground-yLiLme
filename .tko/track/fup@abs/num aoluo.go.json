@@ -12,8 +12,18 @@
         },
         {
             "label": "2026-03-30_18-00-14",
-            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var num1, num2, num11, num22, vabs int64\n    \n    fmt.Scan(&num1, &num2)\n\n        if num1<0{\n            num11=num1*(-1)\n            vabs=num11-num2\n            println(vabs)\n        } else if num2<0 {\n                num22=num2*(-1)\n                vabs=num1-num22\n                println(vabs)\n        } else {\n            num11=num1*(-1)\n            num22=num2*(-1)\n            vabs=num11-num22\n            println(vabs)\n        }\n    \n}\n",
+            "content": "@@ -47,12 +47,30 @@\n ar n\n+um\n 1, n\n+um2, num11, num2\n 2, v\n@@ -79,21 +79,21 @@\n s int64%0A\n-%0A\n     \n+%0A\n     fmt.\n@@ -103,21 +103,25 @@\n n(&n\n+um\n 1, &n\n+um\n 2)%0A%0A    \n if n\n@@ -116,20 +116,26 @@\n 2)%0A%0A    \n+   \n+ \n if n\n+um\n 1%3C0%7B%0A   \n@@ -143,19 +143,86 @@\n     \n-n\n+    num1\n 1=n\n+um\n 1*(-1)%0A\n+            vabs=num11-num2%0A            println(vabs)%0A    \n     \n@@ -232,16 +232,18 @@\n lse if n\n+um\n 2%3C0 %7B%0A  \n@@ -252,12 +252,25 @@\n     \n+     \n-n\n+   num2\n 2=n\n+um\n 2*(-\n@@ -280,17 +280,13 @@\n     \n-%7D else %7B%0A\n+     \n     \n@@ -294,19 +294,24 @@\n   vabs=n\n+um\n 1-n\n+um2\n 2%0A      \n@@ -316,17 +316,44 @@\n     \n-if vabs%3C0\n+        println(vabs)%0A        %7D else\n  %7B%0A \n@@ -367,17 +367,18 @@\n     \n-vabs=vabs\n+num11=num1\n *(-1\n@@ -395,41 +395,52 @@\n     \n-fmt.Println(vabs)%0A        %7D else%7B\n+num22=num2*(-1)%0A            vabs=num11-num22\n %0A   \n@@ -452,13 +452,9 @@\n     \n-fmt.P\n+p\n rint\n@@ -474,15 +474,13 @@\n     \n-  \n %7D%0A    \n-%7D\n %0A%7D\n+%0A\n",
             "lines": "24"
+        },
+        {
+            "label": "2026-04-10_23-26-33",
+            "content": "@@ -92,16 +92,98 @@\n &n2)%0A%0A  \n+  if n1%3C0%7B%0A        n1=n1*(-1)%0A    %7D else if n2%3C0 %7B%0A        n2=n2*(-1)%0A    %7D else %7B\n %0A       \n@@ -330,12 +330,13 @@\n     %7D%0A    %7D%0A\n+%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-10_23-28-58",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var n1, n2, vabs int64\n\n        fmt.Scan(&n1, &n2)\n\n  \n       vabs=n1-n2\n        if vabs<0 {\n            vabs=vabs*(-1)\n            fmt.Println(vabs)\n        } else{\n            fmt.Println(vabs)\n          }\n    }\n",
+            "lines": "17"
         }
     ]
 }

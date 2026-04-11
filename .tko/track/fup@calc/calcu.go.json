@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-11_00-12-08",
+            "content": "@@ -82,12 +82,12 @@\n  op \n-rune\n+char\n %0A%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-11_00-14-30",
+            "content": "@@ -134,33 +134,19 @@\n     \n-switch op %7B%0A    case '+':\n+if op=='+'%7B\n %0A   \n@@ -189,17 +189,26 @@\n     \n-case '-':\n+%7D else if op=='-'%7B\n %0A   \n@@ -253,17 +253,26 @@\n     \n-case '*':\n+%7D else if op=='*'%7B\n %0A   \n@@ -315,16 +315,16 @@\n     \n-default:\n+%7D else %7B\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-11_00-15-38",
+            "content": "@@ -100,48 +100,37 @@\n Scan\n-(&n1, &n2)%0A    fmt.Scanf(%22%25c%22\n+f(%22%25d,%25d,%25c%22, &n1, &n2\n , &op)%0A\n-    \n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-11_00-30-53",
+            "content": "@@ -100,35 +100,48 @@\n Scan\n-f(%22%25d%25d%25c%22, &n1, &n2\n+(&n1, &n2)%0A    fmt.Scanf(%22%25c%22\n , &op)%0A\n+    \n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-11_00-31-58",
+            "content": "@@ -96,17 +96,28 @@\n fmt.Scan\n-(\n+f(%22%25d%25d%25c%22, \n &n1, &n2\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-11_00-32-28",
+            "content": "@@ -109,28 +109,8 @@\n  &n2\n-)%0A    fmt.Scanf(%22%25c%22\n , &o\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-11_00-33-40",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, s, su, m, d int64\n    var op rune\n\n    fmt.Scan(&n1, &n2)\n    fmt.Scanf(\"%c\", &op)\n\n    switch op {\n    case '+':\n        s=n1+n2\n        fmt.Println(s)\n    case '-':\n        su=n1-n2\n        fmt.Println(su)\n    case '*':\n        m=n1*n2\n        fmt.Println(m)\n    default:\n        d=n1/n2\n        fmt.Println(d)\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}

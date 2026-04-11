@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-10_23-39-56",
+            "content": "@@ -106,11 +106,11 @@\n ln(%22\n-NAO\n+SIM\n %22)%0A \n@@ -134,31 +134,31 @@\n    fmt.Println(%22\n-SIM\n+NAO\n %22)%0A    %7D%0A%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-10_23-40-13",
+            "content": "@@ -80,9 +80,9 @@\n if n\n-%3E\n+%3C\n =0%7B%0A\n@@ -106,11 +106,11 @@\n ln(%22\n-SIM\n+NAO\n %22)%0A \n@@ -134,31 +134,31 @@\n    fmt.Println(%22\n-NAO\n+SIM\n %22)%0A    %7D%0A%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-10_23-40-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int64\n\n    fmt.Scan(&n)\n\n    if n>=0{\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n\n}\n",
+            "lines": "14"
+        }
+    ]
+}

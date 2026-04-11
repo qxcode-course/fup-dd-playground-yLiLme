@@ -6,10 +6,9 @@ func main() {
     fmt.Scan(&a, &b)
 
     if a>b {
-        print(a)
-    } else if b>a {
-        print(b)
+        fmt.Println(a)
     } else {
-        print(a)
-    }
+        fmt.Println(b)
+    } 
+
 }

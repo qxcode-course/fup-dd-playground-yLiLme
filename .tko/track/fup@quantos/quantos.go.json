@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-11_01-24-55",
+            "content": "@@ -148,70 +148,8 @@\n    %7D\n- if n1==n2 %7C%7C n2==n3 %7C%7C n3==n1 %7B%0A        fmt.Println(2)%0A     %7D\n %0A%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-11_01-27-26",
+            "content": "@@ -148,13 +148,8 @@\n    %7D\n- else\n  if \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_01-27-39",
+            "content": "@@ -215,45 +215,8 @@\n    %7D\n- else %7B%0A        fmt.Println(0)%0A     %7D\n %0A%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_01-28-03",
+            "content": "@@ -107,10 +107,10 @@\n =n2 \n-&&\n+%7C%7C\n  n1=\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-11_01-29-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3 int64\n\n    fmt.Scan(&n1, &n2, &n3)\n\n     if n1==n2 && n1==n3 {\n        fmt.Println(3)\n     } else if n1==n2 || n2==n3 || n3==n1 {\n        fmt.Println(2)\n     } else {\n        fmt.Println(0)\n     }\n\n}\n",
+            "lines": "16"
+        }
+    ]
+}

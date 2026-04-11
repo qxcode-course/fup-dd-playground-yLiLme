@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-11_01-07-37",
+            "content": "@@ -106,18 +106,18 @@\n =n2 \n-&&\n+%7C%7C\n  n1==n3 \n && n\n@@ -112,18 +112,18 @@\n  n1==n3 \n-&&\n+%7C%7C\n  n2==n3 \n@@ -172,10 +172,10 @@\n =n2 \n-&&\n+%7C%7C\n  n2=\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-11_01-08-52",
+            "content": "@@ -102,26 +102,26 @@\n  n1==n2 \n-%7C%7C\n+&&\n  n1==n3 \n %7C%7C n2==n\n@@ -112,26 +112,26 @@\n  n1==n3 \n-%7C%7C\n+&&\n  n2==n3 \n %7C%7C n1==n\n@@ -126,18 +126,8 @@\n =n3 \n-%7C%7C n1==n3 \n %7B%0A  \n@@ -172,10 +172,10 @@\n =n2 \n-%7C%7C\n+&&\n  n2=\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-11_01-09-47",
+            "content": "@@ -122,16 +122,26 @@\n  n2==n3 \n+%7C%7C n1==n3 \n %7B%0A      \n@@ -192,17 +192,8 @@\n =n3 \n-%7C%7C n3==n1\n %7B%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-11_01-10-25",
+            "content": "@@ -170,32 +170,41 @@\n 1==n2 %7C%7C n2==n3 \n+%7C%7C n3==n1\n %7B%0A        fmt.Pr\n@@ -216,42 +216,8 @@\n (2)%0A\n-    %7D else if n3==n1 %7C%7C n2==n1 %7B%0A%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-11_01-12-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3 int64\n\n    fmt.Scan(&n1, &n2, &n3)\n\n    if n1==n2 || n1==n3 || n2==n3 {\n        fmt.Println(3)\n    } else if n1==n2 || n2==n3 {\n        fmt.Println(2)\n    } else if n3==n1 || n2==n1 {\n\n    } else {\n        fmt.Println(0)\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}
