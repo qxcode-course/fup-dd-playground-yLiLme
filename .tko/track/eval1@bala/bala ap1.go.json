@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-13-04",
+            "content": "@@ -219,18 +219,11 @@\n rint\n-f(%22%25.2f%22, \n+ln(\n dab)\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-13-23",
+            "content": "@@ -226,10 +226,8 @@\n %25.2f\n-%5Cn\n %22, d\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-13-29",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n    var x1, x2, y1, y2, dab, xx, yy float64\n\n    fmt.Scan(&x1, &y1, &x2, &y2)\n\n    xx=(x2-x1)*(x2-x1)\n    yy=(y2-y1)*(y2-y1)\n \n     dab=math.Sqrt(xx+yy)\n\n    fmt.Printf(\"%.2f\\n\", dab)\n\n}\n",
+            "lines": "17"
+        }
+    ]
+}

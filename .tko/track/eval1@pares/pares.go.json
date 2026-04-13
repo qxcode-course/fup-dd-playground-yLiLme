@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-59-27",
+            "content": "@@ -45,16 +45,22 @@\n var a, b\n+, p, i\n  int64%0A \n@@ -153,14 +153,122 @@\n     \n-%0A    %7D%0A\n+ for i=0; a%3C=b; i++ %7B%0A           if a%252==0 %7B%0A            p=a+p%0A           %7D%0A        %7D%0A    %7D%0A%0A        fmt.Println(p)\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_18-00-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int64\n   \n    fmt.Scan(&a, &b)\n\n    if a>b {\n        fmt.Println(\"invalido\")\n    } else {\n       \n    }\n\n}\n",
+            "lines": "14"
+        }
+    ]
+}

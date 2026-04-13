@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-18-42",
+            "content": "@@ -175,17 +175,17 @@\n rintf(%22%25\n-c\n+s\n  eh cria\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-13_17-19-06",
+            "content": "@@ -1,8 +1,28 @@\n+@@ -1,212 +1,51 @@%0A-\n package \n@@ -29,22 +29,30 @@\n main\n-%0A\n+%250A\n import \n-%22fmt%22%0A\n+%2522fmt%2522%250A\n func\n@@ -59,18 +59,22 @@\n  main() \n-%7B%0A\n+%257B%250A\n     var \n@@ -84,17 +84,19 @@\n e string\n-%0A\n+%250A\n     var \n@@ -104,18 +104,22 @@\n ge int64\n-%0A%0A\n+%250A%250A\n     fmt.\n@@ -128,20 +128,26 @@\n anf(\n-%22%25c%22\n+%2522%2525c%2522\n , &nome)\n %0A   \n@@ -138,25 +138,27 @@\n c%2522, &nome)\n-%0A\n+%250A\n     fmt.Scan\n@@ -167,10 +167,14 @@\n age)\n-%0A%0A\n+%250A%250A\n     \n@@ -186,31 +186,41 @@\n me==\n-%22\n+%2522\n crianca\n-%22\n+%2522\n  && age\n-%3C\n+%253C\n =12 \n-%7B%0A\n+%257B%250A\n     \n@@ -238,10 +238,14 @@\n ntf(\n-%22\n %25\n+22%2525\n c eh\n@@ -256,21 +256,100 @@\n anca\n-%22\n+%2522\n , nome)\n-%0A    %7D%0A%7D\n+%250A    %257D%250A%257D%0A+@@ -149,17 +149,16 @@%250A  && age%25253C%250A-=%250A 12 %25257B%25250A   %0A %250A\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-04-13_17-20-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nome string\n    var age int64\n\n    fmt.Scanf(\"%c\", &nome)\n    fmt.Scan(&age)\n\n    if nome==\"crianca\" && age<=12 {\n        fmt.Printf(\"%c eh crianca\", nome)\n    }\n}\n",
+            "lines": "13"
+        }
+    ]
+}
