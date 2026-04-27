@@ -1,0 +1,20 @@
+2026-04-14 17:00:48, MOVE, v:1, k:fup@impar, mode:PICK
+2026-04-14 17:00:49, MOVE, v:1, k:fup@impar, mode:BACK
+2026-04-14 17:01:31, MOVE, v:1, k:fup@impar, mode:PICK
+2026-04-14 17:03:09, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-04-14 17:09:00, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-04-14 17:17:42, MOVE, v:1, k:fup@impar, mode:BACK
+2026-04-14 17:17:56, MOVE, v:1, k:eval1@pares, mode:PICK
+2026-04-14 17:17:58, EXEC, v:1, k:eval1@pares, mode:FULL, size:21, fail:COMP
+2026-04-14 17:19:53, EXEC, v:1, k:eval1@pares, mode:FULL, rate:0, size:22
+2026-04-14 17:19:30, MOVE, v:1, k:eval1@pares, mode:EDIT
+2026-04-14 17:19:51, MOVE, v:1, k:eval1@pares, mode:EDIT
+2026-04-14 17:27:52, EXEC, v:1, k:eval1@pares, mode:FULL, rate:0, size:23
+2026-04-14 17:28:40, EXEC, v:1, k:eval1@pares, mode:FULL, rate:0, size:23
+2026-04-14 17:30:14, MOVE, v:1, k:eval1@pares, mode:EDIT
+2026-04-14 17:28:37, MOVE, v:1, k:eval1@pares, mode:EDIT
+2026-04-14 17:31:58, EXEC, v:1, k:eval1@pares, mode:FULL, rate:0, size:23
+2026-04-14 17:31:52, MOVE, v:1, k:eval1@pares, mode:EDIT
+2026-04-14 17:31:56, MOVE, v:1, k:eval1@pares, mode:EDIT
+2026-04-14 17:38:04, MOVE, v:1, k:eval1@pares, mode:BACK
+2026-04-14 17:37:37, MOVE, v:1, k:eval1@pares, mode:EDIT

@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_17-01-58",
+            "content": "@@ -91,14 +91,8 @@\n &nt2\n-, &ntf\n )%0A%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-27_17-04-38",
+            "content": "@@ -87,16 +87,22 @@\n t1, &nt2\n+, &ntf\n )%0A%0A    m\n@@ -221,16 +221,31 @@\n  %7D else \n+if m%3E=4 && m%3C7 \n %7B%0A      \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-27_17-05-51",
+            "content": "@@ -91,14 +91,8 @@\n &nt2\n-, &ntf\n )%0A%0A \n@@ -221,24 +221,47 @@\n e %7B%0A        \n+fmt.Scan(&ntf)%0A        \n m=ntf/m%0A    \n@@ -279,77 +279,8 @@\n m%3E=5\n- %7B%0A                fmt.Println(%22aprovado na final%22)%0A            %7Delse\n  %7B%0A \n@@ -303,26 +303,25 @@\n mt.Println(%22\n-re\n+a\n provado na f\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-27_17-08-44",
+            "content": "@@ -106,19 +106,15 @@\n   m=\n-(\n nt1\n-+\n+/\n nt2\n-)/2\n %0A%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-27_17-09-39",
+            "content": "@@ -241,17 +241,13 @@\n   m=\n-(\n ntf\n-+m)/2\n+/m\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-27_17-09-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nt1, nt2, ntf, m int64\n    fmt.Scan(&nt1, &nt2, &ntf)\n\n    m=(nt1+nt2)/2\n\n    if m>=7 {\n        fmt.Println(\"aprovado\")\n    } else if m<4 {\n        fmt.Println(\"reprovado\")\n    } else {\n        m=(ntf+m)/2\n            if m>=5 {\n                fmt.Println(\"aprovado na final\")\n            }else {\n                fmt.Println(\"reprovado na final\")\n            }\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}
