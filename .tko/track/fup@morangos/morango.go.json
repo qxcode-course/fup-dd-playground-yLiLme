@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_18-04-02",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c1, l1, c2, l2, d1, d2 int64\n\n    fmt.Scan(&c1, &l1, &c2, &l2)\n\n    d1=c1*l1\n    d2=c2*l2\n\n    if d1>d2{\n        fmt.Println(d1)\n    } else {\n        fmt.Println(d2)\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

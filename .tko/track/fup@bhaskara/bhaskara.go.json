@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_18-00-50",
+            "content": "@@ -232,19 +232,26 @@\n      if \n-del\n+x1%3E0 && x2\n %3E0 %7B%0A   \n@@ -292,16 +292,44 @@\n x1, x2)%0A\n+        %7D else if x1==0  %7B%0A%0A\n         \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-27_18-03-44",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var a, b, c, del, x1, x2 float64\n        fmt.Scan(&a, &b, &c)\n\n        del=math.Sqrt(b)-4*a*b\n\n        x1=(-b+math.Sqrt(del))/(2*a)\n        x2=(-b-math.Sqrt(del))/(2*a)\n\n        if del>0 {\n            fmt.Printf(\"%.2f\\n%.2f\", x1, x2)\n        }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

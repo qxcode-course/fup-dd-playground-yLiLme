@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-19-20",
+            "content": "@@ -247,20 +247,8 @@\n lse \n-if char=='r'\n %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-20-06",
+            "content": "@@ -103,18 +103,9 @@\n Scan\n-f(%22%25c%25f%22, \n+(\n &cha\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-20-46",
+            "content": "@@ -108,16 +108,18 @@\n (%22%25c\n+%25f\n %22, &char\n )%0A  \n@@ -118,23 +118,10 @@\n char\n-)%0A    fmt.Scan(\n+, \n &num\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-25-35",
+            "content": "package main\nimport \"fmt\" \nimport \"math\"\nfunc main() {\n    var num float64\n    var char rune\n\n    fmt.Scanf(\"%c\", &char)\n    fmt.Scan(&num)\n\n    if char=='c' {\n        fmt.Println(math.Ceil(num))\n    } else if char=='f' {\n        fmt.Println(math.Floor(num))\n    } else if char=='r'{\n        fmt.Println(math.Round(num))\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}
