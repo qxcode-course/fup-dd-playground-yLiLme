@@ -22,19 +22,19 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@base
 - fup@rec
 - fup@if1
-- fup@if2
-- fup@struct
-- fup@if_extra
-- fup@dict
+- fup@string
 - fup@for_extra
-- fup@for1
-- fup@list
+- fup@struct
 - fup@for2
 - fup@games
-- fup@string
+- fup@if2
+- fup@base
+- fup@list
+- fup@if_extra
+- fup@dict
+- fup@for1
 flags:
   inbox: all
   panel: skills
@@ -42,5 +42,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@taxi
-selected_index: 48
+selected: fup@jokenpo
+selected_index: 27
