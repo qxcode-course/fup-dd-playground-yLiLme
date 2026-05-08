@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-08_16-42-04",
+            "content": "@@ -108,34 +108,22 @@\n if a\n-%3C=h\n  && b\n-%3C=h && a%3C=l\n+ %3C= h\n  && \n-b%3C=\n l %7B%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-08_16-43-10",
+            "content": "@@ -163,78 +163,8 @@\n S%22)%0A\n-    %7D else if a%3C=h && c%3C=h && a%3C=l && c%3C=l %7B%0A        fmt.Println(%22S%22)%0A\n     \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-08_16-44-05",
+            "content": "@@ -233,78 +233,8 @@\n S%22)%0A\n-    %7D else if b%3C=h && a%3C=h && b%3C=l && a%3C=l %7B%0A        fmt.Println(%22S%22)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-08_16-45-46",
+            "content": "@@ -308,184 +308,7 @@\n    %7D\n- else if b%3C=h && c%3C=h && b%3C=l && c%3C=l %7B%0A        fmt.Println(%22S%22)%0A    %7D else if c%3C=h && a%3C=h && c%3C=l && a%3C=l %7B%0A        fmt.Println(%22S%22)%0A    %7D else if c%3C=h && b%3C=h && c%3C=l && b%3C=l\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-08_16-48-45",
+            "content": "@@ -485,78 +485,7 @@\n b%3C=l\n- %7B%0A        fmt.Println(%22S%22)%0A    %7D else %7B%0A        fmt.Println(%22N%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-08_16-49-03",
+            "content": "@@ -190,10 +190,10 @@\n %3C=h \n-%7C%7C\n+&&\n  a%3C=\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-08_16-53-28",
+            "content": "@@ -112,26 +112,26 @@\n %3C=h && b%3C=h \n-%7C%7C\n+&&\n  a%3C=l && b%3C=\n@@ -252,26 +252,26 @@\n %3C=h && a%3C=h \n-%7C%7C\n+&&\n  b%3C=l && a%3C=\n@@ -326,18 +326,18 @@\n && c%3C=h \n-%7C%7C\n+&&\n  b%3C=l &&\n@@ -392,26 +392,26 @@\n %3C=h && a%3C=h \n-%7C%7C\n+&&\n  c%3C=l && a%3C=\n@@ -466,18 +466,18 @@\n && b%3C=h \n-%7C%7C\n+&&\n  c%3C=l &&\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-08_16-54-07",
+            "content": "@@ -112,26 +112,26 @@\n %3C=h && b%3C=h \n-&&\n+%7C%7C\n  a%3C=l && b%3C=\n@@ -182,26 +182,26 @@\n %3C=h && c%3C=h \n-&&\n+%7C%7C\n  a%3C=l && c%3C=\n@@ -252,26 +252,26 @@\n %3C=h && a%3C=h \n-&&\n+%7C%7C\n  b%3C=l && a%3C=\n@@ -322,26 +322,26 @@\n %3C=h && c%3C=h \n-&&\n+%7C%7C\n  b%3C=l && c%3C=\n@@ -392,26 +392,26 @@\n %3C=h && a%3C=h \n-&&\n+%7C%7C\n  c%3C=l && a%3C=\n@@ -462,26 +462,26 @@\n %3C=h && b%3C=h \n-&&\n+%7C%7C\n  c%3C=l && b%3C=\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-08_16-55-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c, h, l int64\n\n    fmt.Scan(&a, &b, &c, &h, &l)\n\n    if a<=h && b<=h && a<=l && b<=l {\n        fmt.Println(\"S\")\n    } else if a<=h && c<=h && a<=l && c<=l {\n        fmt.Println(\"S\")\n    } else if b<=h && a<=h && b<=l && a<=l {\n        fmt.Println(\"S\")\n    } else if b<=h && c<=h && b<=l && c<=l {\n        fmt.Println(\"S\")\n    } else if c<=h && a<=h && c<=l && a<=l {\n        fmt.Println(\"S\")\n    } else if c<=h && b<=h && c<=l && b<=l {\n        fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}

@@ -9,5 +9,9 @@ func main() {
     
     if f1>f2 && f1>f3 {
         fmt.Println(f1)
+    } else if f2>f1 && f2>f3{
+        fmt.Println(f2)
+    } else if f3>f2 && f3>f1 {
+        fmt.Println(f3)
     }
 }

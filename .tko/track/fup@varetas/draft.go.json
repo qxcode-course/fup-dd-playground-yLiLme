@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-08_15-22-28",
+            "content": "@@ -41,245 +41,35 @@\n     \n-var a, b, c int64%0A%0A    fmt.Scan(&a, &b, &c)%0A%0A    if b+c%3Ea %7B%0A        fmt.Println(%22false%22)%0A    %7D else if a+c%3Eb %7B%0A        fmt.Println(%22false%22)%0A    %7D else if b+a%3Ec %7B%0A        fmt.Println(%22false%22)%0A    %7D else %7B%0A        fmt.Println(%22true%22)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-08_15-33-30",
+            "content": "@@ -110,33 +110,33 @@\n    fmt.Println(%22\n-F\n+f\n alse%22)%0A    %7D els\n@@ -161,33 +161,33 @@\n    fmt.Println(%22\n-F\n+f\n alse%22)%0A    %7D els\n@@ -224,9 +224,9 @@\n ln(%22\n-F\n+f\n alse\n@@ -266,9 +266,9 @@\n ln(%22\n-T\n+t\n rue%22\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-08_15-33-56",
+            "content": "@@ -99,27 +99,110 @@\n c%3Ea \n-&& a+c%3Eb &&\n+%7B%0A        fmt.Println(%22False%22)%0A    %7D else if a+c%3Eb %7B%0A        fmt.Println(%22False%22)%0A    %7D else if\n  b+a%3Ec \n- \n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-08_15-35-34",
+            "content": "@@ -141,11 +141,12 @@\n ln(%22\n-Tru\n+Fals\n e%22)%0A\n@@ -171,33 +171,32 @@\n    fmt.Println(%22\n-Fals\n+Tru\n e%22)%0A    %7D%0A%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-08_15-36-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int64\n\n    fmt.Scan(&a, &b, &c)\n\n    if b+c>a && a+c>b && b+a>c  {\n        fmt.Println(\"True\")\n    } else {\n        fmt.Println(\"False\")\n    }\n\n}\n",
+            "lines": "14"
+        }
+    ]
+}

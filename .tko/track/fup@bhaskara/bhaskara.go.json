@@ -7,8 +7,58 @@
         },
         {
             "label": "2026-04-27_18-03-44",
-            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var a, b, c, del, x1, x2 float64\n        fmt.Scan(&a, &b, &c)\n\n        del=math.Sqrt(b)-4*a*b\n\n        x1=(-b+math.Sqrt(del))/(2*a)\n        x2=(-b-math.Sqrt(del))/(2*a)\n\n        if del>0 {\n            fmt.Printf(\"%.2f\\n%.2f\", x1, x2)\n        }\n}\n",
+            "content": "@@ -84,17 +84,20 @@\n float64%0A\n-%0A\n+    \n     fmt.\n@@ -135,41 +135,23 @@\n ath.\n-Pow(b,2\n+Sqrt(b\n )-4*\n-(\n a*\n-c)\n+b\n %0A%0A\n-    if del%3E0 %7B%0A\n     \n@@ -157,17 +157,16 @@\n      x1=\n--\n (-b+math\n@@ -186,19 +186,8 @@\n 2*a)\n- //positivo\n %0A   \n@@ -194,17 +194,16 @@\n      x2=\n--\n (-b-math\n@@ -223,20 +223,33 @@\n 2*a)\n- //negativo%0A\n+%0A%0A        if del%3E0 %7B%0A    \n     \n@@ -293,94 +293,12 @@\n     \n-%7D else if del%3C0 %7B%0A        %0A    %7D else %7B%0A        fmt.Println(%22nao ha raiz real%22)%0A    %7D%0A%0A\n+    %7D\n %0A%7D%0A\n",
             "lines": "16"
+        },
+        {
+            "label": "2026-05-08_15-44-33",
+            "content": "@@ -295,16 +295,19 @@\n 2f%22, x1,\n+ x2\n )%0A    %7D \n@@ -321,14 +321,21 @@\n  del\n-==\n+%3C\n 0 %7B%0A\n+        \n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-08_15-46-03",
+            "content": "@@ -295,19 +295,16 @@\n 2f%22, x1,\n- x2\n )%0A    %7D \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-08_15-46-13",
+            "content": "@@ -176,17 +176,17 @@\n  x1=-(-b\n--\n++\n math.Sqr\n@@ -221,25 +221,25 @@\n      x2=-(-b\n-+\n+-\n math.Sqrt(de\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-08_15-47-01",
+            "content": "@@ -176,17 +176,17 @@\n  x1=-(-b\n-+\n+-\n math.Sqr\n@@ -225,17 +225,16 @@\n  x2=-(-b\n--\n +math.Sq\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-08_15-47-16",
+            "content": "@@ -172,16 +172,17 @@\n      x1=\n+-\n (-b+math\n@@ -221,16 +221,17 @@\n      x2=\n+-\n (-b-+mat\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-08_15-47-44",
+            "content": "@@ -288,18 +288,16 @@\n 2f%5Cn%25.2f\n-%5Cn\n %22, x1, x\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-08_15-47-52",
+            "content": "@@ -328,224 +328,8 @@\n 0 %7B%0A\n-        x1=(-b+math.Sqrt(del))/(2*a) //positivo%0A        x2=(-b-+math.Sqrt(del))/(2*a) //negativo%0A        if x1==0 %7B%0A            fmt.Printf(%22%25.2f%5Cn%22, x2)%0A        %7D else %7B%0A            fmt.Printf(%22%25.2f%5Cn%22, x1)%0A        %7D\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-08_15-49-32",
+            "content": "@@ -37,50 +37,8 @@\n th%22%0A\n-//programa que calcula se uma raiz %C3%A9 real%0A\n func\n@@ -496,17 +496,8 @@\n lse \n-if x2==0 \n %7B%0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-08_15-51-10",
+            "content": "@@ -526,32 +526,41 @@\n %0A        %7D else \n+if x2==0 \n %7B%0A            fm\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-08_15-51-32",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\n//programa que calcula se uma raiz \u00e9 real\nfunc main() {\n    var a, b, c, del, x1, x2 float64\n\n    fmt.Scan(&a, &b, &c)\n\n        del=math.Pow(b,2)-4*(a*c)\n\n    if del>0 {\n        x1=(-b+math.Sqrt(del))/(2*a) //positivo\n        x2=(-b-+math.Sqrt(del))/(2*a) //negativo\n        fmt.Printf(\"%.2f\\n%.2f\\n\", x1, x2)\n    } else if del==0 {\n        x1=(-b+math.Sqrt(del))/(2*a) //positivo\n        x2=(-b-+math.Sqrt(del))/(2*a) //negativo\n        if x1==0 {\n            fmt.Printf(\"%.2f\\n\", x2)\n        } else {\n            fmt.Printf(\"%.2f\\n\", x1)\n        }\n    } else {\n        fmt.Println(\"nao ha raiz real\")\n    }\n\n\n}\n",
+            "lines": "29"
         }
     ]
 }

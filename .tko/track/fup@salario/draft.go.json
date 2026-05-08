@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-08_17-04-27",
+            "content": "@@ -118,13 +118,8 @@\n /100\n-*1.20\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-08_17-04-49",
+            "content": "@@ -47,13 +47,8 @@\n r sl\n-, nsl\n  flo\n@@ -102,15 +102,11 @@\n     \n-n\n sl=\n-sl+\n (100\n@@ -114,16 +114,21 @@\n *20)/100\n+*1.20\n %0A       \n@@ -140,17 +140,16 @@\n Println(\n-n\n sl)%0A    \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-08_17-06-26",
+            "content": "@@ -145,19 +145,11 @@\n rint\n-f(%22%25.2f%5Cn%22,\n+ln(\n nsl)\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-08_17-08-01",
+            "content": "@@ -113,17 +113,22 @@\n l=sl\n++(1000\n *\n-(\n 20\n+)\n /100\n-)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-08_17-15-41",
+            "content": "@@ -121,10 +121,8 @@\n /100\n-+1\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-08_17-16-03",
+            "content": "@@ -117,17 +117,17 @@\n *(20/100\n-*\n++\n 1)%0A     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-08_17-16-16",
+            "content": "@@ -114,15 +114,17 @@\n =sl*\n+(\n 20/\n-(\n 100\n+*1\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-08_17-16-56",
+            "content": "@@ -107,17 +107,16 @@\n     nsl=\n-(\n sl*20/(1\n@@ -122,12 +122,8 @@\n 100)\n-)+sl\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-08_17-17-35",
+            "content": "@@ -161,278 +161,8 @@\n sl)%0A\n-    %7D else if sl%3E1000 && sl%3C=1500 %7B%0A        nsl=(sl*15/(100))+sl%0A        fmt.Printf(%22%25.2f%5Cn%22,nsl)%0A    %7D else if sl%3E1500 && sl%3C=2000 %7B%0A        nsl=(sl*10/(100))+sl%0A        fmt.Printf(%22%25.2f%5Cn%22,nsl)%0A    %7D else %7B%0A        nsl=(sl*5/(100))+sl%0A        fmt.Printf(%22%25.2f%5Cn%22,nsl)%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-08_17-19-57",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var sl, nsl float64\n\n    fmt.Scan(&sl)\n\n    if sl<=1000 {\n        nsl=(sl*20/(100))+sl\n        fmt.Printf(\"%.2f\\n\",nsl)\n    } else if sl>1000 && sl<=1500 {\n        nsl=(sl*15/(100))+sl\n        fmt.Printf(\"%.2f\\n\",nsl)\n    } else if sl>1500 && sl<=2000 {\n        nsl=(sl*10/(100))+sl\n        fmt.Printf(\"%.2f\\n\",nsl)\n    } else {\n        nsl=(sl*5/(100))+sl\n        fmt.Printf(\"%.2f\\n\",nsl)\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}
