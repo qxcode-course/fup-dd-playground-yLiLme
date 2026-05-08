@@ -5,7 +5,7 @@ func main() {
 
     fmt.Scan(&a, &b)
 
-    for  {
-
+    for i:=a; i<b; i++  {
+        fmt.Println(i)
     }
 }

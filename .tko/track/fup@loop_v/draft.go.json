@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-08_20-25-50",
+            "content": "@@ -176,16 +176,22 @@\n       %7D \n+else %7B\n %0A       \n@@ -216,16 +216,26 @@\n d %22, i)%0A\n+        %7D%0A\n     %7D%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-08_20-27-43",
+            "content": "@@ -177,32 +177,36 @@\n      %7D %0A        \n+    \n fmt.Printf(%22%25d %22\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-08_20-27-51",
+            "content": "@@ -237,10 +237,8 @@\n f(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-08_20-29-29",
+            "content": "@@ -116,17 +116,16 @@\n i:=a; i%3C\n-=\n b; i++ %7B\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-08_20-30-52",
+            "content": "@@ -120,11 +120,10 @@\n ; i%3C\n+=\n b\n--1\n ; i+\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-08_20-32-05",
+            "content": "@@ -138,17 +138,17 @@\n      if \n-i\n+a\n %252==0 %7B%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-08_20-33-04",
+            "content": "@@ -117,16 +117,18 @@\n :=a; i%3Cb\n+-1\n ; i++ %7B%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-08_20-33-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int64\n\n    fmt.Scan(&a, &b)\n\n        fmt.Printf(\"[ \")\n    for i:=a; i<b; i++ {\n        if i%2==0 {\n            continue\n        } \n        fmt.Printf(\"%d \", i)\n    }\n        fmt.Printf(\"]\\n\")\n}\n",
+            "lines": "16"
+        }
+    ]
+}

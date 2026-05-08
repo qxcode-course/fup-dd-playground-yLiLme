@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-08_20-45-46",
+            "content": "@@ -82,21 +82,8 @@\n b)%0A%0A\n-    if b%3Ea %7B%0A\n     \n@@ -192,63 +192,7 @@\n n(s)\n-%0A%0A    %7D else %7B%0A        fmt.Println(%22invalido%22)%0A    %7D    \n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-08_20-46-42",
+            "content": "@@ -91,20 +91,16 @@\n f b%3Ea %7B%0A\n-    \n     for \n@@ -107,17 +107,16 @@\n i:=a; i%3C\n-=\n b; i++ %7B\n@@ -116,20 +116,16 @@\n ; i++ %7B%0A\n-    \n         \n@@ -158,20 +158,16 @@\n         \n-    \n s+=i%0A   \n@@ -175,31 +175,16 @@\n     \n-  \n-  %7D   %0A        \n %7D%0A    \n+%7D%0A\n     \n@@ -202,16 +202,17 @@\n ntln(s)%0A\n+%0A\n     %7D el\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-08_20-47-24",
+            "content": "@@ -147,10 +147,10 @@\n ==0 \n-%7C%7C\n+&&\n  i%253\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-08_20-47-47",
+            "content": "@@ -147,10 +147,10 @@\n ==0 \n-&&\n+%7C%7C\n  i%253\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-08_20-47-54",
+            "content": "@@ -87,17 +87,16 @@\n    if b%3E\n-=\n a %7B%0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-08_20-49-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, s int64\n\n    fmt.Scan(&a, &b)\n\n    if b>=a {\n        for i:=a; i<=b; i++ {\n            if i%2==0 && i%3==0 {\n                s+=i\n            }   \n        }\n            fmt.Println(s)\n    } else {\n        fmt.Println(\"invalido\")\n    }    \n}\n",
+            "lines": "18"
+        }
+    ]
+}
