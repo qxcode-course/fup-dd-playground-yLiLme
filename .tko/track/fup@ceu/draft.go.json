@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-09_00-16-39",
+            "content": "@@ -232,19 +232,14 @@\n tf(%22\n- ceu \n %5D%5Cn%22)%0A%7D%0A\n  %0A\n@@ -240,6 +240,4 @@\n )%0A%7D%0A\n- %0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-09_00-16-57",
+            "content": "@@ -228,16 +228,17 @@\n Printf(%22\n+ \n ceu %5D%5Cn%22\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-09_00-17-07",
+            "content": "@@ -108,17 +108,16 @@\n i:=0; i%3C\n-=\n 10; i++ \n@@ -167,55 +167,8 @@\n nue%0A\n-        %7D else if i==10 %7B%0A            continue%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-09_00-19-02",
+            "content": "@@ -264,13 +264,34 @@\n         \n+fmt.Printf(%22ceu %5D%5Cn%22)\n %0A%7D%0A %0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-09_00-19-37",
+            "content": "@@ -178,38 +178,49 @@\n   %7D \n-%0A        fmt.Printf(%22%25d %22, i)%0A\n+else if i==10 %7B%0A            continue%0A    \n     \n@@ -245,17 +245,22 @@\n tf(%22\n-ceu %5D%5Cn%22)\n+%25d %22, i)%0A    %7D\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-09_00-22-01",
+            "content": "@@ -173,16 +173,17 @@\n        %7D\n+ \n %0A       \n@@ -205,25 +205,24 @@\n  %22, i)%0A    %7D\n- \n %0A        fmt\n@@ -240,12 +240,21 @@\n u %5D%5Cn%22)%0A\n+        %0A\n %7D%0A %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-09_00-23-23",
+            "content": "@@ -108,16 +108,17 @@\n i:=0; i%3C\n+=\n 10; i++ \n@@ -204,24 +204,25 @@\n  %22, i)%0A    %7D\n+ \n %0A        fmt\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-09_00-23-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p int64\n\n    fmt.Scan(&p)\n\n        fmt.Print(\"[ \")\n    for i:=0; i<10; i++ {\n        if p==int64(i){\n            continue\n        }\n        fmt.Printf(\"%d \", i)\n    }\n        fmt.Printf(\"ceu ]\\n\")\n}\n \n",
+            "lines": "17"
+        }
+    ]
+}
