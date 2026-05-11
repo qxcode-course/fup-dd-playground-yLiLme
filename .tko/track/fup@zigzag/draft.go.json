@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_17-31-07",
+            "content": "@@ -99,9 +99,9 @@\n s; i\n-%3C\n+%3E\n =fs;\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-11_17-32-10",
+            "content": "@@ -128,18 +128,8 @@\n 3==0\n- && i%255==0\n %7B%0A  \n@@ -154,19 +154,16 @@\n tln(%22zig\n-zag\n %22)%0A     \n@@ -236,24 +236,34 @@\n e if i%253==0 \n+&& i%255==0 \n %7B%0A          \n@@ -272,32 +272,35 @@\n fmt.Println(%22zig\n+zag\n %22)%0A        %7D els\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-11_17-33-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var is, fs int64\n\n    fmt.Scan(&is, &fs)\n\n    for i:=is; i<=fs; i++ {\n        if i%3==0 && i%5==0{\n            fmt.Println(\"zigzag\")\n        } else if i%5==0 {\n            fmt.Println(\"zag\")\n        } else if i%3==0 {\n            fmt.Println(\"zig\")\n        } else {\n            fmt.Println(i)\n        }\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
