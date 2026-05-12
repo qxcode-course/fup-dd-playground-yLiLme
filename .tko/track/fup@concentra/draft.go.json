@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_12-37-04",
+            "content": "@@ -119,17 +119,16 @@\n rintf(%22%5B\n- \n %22)%0A    f\n@@ -172,16 +172,17 @@\n f(%22%25d %25d\n+ \n %22, cp, c\n@@ -198,10 +198,10 @@\n   cp\n-+\n =\n++\n 1%0A  \n@@ -211,11 +211,11 @@\n    c\n-b-=\n+p=-\n 1%0A  \n@@ -239,12 +239,9 @@\n tf(%22\n- %5D%5Cn\n+%5D\n %22)%0A%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-12_12-38-26",
+            "content": "@@ -173,17 +173,16 @@\n f(%22%25d %25d\n- \n %22, cp, c\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-12_12-38-33",
+            "content": "@@ -139,17 +139,16 @@\n i:=a; i%3C\n-=\n b; i++ %7B\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-12_12-38-42",
+            "content": "@@ -237,16 +237,17 @@\n Printf(%22\n+ \n %5D%5Cn%22)%0A%0A%7D\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-12_12-38-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, cp, cb int64\n\n    fmt.Scan(&a, &b)\n\n    cp=a\n    cb=b\n\n    fmt.Printf(\"[ \")\n    for i:=a; i<=b; i++ {\n        fmt.Printf(\"%d %d \", cp, cb)\n        cp+=1\n        cb-=1\n    } \n    fmt.Printf(\"]\\n\")\n\n}\n",
+            "lines": "19"
+        }
+    ]
+}

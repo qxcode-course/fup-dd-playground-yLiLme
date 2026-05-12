@@ -22,19 +22,20 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if2
-- fup@rec
+- fup@base
 - fup@for1
+- fup@rec
 - fup@games
-- fup@struct
-- fup@for_extra
-- fup@string
-- fup@list
-- fup@if_extra
 - fup@for2
 - fup@dict
+- fup@struct
+- fup@string
+- fup@if_extra
+- fup@if2
 - fup@if1
-- fup@base
+- fup@list
+- fup@for_extra
+- fup@mat
 flags:
   inbox: all
   panel: skills
@@ -42,5 +43,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@concentra
-selected_index: 79
+selected: fup@sapinho
+selected_index: 83
