@@ -8,5 +8,7 @@ func main() {
         fmt.Scan(&nums)
         vet[i]=nums
     }
-    for 
+    for i:= range vet {
+        
+    }
 }
