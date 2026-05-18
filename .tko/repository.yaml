@@ -19,20 +19,20 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@struct
-- fup@games
-- fup@if2
 - fup@for_extra
-- fup@mat
 - fup@list
-- fup@for1
-- fup@if_extra
+- fup@struct
 - fup@string
+- fup@if2
+- fup@if_extra
 - fup@dict
+- fup@for2
+- fup@mat
 - fup@rec
+- fup@for1
+- fup@games
 - fup@if1
 - fup@base
-- fup@for2
 flags:
   inbox: all
   panel: skills
@@ -40,5 +40,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@vet_i
-selected_index: 94
+selected: fup@apertada
+selected_index: 97

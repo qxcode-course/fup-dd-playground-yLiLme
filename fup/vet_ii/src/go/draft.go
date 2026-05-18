@@ -6,16 +6,17 @@ func main() {
     var vet[]int = make([]int, n)
 
     if n==0 {
-        fmt.Println()
+        fmt.Printf("[ ]\n")
     } else {
     var nums int
     for i:=0; i<n; i++ {
         fmt.Scan(&nums)
         vet[i]=nums
     }
+        fmt.Printf("[ ")
         for i := range vet {
-        fmt.Println(vet[i])
+        fmt.Printf("%d ", vet[i])
     }
+        fmt.Printf("]\n")
 }
-
 }

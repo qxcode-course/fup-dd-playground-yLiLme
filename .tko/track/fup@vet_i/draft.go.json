@@ -17,8 +17,68 @@
         },
         {
             "label": "2026-05-18_17-12-48",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(n)\n    var vet[]int = make([]int, n)\n\n    var nums int\n    for i:=0; i<=n; i++ {\n         fmt.Scan(&nums)\n         vet[i]=nums\n         fmt.Println(vet[i])\n    }\n    \n\n}\n",
+            "content": "@@ -209,18 +209,11 @@\n rint\n-f(%22%25d%5Cn%22, \n+ln(\n vet%5B\n",
             "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-15-37",
+            "content": "@@ -60,17 +60,16 @@\n mt.Scan(\n-&\n n)%0A    v\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-16-28",
+            "content": "@@ -210,11 +210,18 @@\n rint\n-ln(\n+f(%22%25d%5Cn%22, \n vet%5B\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-17-13",
+            "content": "@@ -146,24 +146,25 @@\n + %7B%0A        \n+ \n fmt.Scan(&nu\n@@ -179,32 +179,22 @@\n     \n-vet = append(vet, \n+ vet%5Bi%5D=\n nums\n-)\n %0A\n+ \n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-21-14",
+            "content": "@@ -132,16 +132,17 @@\n i:=0; i%3C\n+=\n n; i++ %7B\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-21-30",
+            "content": "@@ -103,16 +103,28 @@\n n)%0A%0A    \n+var nums int\n %0A    for\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-21-48",
+            "content": "@@ -107,20 +107,8 @@\n     \n-var nums int\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-22-11",
+            "content": "@@ -201,39 +201,8 @@\n ms)%0A\n-    %7D%0A    for i := range vet %7B%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-27-57",
+            "content": "@@ -180,16 +180,28 @@\n  vet\n-%5Bi%5D=\n+ = append(vet, \n nums\n+)\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-18_17-32-33",
+            "content": "@@ -145,61 +145,8 @@\n + %7B%0A\n-        if n==0 %7B%0A            break%0A    %7D else %7B%0A    \n     \n@@ -173,20 +173,16 @@\n         \n-    \n vet%5Bi%5D=n\n@@ -193,22 +193,10 @@\n     \n-  \n-  %7D%0A        \n+%7D%0A\n     \n@@ -220,28 +220,24 @@\n t %7B%0A        \n-    \n fmt.Println(\n@@ -244,20 +244,16 @@\n vet%5Bi%5D)%0A\n-    \n     %7D%0A  \n@@ -254,13 +254,12 @@\n   %7D%0A    \n-%7D\n %0A%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-18_17-36-13",
+            "content": "@@ -141,16 +141,69 @@\n ; i++ %7B%0A\n+        if n==0 %7B%0A            break%0A    %7D else %7B%0A    \n         \n@@ -226,16 +226,20 @@\n         \n+   \n+ \n vet%5Bi%5D=n\n@@ -250,18 +250,24 @@\n     \n-%7D%0A\n+    %7D%0A  \n         \n for \n@@ -258,24 +258,26 @@\n %7D%0A          \n+  \n for i := ran\n@@ -292,61 +292,8 @@\n %0A   \n-        if n==0 %7B%0A            break%0A        %7D else %7B%0A\n     \n@@ -325,16 +325,19 @@\n     \n-%7D%0A\n+    \n %7D%0A    \n+%7D\n %0A%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-18_17-38-23",
+            "content": "@@ -103,57 +103,8 @@\n n)%0A%0A\n-    if n==0 %7B%0A        fmt.Println()%0A    %7D else %7B%0A\n     \n@@ -220,16 +220,73 @@\n e vet %7B%0A\n+           if n==0 %7B%0A            break%0A        %7D else %7B%0A \n         \n@@ -312,12 +312,17 @@\n %0A    %7D%0A%7D\n+%0A    \n %0A%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-18_17-41-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    var vet[]int = make([]int, n)\n\n    if n==0 {\n        fmt.Println()\n    } else {\n    var nums int\n    for i:=0; i<n; i++ {\n        fmt.Scan(&nums)\n        vet[i]=nums\n    }\n        for i := range vet {\n        fmt.Println(vet[i])\n    }\n}\n\n}\n",
+            "lines": "21"
         }
     ]
 }
