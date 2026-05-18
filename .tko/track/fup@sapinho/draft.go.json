@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_17-10-30",
+            "content": "@@ -181,68 +181,8 @@\n +=e%0A\n-        if qts%3E=p %7B%0A            fmt.Print(%22saiu%22)%0A        %7D%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-12_17-11-18",
+            "content": "@@ -117,16 +117,135 @@\n %7B%0A      \n+  fmt.Printf(%22%25d %25d%5Cn%22, i, qts)%0A        qts+=s%0A        i+=e%0A        if qts%3E=p %7B%0A            fmt.Print(%22saiu%22)%0A        %7D\n %0A    %7D%0A%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-12_17-12-03",
+            "content": "@@ -89,18 +89,8 @@\n e)%0A%0A\n-    qts=s%0A\n     \n@@ -121,39 +121,8 @@\n     \n-  fmt.Printf(%22%25d %25d%5Cn%22, i, qts)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_17-13-17",
+            "content": "@@ -163,36 +163,8 @@\n ts)%0A\n-        i-=e%0A        qts+=i%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-12_17-14-20",
+            "content": "@@ -159,16 +159,29 @@\n i, qts)%0A\n+        i-=e%0A\n         \n@@ -185,19 +185,17 @@\n    qts+=\n-qts\n+i\n %0A    %7D%0A%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-12_17-14-59",
+            "content": "@@ -179,10 +179,8 @@\n =qts\n--e\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-12_17-15-14",
+            "content": "@@ -53,21 +53,16 @@\n , e, qts\n-, qtd\n  int%0A%0A  \n@@ -151,19 +151,17 @@\n  %25d%5Cn%22, \n-qtd\n+i\n , qts)%0A \n@@ -179,36 +179,10 @@\n =qts\n-%0A        qtd-=qts-e%0A        \n+-e\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-12_17-18-41",
+            "content": "@@ -198,14 +198,15 @@\n  qtd\n-=e\n -\n+=\n qts\n+-e\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-19-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, s, e, qts, qtd int\n\n    fmt.Scan(&p, &s, &e)\n\n    qts=s\n    for i:=0; i<=p; i++ {\n        fmt.Printf(\"%d %d\\n\", qtd, qts)\n        qts+=qts\n        qtd=e-qts\n        \n    }\n\n}\n",
+            "lines": "16"
+        }
+    ]
+}

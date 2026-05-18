@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_17-47-50",
+            "content": "@@ -177,34 +177,56 @@\n     \n-fmt.Println(nums)%0A        \n+vet = append(vet, nums)%0A        fmt.Println(vet)\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-51-25",
+            "content": "@@ -169,28 +169,8 @@\n ms)%0A\n-        vet%5Bi%5D=nums%0A\n     \n@@ -189,15 +189,19 @@\n tln(\n-vet%5Bi%5D)\n+nums)%0A     \n    %0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-53-58",
+            "content": "@@ -145,25 +145,24 @@\n + %7B%0A        \n- \n fmt.Scan(&nu\n@@ -173,17 +173,16 @@\n         \n- \n vet%5Bi%5D=n\n@@ -185,17 +185,16 @@\n i%5D=nums%0A\n- \n         \n@@ -212,16 +212,19 @@\n (vet%5Bi%5D)\n+   \n %0A    %7D%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-12-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(n)\n    var vet[]int = make([]int, n)\n\n    var nums int\n    for i:=0; i<=n; i++ {\n         fmt.Scan(&nums)\n         vet[i]=nums\n         fmt.Println(vet[i])\n    }\n    \n\n}\n",
+            "lines": "16"
+        }
+    ]
+}
