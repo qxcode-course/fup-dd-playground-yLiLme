@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-36-56",
+            "content": "@@ -273,35 +273,34 @@\n %0A    for i:=\n-0; i%3Ca; i++\n+ range vet\n  %7B%0A        i\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_17-37-42",
+            "content": "@@ -311,16 +311,18 @@\n ni==%22v%22 \n+%7C%7C\n  ani==%22c\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_17-39-57",
+            "content": "@@ -315,10 +315,8 @@\n %22v%22 \n-%7C%7C\n  ani\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_17-39-59",
+            "content": "@@ -311,16 +311,27 @@\n ni==%22v%22 \n+%7C%7C ani==%22c%22\n %7B%0A      \n@@ -399,58 +399,8 @@\n +=2%0A\n-        %7D else if ani==%22c%22 %7B%0A            qtani+=4%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_17-40-36",
+            "content": "@@ -279,21 +279,21 @@\n or i\n- \n :=\n- range vet\n+0; i%3Ca; i++\n  %7B%0A \n@@ -306,34 +306,67 @@\n  if \n-vet%5Bi%5D==%22v%22 %7C%7C vet%5Bi%5D==%22c%22\n+ani==%22v%22 %7B%0A            qtani+=4%0A        %7D else if ani==%22g%22 \n %7B%0A  \n@@ -374,33 +374,33 @@\n          qtani+=\n-4\n+2\n %0A        %7D else \n@@ -406,18 +406,15 @@\n  if \n-vet%5Bi%5D==%22g\n+ani==%22c\n %22 %7B%0A\n@@ -424,33 +424,33 @@\n          qtani+=\n-2\n+4\n %0A        %7D%0A    %7D\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-19_17-41-44",
+            "content": "@@ -416,24 +416,25 @@\n     %7D%0A    %7D%0A\n+%0A\n         fmt.\n@@ -460,85 +460,6 @@\n i)%0A%0A\n-    if c%3Eqtani && cb%3Cqtani %7B%0A        fmt.Println(%22Cebolinha%22)%0A    %7D%0A%0A        %0A%0A\n %7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_17-44-38",
+            "content": "@@ -464,17 +464,16 @@\n    if c%3E\n-=\n qtani &&\n@@ -476,17 +476,16 @@\n i && cb%3C\n-=\n qtani %7B%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-19_17-52-08",
+            "content": "@@ -85,41 +85,8 @@\n ng%0A%0A\n-    //chico bento chuta primeiro%0A\n     \n@@ -463,53 +463,32 @@\n     \n-var Ccb, Cc int%0A%0A    Ccb=cb-a%0A    Cc=%0A    if \n+if c%3E=qtani && cb%3C=qtani\n  %7B%0A \n@@ -507,16 +507,25 @@\n rintln(%22\n+Cebolinha\n %22)%0A    %7D\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-19_17-55-52",
+            "content": "@@ -488,16 +488,58 @@\n qtani)%0A%0A\n+    var Ccb, Cc int%0A%0A    Ccb=cb-a%0A    Cc=%0A\n     if  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-19_17-55-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var cb, c, a, qtani int\n    var ani string\n\n    //chico bento chuta primeiro\n    fmt.Scan(&cb, &c)\n    \n    //Quantidade do vetor\n    fmt.Scan(&a)\n    var vet[] string = make([]string, a)\n\n    for i:=0; i<a; i++ {\n        fmt.Scan(&ani)\n        vet[i]=ani\n    }\n    for i := range vet {\n        if vet[i]==\"v\" || vet[i]==\"c\"{\n            qtani+=4\n        } else if vet[i]==\"g\" {\n            qtani+=2\n        }\n    }\n        fmt.Printf(\"%d\\n\", qtani)\n\n    if  {\n        fmt.Println(\"\")\n    }\n\n        \n\n}\n",
+            "lines": "33"
+        }
+    ]
+}

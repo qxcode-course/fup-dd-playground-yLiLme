@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_18-11-36",
+            "content": "@@ -333,17 +333,17 @@\n ange vet\n-1\n+2\n  %7B%0A     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_18-12-08",
+            "content": "@@ -333,17 +333,17 @@\n ange vet\n-2\n+1\n  %7B%0A     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_18-12-15",
+            "content": "@@ -98,17 +98,17 @@\n  var vet\n-n\n+1\n  %5B%5D int \n@@ -137,17 +137,17 @@\n  var vet\n-m\n+2\n  %5B%5D int \n@@ -220,25 +220,25 @@\n %0A        vet\n-n\n+1\n %5Bi%5D=n2%0A    %7D\n@@ -297,17 +297,17 @@\n      vet\n-m\n+2\n %5Bi%5D=m2%0A \n@@ -333,17 +333,17 @@\n ange vet\n-m\n+2\n  %7B%0A     \n@@ -355,17 +355,17 @@\n  vet\n-n\n+1\n %5Bi%5D==vet\n m%5Bi%5D\n@@ -360,17 +360,17 @@\n %5Bi%5D==vet\n-m\n+2\n %5Bi%5D %7B%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-19_18-14-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, m1, n2, m2, ct int\n    fmt.Scan(&n1, &m1)\n    var vetn [] int = make([]int, n1) \n    var vetm [] int = make([]int, m1)\n\n    for i:=0; i<n1; i++ {\n        fmt.Scan(&n2)\n        vetn[i]=n2\n    }\n    for i:=0; i<m1; i++ {\n        fmt.Scan(&m2)\n        vetm[i]=m2\n    }\n    for i := range vetm {\n        if vetn[i]==vetm[i] {\n            ct+=1\n        }\n    }\n        if ct>0 {\n            fmt.Println(\"sim\")\n        } else {\n            fmt.Println(\"nao\")\n        }\n}\n",
+            "lines": "27"
+        }
+    ]
+}

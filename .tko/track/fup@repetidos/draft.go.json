@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_18-02-01",
+            "content": "@@ -64,30 +64,8 @@\n int \n-%0A%0A    fmt.Scan(&p, &n)\n %0A   \n@@ -97,20 +97,33 @@\n int, n)%0A\n+%0A\n     \n+fmt.Scan(&p)\n %0A    for\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-19_18-03-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, n, nums, ct int \n\n    fmt.Scan(&p, &n)\n    var vet [] int = make([]int, n)\n    \n    for i:=0; i<n; i++ {\n        fmt.Scan(&nums)\n        vet[i]=nums\n    }\n    for i := range vet {\n        if vet[i]==p {\n            ct+=1\n        }\n    }\n        fmt.Println(ct)\n}\n",
+            "lines": "19"
+        }
+    ]
+}
