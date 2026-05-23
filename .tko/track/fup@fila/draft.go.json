@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_19-40-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, p int\n    fmt.Scan(&n)\n    var fila[]int=make([]int, n)\n    var par[]int\n\n    for i:=0; i<n; i++ {\n        fmt.Scan(&p)\n        fila[i]=p\n    }\n    for i:= range fila {\n        if fila[i]%2==0 {\n            =fila[i]\n        }\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}

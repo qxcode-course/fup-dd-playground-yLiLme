@@ -1,0 +1,12 @@
+2026-05-20 13:24:30, MOVE, v:1, k:fup@linha, mode:DOWN
+2026-05-20 13:24:31, MOVE, v:1, k:fup@linha, mode:PICK
+2026-05-20 13:24:33, EXEC, v:1, k:fup@linha, mode:FULL, rate:0, size:5
+2026-05-20 13:24:54, MOVE, v:1, k:fup@linha, mode:BACK
+2026-05-20 13:25:03, MOVE, v:1, k:fup@medico, mode:DOWN
+2026-05-20 13:25:04, MOVE, v:1, k:fup@medico, mode:PICK
+2026-05-20 13:24:30, MOVE, v:1, k:fup@linha, mode:EDIT
+2026-05-20 13:24:30, MOVE, v:1, k:fup@linha, mode:EDIT
+2026-05-20 13:24:30, MOVE, v:1, k:fup@linha, mode:EDIT
+2026-05-20 13:24:33, MOVE, v:1, k:fup@linha, mode:EDIT
+2026-05-20 13:25:03, MOVE, v:1, k:fup@medico, mode:EDIT
+2026-05-20 13:25:03, MOVE, v:1, k:fup@medico, mode:EDIT

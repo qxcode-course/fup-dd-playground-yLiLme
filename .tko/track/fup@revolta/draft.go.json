@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_19-53-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, p, s, r int\n    fmt.Scan(&n)\n    var vet[]int=make([]int, n)\n\n    for i:=0; i<n; i++{\n        fmt.Scan(&p)\n        vet[i]=p\n    }\n    for i:= range vet{\n        if vet[i]%2==0 || vet[i]==0{\n            r+=vet[i]\n        } else {\n            s+=vet[i]\n        }\n    }\n        if r>s{\n            fmt.Println(\"rebeldes\")\n        } else if s>r{\n            fmt.Println(\"soldados\")\n        } else {\n            fmt.Println(\"empate\")\n        }\n}\n",
+            "lines": "26"
+        }
+    ]
+}

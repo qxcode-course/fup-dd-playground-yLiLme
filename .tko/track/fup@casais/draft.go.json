@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_03-40-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nvet,  ani, ct int\n    fmt.Scan(&nvet)\n    var vet [] int = make([]int, nvet)\n\n    for i:=0; i<nvet; i++ {\n        fmt.Scan(&ani)\n        vet[i]=ani\n    }\n    for i:= range vet {\n        if vet[i]==ani>0 && vet[i]==ani<0 {\n            ct+=1\n        }\n    }\n    fmt.Println(ct)\n}\n",
+            "lines": "18"
+        }
+    ]
+}
