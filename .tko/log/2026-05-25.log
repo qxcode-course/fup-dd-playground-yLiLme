@@ -35,3 +35,59 @@
 2026-05-25 18:05:05, MOVE, v:1, k:fup@estudante, mode:PICK
 2026-05-25 18:06:15, MOVE, v:1, k:fup@estudante, mode:EDIT
 2026-05-25 18:06:59, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-05-25 18:16:43, MOVE, v:1, k:fup@estudante, mode:BACK
+2026-05-25 22:53:07, MOVE, v:1, k:fup@invertendo, mode:DOWN
+2026-05-25 22:53:08, MOVE, v:1, k:fup@invertendo, mode:PICK
+2026-05-25 22:53:07, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-25 22:53:07, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-25 22:56:45, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-25 22:58:01, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:17
+2026-05-25 22:58:15, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:17
+2026-05-25 22:58:55, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0
+2026-05-25 23:01:19, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0
+2026-05-25 23:01:29, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:17
+2026-05-25 23:01:29, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-25 23:01:29, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-25 23:08:47, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:17
+2026-05-25 23:09:00, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:17
+2026-05-25 23:08:59, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-25 23:09:00, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-25 23:11:50, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0
+2026-05-25 23:12:25, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0
+2026-05-25 23:13:01, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:17
+2026-05-25 23:13:29, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0
+2026-05-25 23:13:33, MOVE, v:1, k:fup@invertendo, mode:BACK
+2026-05-25 23:13:54, MOVE, v:1, k:fup@invertendo, mode:PICK
+2026-05-25 23:13:56, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0
+2026-05-25 23:16:05, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:17
+2026-05-25 23:16:19, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:17
+2026-05-25 23:16:25, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:17
+2026-05-25 23:16:41, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:0, size:17
+2026-05-25 23:16:56, EXEC, v:1, k:fup@invertendo, mode:FULL, rate:100, size:17
+2026-05-25 23:16:58, MOVE, v:1, k:fup@invertendo, mode:BACK
+2026-05-25 23:17:03, SELF, v:1, k:fup@invertendo, self:1, rate:100
+2026-05-25 23:17:57, MOVE, v:1, k:fup@apertada, mode:PICK
+2026-05-25 23:17:59, MOVE, v:1, k:fup@apertada, mode:BACK
+2026-05-25 23:18:33, MOVE, v:1, k:fup@goiabas, mode:PICK
+2026-05-25 23:18:34, EXEC, v:1, k:fup@goiabas, mode:FULL, size:10, fail:COMP
+2026-05-25 23:18:41, MOVE, v:1, k:fup@goiabas, mode:BACK
+2026-05-25 23:16:56, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-25 23:16:56, MOVE, v:1, k:fup@invertendo, mode:EDIT
+2026-05-25 23:19:20, MOVE, v:1, k:fup@patas, mode:PICK
+2026-05-25 23:19:32, EXEC, v:1, k:fup@patas, mode:FULL, fail:COMP
+2026-05-25 23:19:40, EXEC, v:1, k:fup@patas, mode:FULL, rate:0, size:31
+2026-05-25 23:20:40, MOVE, v:1, k:fup@patas, mode:EDIT
+2026-05-25 23:19:40, MOVE, v:1, k:fup@patas, mode:EDIT
+2026-05-25 23:28:52, MOVE, v:1, k:fup@patas, mode:EDIT
+2026-05-25 23:30:42, MOVE, v:1, k:fup@patas, mode:EDIT
+2026-05-25 23:38:22, EXEC, v:1, k:fup@patas, mode:FULL, rate:0, size:35
+2026-05-25 23:37:45, MOVE, v:1, k:fup@patas, mode:EDIT
+2026-05-25 23:38:22, MOVE, v:1, k:fup@patas, mode:EDIT
+2026-05-25 23:40:26, EXEC, v:1, k:fup@patas, mode:FULL, rate:42, size:39
+2026-05-25 23:40:50, EXEC, v:1, k:fup@patas, mode:FULL, rate:85, size:41
+2026-05-25 23:42:02, MOVE, v:1, k:fup@patas, mode:BACK
+2026-05-25 23:42:06, SELF, v:1, k:fup@patas, self:1, rate:85
+2026-05-25 23:42:22, MOVE, v:1, k:fup@dindin, mode:PICK
+2026-05-25 23:40:50, MOVE, v:1, k:fup@patas, mode:EDIT
+2026-05-25 23:40:50, MOVE, v:1, k:fup@patas, mode:EDIT
+2026-05-25 23:43:29, MOVE, v:1, k:fup@dindin, mode:EDIT

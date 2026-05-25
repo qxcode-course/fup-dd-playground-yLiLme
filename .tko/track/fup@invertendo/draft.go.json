@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_22-58-01",
+            "content": "@@ -215,17 +215,17 @@\n  for i:=\n-n\n+0\n ; i%3E0; i\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_22-58-15",
+            "content": "@@ -200,16 +200,17 @@\n rintf(%22%5B\n+ \n %22)%0A    f\n@@ -249,17 +249,16 @@\n Printf(%22\n- \n %25d %22, ve\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_23-01-29",
+            "content": "@@ -210,35 +210,35 @@\n %0A    for i:=\n-0; i%3Cn; i++\n+n; i%3E0; i--\n  %7B%0A        f\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_23-08-47",
+            "content": "@@ -200,17 +200,16 @@\n rintf(%22%5B\n- \n %22)%0A    f\n@@ -248,16 +248,17 @@\n Printf(%22\n+ \n %25d %22, ve\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_23-09-00",
+            "content": "@@ -219,19 +219,19 @@\n  i:=\n-n; i%3E0; i--\n+0; i%3Cn; i++\n  %7B%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_23-13-01",
+            "content": "@@ -220,10 +220,8 @@\n i:=n\n--1\n ; i%3E\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_23-16-05",
+            "content": "@@ -216,17 +216,17 @@\n for i:=n\n-+\n+-\n 1; i%3E0; \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_23-16-19",
+            "content": "@@ -216,17 +216,17 @@\n for i:=n\n--\n++\n 1; i%3E0; \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_23-16-25",
+            "content": "@@ -220,13 +220,14 @@\n i:=n\n+-1\n ; i%3E\n-=\n 0; i\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_23-16-41",
+            "content": "@@ -220,10 +220,8 @@\n i:=n\n--1\n ; i%3E\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_23-16-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, nums int\n    fmt.Scan(&n)\n    var vet[]int=make([]int, n)\n\n    for i:=0; i<n; i++ {\n        fmt.Scan(&nums)\n        vet[i]=nums\n    } \n        fmt.Printf(\"[ \")\n    for i:=n-1; i>=0; i-- {\n        fmt.Printf(\"%d \", vet[i])\n    }\n        fmt.Printf(\"]\\n\")\n}\n",
+            "lines": "17"
+        }
+    ]
+}

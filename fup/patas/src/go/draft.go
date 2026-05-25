@@ -5,10 +5,7 @@ func main() {
     var ani string
 
     //chico bento chuta primeiro
-    fmt.Scan(&cb, &c)
-    
-    //Quantidade do vetor
-    fmt.Scan(&a)
+    fmt.Scan(&cb, &c, &a)
     var vet[] string = make([]string, a)
 
     for i:=0; i<a; i++ {
@@ -23,11 +20,22 @@ func main() {
         }
     }
         fmt.Printf("%d\n", qtani)
+    
+    cb=cb-qtani
+    c=c-qtani
 
-    if  {
-        fmt.Println("")
+    if cb<0 {
+        cb=cb*(-1)
+    } else if c<0 {
+        c=c*(-1)
     }
-
-        
+    
+    if cb<c {
+        fmt.Println("Chico Bento")
+    } else if c<cb{
+        fmt.Println("Cebolinha")
+    } else {
+        fmt.Println("empate")
+    }
 
 }
