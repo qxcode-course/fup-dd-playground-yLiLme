@@ -19,20 +19,20 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@dict
-- fup@if_extra
-- fup@games
-- fup@if2
-- fup@for1
-- fup@rec
-- fup@if1
-- fup@string
-- fup@struct
-- fup@for_extra
-- fup@base
-- fup@for2
 - fup@mat
+- fup@if2
+- fup@base
+- fup@struct
+- fup@for2
+- fup@for1
+- fup@games
+- fup@if1
 - fup@list
+- fup@if_extra
+- fup@rec
+- fup@for_extra
+- fup@string
+- fup@dict
 flags:
   inbox: all
   panel: skills
@@ -40,5 +40,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@revolta
-selected_index: 105
+selected: fup@cartas
+selected_index: 106
