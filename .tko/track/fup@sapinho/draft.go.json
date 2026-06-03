@@ -42,8 +42,63 @@
         },
         {
             "label": "2026-05-12_17-19-03",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, s, e, qts, qtd int\n\n    fmt.Scan(&p, &s, &e)\n\n    qts=s\n    for i:=0; i<=p; i++ {\n        fmt.Printf(\"%d %d\\n\", qtd, qts)\n        qts+=qts\n        qtd=e-qts\n        \n    }\n\n}\n",
+            "content": "@@ -170,24 +170,50 @@\n ts)%0A        \n+qts+=qts%0A        qtd=e-qts\n %0A        %0A  \n",
             "lines": "16"
+        },
+        {
+            "label": "2026-05-30_19-32-13",
+            "content": "@@ -57,17 +57,17 @@\n  qts, qt\n-e\n+d\n  int%0A%0A  \n@@ -158,17 +158,17 @@\n d%5Cn%22, qt\n-e\n+d\n , qts)%0A \n@@ -178,134 +178,17 @@\n     \n-if qts%3C=p %7B%0A            qte=qts-qte%0A            qts=qte+qts%0A        %7D else %7B%0A            fmt.Printf(%22%25d saiu%22, qts )%0A        %7D\n+%0A        \n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-30_19-55-11",
+            "content": "@@ -166,16 +166,36 @@\n e, qts)%0A\n+        if qts%3C=p %7B%0A\n         \n@@ -241,16 +241,75 @@\n %0A       \n+ %7D else %7B%0A            fmt.Printf(%22%25d saiu%22, qts )%0A        %7D\n %0A    %7D%0A%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-30_19-55-37",
+            "content": "@@ -126,16 +126,61 @@\n ; i++ %7B%0A\n+        fmt.Printf(%22%25d %25d%5Cn%22, qte, qts)%0A     \n        q\n@@ -190,16 +190,21 @@\n qts-qte%0A\n+     \n        q\n@@ -214,16 +214,24 @@\n qte+qts%0A\n+       %0A\n     %7D%0A%0A%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-30_19-56-26",
+            "content": "@@ -130,18 +130,8 @@\n + %7B%0A\n-        %0A \n     \n@@ -152,17 +152,16 @@\n %0A       \n- \n qts=qte+\n@@ -168,47 +168,8 @@\n qts%0A\n-    fmt.Printf(%22%25d %25d%5Cn%22, qte, qts)   %0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-30_19-57-12",
+            "content": "@@ -104,42 +104,8 @@\n s=s%0A\n-    fmt.Printf(%22%25d %25d%22, qte, qts)%0A\n     \n@@ -125,16 +125,18 @@\n p; i++ %7B\n+%0A \n        %0A\n@@ -175,20 +175,16 @@\n qte+qts%0A\n-    \n     fmt.\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-30_19-58-08",
+            "content": "@@ -113,34 +113,32 @@\n mt.Printf(%22%25d %25d\n-%5Cn\n %22, qte, qts)%0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-30_19-58-17",
+            "content": "@@ -104,18 +104,8 @@\n s=s%0A\n-    qte=e%0A\n     \n@@ -213,22 +213,56 @@\n qts%0A        \n+fmt.Printf(%22%25d %25d%5Cn%22, qte, qts)   \n %0A    %7D%0A%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-30_19-59-27",
+            "content": "@@ -100,16 +100,26 @@\n   qts=s%0A\n+    qte=e%0A\n     fmt.\n@@ -146,26 +146,16 @@\n e, qts)%0A\n-    qte=e%0A\n     for \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-30_19-59-53",
+            "content": "@@ -231,39 +231,8 @@\n     \n-fmt.Printf(%22%25d %25d%5Cn%22, qte, qts)\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-30_20-00-04",
+            "content": "@@ -264,17 +264,12 @@\n s)%0A    %7D\n-%0A    \n %0A%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-03_00-24-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, s, e, qts, qte int\n\n    fmt.Scan(&p, &s, &e)\n\n    qts=s\n    fmt.Printf(\"%d %d\\n\", qte, qts)\n    qte=e\n    for i:=0; i<=p; i++ {       \n        qte=qts-qte\n        qts=qte+qts\n        fmt.Printf(\"%d %d\\n\", qte, qts)\n    }\n    \n\n}\n",
+            "lines": "18"
         }
     ]
 }

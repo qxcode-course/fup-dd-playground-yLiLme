@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_00-09-03",
+            "content": "@@ -136,17 +136,17 @@\n      if \n-p\n+t\n %3E=c %7B%0A  \n@@ -203,17 +203,17 @@\n else if \n-p\n+t\n ==0 %7B%0A  \n@@ -261,17 +261,17 @@\n else if \n-p\n+t\n ==c%7B%0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-03_00-09-23",
+            "content": "@@ -84,22 +84,8 @@\n for \n-i:=0; i%3Cc; i++\n %7B%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-03_00-10-03",
+            "content": "@@ -158,10 +158,8 @@\n p%3E=c\n-*2\n  %7B%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-03_00-10-41",
+            "content": "@@ -205,26 +205,8 @@\n r%22)%0A\n-            break%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-03_00-11-01",
+            "content": "@@ -44,17 +44,19 @@\n  var c, \n-t\n+m, \n p int%0A%0A \n@@ -100,26 +100,8 @@\n ++%7B%0A\n-        var m int%0A\n     \n@@ -125,17 +125,16 @@\n         \n-t\n p+=m%0A   \n@@ -150,17 +150,16 @@\n      if \n-t\n p%3E=c*2 %7B\n@@ -237,17 +237,16 @@\n else if \n-t\n p==0 %7B%0A \n@@ -295,17 +295,16 @@\n else if \n-t\n p==c%7B%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-03_00-14-36",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -46,22 +46,18 @@\n ar c\n-apacidade\n+, tp\n  int%0A\n+%0A\n     \n@@ -71,119 +71,33 @@\n n(&c\n-apacidade) // L%C3%AA a capacidade C%0A%0A    totalPassageiros := 0%0A%0A    // Loop infinito usando apenas o 'for'%0A    for \n+)%0A%0A    for i:=0; i%3Cc; i++\n %7B%0A  \n@@ -107,27 +107,16 @@\n    var m\n-ovimentacao\n  int%0A   \n@@ -135,173 +135,49 @@\n n(&m\n-ovimentacao) // L%C3%AA a movimenta%C3%A7%C3%A3o M%0A%0A        totalPassageiros += movimentacao%0A%0A        // Verifica%C3%A7%C3%A3o dos estados do %C3%B4nibus%0A        if totalPassageiros %3E= capacidade\n+)%0A        tp+=m%0A        %0A        if tp%3E=c\n *2 %7B\n@@ -240,56 +240,8 @@\n reak\n- // Interrompe o loop 'for' e encerra o programa\n %0A   \n@@ -256,35 +256,19 @@\n lse if t\n-otalPassageiros \n+p\n ==\n- \n 0 %7B%0A    \n@@ -319,38 +319,12 @@\n if t\n-otalPassageiros == capacidade \n+p==c\n %7B%0A  \n@@ -426,10 +426,12 @@\n %7D%0A    %7D%0A\n+%0A%0A\n %7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-03_00-15-27",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -20,16 +20,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -48,21 +48,22 @@\n ar c\n-, m, tp\n+apacidade\n  int%0A\n-%0A\n     \n@@ -77,95 +77,334 @@\n n(&c\n-)%0A%0A    for i:=0; i%3Cc; i++%7B%0A        fmt.Scan(&m)%0A        tp+=m%0A        %0A        if tp%3E=c\n+apacidade) // L%C3%AA a capacidade C%0A%0A    totalPassageiros := 0%0A%0A    // Loop infinito usando apenas o 'for'%0A    for %7B%0A        var movimentacao int%0A        fmt.Scan(&movimentacao) // L%C3%AA a movimenta%C3%A7%C3%A3o M%0A%0A        totalPassageiros += movimentacao%0A%0A        // Verifica%C3%A7%C3%A3o dos estados do %C3%B4nibus%0A        if totalPassageiros %3E= capacidade\n *2 %7B\n@@ -463,16 +463,64 @@\n    break\n+ // Interrompe o loop 'for' e encerra o programa\n %0A       \n@@ -535,11 +535,27 @@\n if t\n-p\n+otalPassageiros \n ==\n+ \n 0 %7B%0A\n@@ -610,12 +610,38 @@\n if t\n-p%3E=c\n+otalPassageiros == capacidade \n %7B%0A  \n@@ -743,12 +743,10 @@\n %7D%0A    %7D%0A\n-%0A%0A\n %7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-03_00-20-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c, m, tp int\n\n    fmt.Scan(&c)\n\n    for i:=0; i<c; i++{\n        fmt.Scan(&m)\n        tp+=m\n        \n        if tp>=c*2 {\n            fmt.Println(\"hora de partir\")\n            break\n        } else if tp==0 {\n            fmt.Println(\"vazio\")\n        } else if tp>=c{\n            fmt.Println(\"lotado\")\n        } else {\n            fmt.Println(\"ainda cabe\")\n        }\n    }\n\n\n}\n",
+            "lines": "25"
+        }
+    ]
+}

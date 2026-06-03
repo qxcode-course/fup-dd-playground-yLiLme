@@ -19,6 +19,9 @@ sources:
   writeable: false
   quests: null
 expanded:
+- fup@for1
+- fup@for2
+- fup@if2
 - fup@list
 flags:
   inbox: all
@@ -27,5 +30,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@dindin
-selected_index: 14
+selected: fup@sapinho
+selected_index: 34
