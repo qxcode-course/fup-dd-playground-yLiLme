@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_03-50-47",
+            "content": "@@ -172,16 +172,34 @@\n     f++%0A\n+            qtd=0%0A\n         \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-04_03-51-07",
+            "content": "@@ -84,24 +84,8 @@\n  for\n- i:=f; i!=1; i++\n  %7B%0A \n@@ -176,68 +176,8 @@\n f++%0A\n-            qtd=0%0A            fmt.Printf(%22%25d %25d%5Cn%22, f, qtd)%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-04_03-55-36",
+            "content": "@@ -43,16 +43,19 @@\n   var n,\n+ f,\n  qtd int\n@@ -59,18 +59,8 @@\n int%0A\n-    f:=2%0A%0A\n     \n@@ -85,11 +85,23 @@\n for \n-n%3E1\n+i:=f; i!=1; i++\n  %7B%0A \n@@ -188,18 +188,29 @@\n     \n-if qtd%3E0 %7B\n+f++%0A            qtd=0\n %0A   \n@@ -252,40 +252,8 @@\n td)%0A\n-            qtd=0%0A            %7D%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-04_04-04-03",
+            "content": "@@ -274,35 +274,16 @@\n       %7D%0A\n-        if qtd%3E0 %7B%0A\n         \n@@ -312,26 +312,16 @@\n f, qtd)%0A\n-        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-04_04-04-44",
+            "content": "@@ -40,21 +40,25 @@\n %0A   \n+ \n var n, \n-c\n+qtd\n  int%0A\n+ \n    f\n@@ -62,16 +62,17 @@\n   f:=2%0A%0A\n+ \n    fmt.S\n@@ -96,15 +96,8 @@\n n%3E1 \n-%7C%7C n%3E0 \n %7B%0A  \n@@ -144,17 +144,19 @@\n         \n-c\n+qtd\n ++%0A     \n@@ -150,39 +150,63 @@\n   qtd++%0A        \n-    f++\n+%7D else %7B%0A            if qtd%3E0 %7B\n %0A            fmt\n@@ -219,33 +219,35 @@\n f(%22%25d %25d%5Cn%22, f, \n-c\n+qtd\n )%0A        %7D else\n@@ -236,32 +236,33 @@\n td)%0A        \n-%7D else %7B\n+    qtd=0\n %0A           \n@@ -266,11 +266,9 @@\n     \n-f++\n+%7D\n %0A   \n@@ -276,20 +276,29 @@\n     \n+%7D%0A\n     \n-c=0%0A\n     \n+if qtd%3E0 %7B%0A\n     \n@@ -326,17 +326,19 @@\n %5Cn%22, f, \n-c\n+qtd\n )%0A      \n@@ -351,9 +351,6 @@\n   %7D%0A\n-  %0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-04_04-11-09",
+            "content": "@@ -158,32 +158,72 @@\n             f++%0A\n+            fmt.Printf(%22%25d %25d%5Cn%22, f, c)%0A\n         %7D else %7B\n@@ -309,44 +309,8 @@\n   %7D%0A\n-        fmt.Printf(%22%25d %25d%5Cn%22, f, c)%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-04_04-11-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var n, c int\n   f:=2\n\n   fmt.Scan(&n)\n\n    for n>1 || n>0 {\n        if n%f==0 {\n            n=n/f\n            c++\n            f++\n        } else {\n            f++\n            c=0\n            fmt.Printf(\"%d %d\\n\", f, c)\n        }\n        fmt.Printf(\"%d %d\\n\", f, c)\n    }\n  \n}\n",
+            "lines": "22"
+        }
+    ]
+}
