@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_18-35-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, nums int\n    fmt.Scan(&n)\n    var cartas[]int = make([]int, n)\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&nums)\n        cartas[i]=nums\n    }\n    for i:=0; i<n; i++{\n        if cartas[i]==1{\n            cartas[i]='A'\n        } else if cartas[i]==11{\n            cartas[i]='J'\n        } else if cartas[i]==12{\n            cartas[i]='Q'\n        } else if cartas[i]==13{\n            cartas[i]='K'\n        }\n    }\n        fmt.Printf(\"[\")\n        fmt.Printf(\"%d \", cartas)\n        fmt.Printf(\"]\")\n}\n",
+            "lines": "26"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-05_01-09-11",
+            "content": "@@ -19,17 +19,32 @@\n t %22fmt%22%0A\n-%0A\n+func main() %7B%0A  \n  func ab\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-05_01-09-33",
+            "content": "package main\nimport \"fmt\"\n\n func abs(x int) int{\n    if x<0{\n        return -x\n    }\n    return x\n}\n\nfunc main() {\n    var valorReal int\n    var chuteA int\n    var chuteB int\n    fmt.Scan(&valorReal, &chuteA, &chuteB)\n\n    difA := abs(valorReal - chuteA)\n    difB := abs(valorReal - chuteB)\n\n    if difA < difB{\n        fmt.Println(\"primeiro\")\n    } else if difB < difA{\n        fmt.Println(\"segundo\")\n    } else{\n        fmt.Println(\"empate\")\n    }\n    \n}\n",
+            "lines": "28"
+        }
+    ]
+}
