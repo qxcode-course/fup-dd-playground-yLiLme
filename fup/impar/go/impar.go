@@ -1,10 +1,26 @@
 package main
+
 import "fmt"
+
 func main() {
-    var p, d1, d2 int64
+	var p, d1, d2 int
+	fmt.Scan(&p)
+	fmt.Scan(&d1)
+	fmt.Scan(&d2)
 
-    fmt.Scan(&p, &d1, &d2)
+	soma := d1 + d2
 
-    if 
-
+	if soma%2 == 0 {
+		if p == 0 {
+			fmt.Println(0)
+		} else {
+			fmt.Println(1)
+		}
+	} else {
+		if p == 0 {
+			fmt.Println(1)
+		} else {
+			fmt.Println(0)
+		}
+	}
 }

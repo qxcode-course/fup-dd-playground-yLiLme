@@ -42,8 +42,13 @@
         },
         {
             "label": "2026-05-08_16-55-26",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c, h, l int64\n\n    fmt.Scan(&a, &b, &c, &h, &l)\n\n    if a<=h && b<=h && a<=l && b<=l {\n        fmt.Println(\"S\")\n    } else if a<=h && c<=h && a<=l && c<=l {\n        fmt.Println(\"S\")\n    } else if b<=h && a<=h && b<=l && a<=l {\n        fmt.Println(\"S\")\n    } else if b<=h && c<=h && b<=l && c<=l {\n        fmt.Println(\"S\")\n    } else if c<=h && a<=h && c<=l && a<=l {\n        fmt.Println(\"S\")\n    } else if c<=h && b<=h && c<=l && b<=l {\n        fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var a, b\n@@ -58,18 +58,24 @@\n h, l int\n-%0A%09\n+64%0A%0A    \n fmt.Scan\n@@ -81,208 +81,423 @@\n n(&a\n-)%0A%09fmt.Scan(&b)%0A%09fmt.Scan(&c)%0A%09fmt.Scan(&h)%0A%09fmt.Scan(&l)%0A%0A%09if (a \n+, &b, &c, &h, &l)%0A%0A    if a%3C=h && b%3C=h && a%3C=l && b%3C=l %7B%0A        fmt.Println(%22S%22)%0A    %7D else if a%3C=h && c%3C=h && a%3C=l && c%3C=l %7B%0A        fmt.Println(%22S%22)%0A    %7D else if b%3C=h && a\n %3C=\n- \n h && b\n- %3C= l) %7C%7C (a %3C= l &&\n+%3C=l && a%3C=l %7B%0A        fmt.Println(%22S%22)%0A    %7D else if\n  b\n- \n %3C=\n- h) %7C%7C%0A%09%09(a \n+h && c\n %3C=\n- \n h && \n-c %3C= l) %7C%7C (a %3C= l &&\n+b%3C=l && c%3C=l %7B%0A        fmt.Println(%22S%22)%0A    %7D else if\n  c\n- \n %3C=\n- h) %7C%7C%0A%09%09(b \n+h && a\n %3C=\n- \n h && c\n- %3C= l) %7C%7C (b %3C= l\n+%3C=l && a%3C=l %7B%0A        fmt.Println(%22S%22)%0A    %7D else if c%3C=h && b%3C=h\n  && c\n- \n %3C=\n- h) %7B%0A%09%09\n+l && b%3C=l %7B%0A        \n fmt.\n@@ -509,17 +509,20 @@\n ln(%22S%22)%0A\n-%09\n+    \n %7D else %7B\n@@ -526,10 +526,16 @@\n e %7B%0A\n-%09%09\n+        \n fmt.\n@@ -551,9 +551,12 @@\n N%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
             "lines": "23"
+        },
+        {
+            "label": "2026-06-17_02-20-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b, c, h, l int\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\tfmt.Scan(&h)\n\tfmt.Scan(&l)\n\n\tif (a <= h && b <= l) || (a <= l && b <= h) ||\n\t\t(a <= h && c <= l) || (a <= l && c <= h) ||\n\t\t(b <= h && c <= l) || (b <= l && c <= h) {\n\t\tfmt.Println(\"S\")\n\t} else {\n\t\tfmt.Println(\"N\")\n\t}\n}\n",
+            "lines": "20"
         }
     ]
 }

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-17_02-16-29",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar p, d1, d2 int\n\tfmt.Scan(&p)\n\tfmt.Scan(&d1)\n\tfmt.Scan(&d2)\n\n\tsoma := d1 + d2\n\n\tif soma%2 == 0 {\n\t\tif p == 0 {\n\t\t\tfmt.Println(0)\n\t\t} else {\n\t\t\tfmt.Println(1)\n\t\t}\n\t} else {\n\t\tif p == 0 {\n\t\t\tfmt.Println(1)\n\t\t} else {\n\t\t\tfmt.Println(0)\n\t\t}\n\t}\n}\n",
+            "lines": "26"
+        }
+    ]
+}

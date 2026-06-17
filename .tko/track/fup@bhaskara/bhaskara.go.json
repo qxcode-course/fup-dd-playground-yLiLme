@@ -57,8 +57,18 @@
         },
         {
             "label": "2026-05-08_15-51-32",
-            "content": "package main\nimport \"fmt\"\nimport \"math\"\n//programa que calcula se uma raiz \u00e9 real\nfunc main() {\n    var a, b, c, del, x1, x2 float64\n\n    fmt.Scan(&a, &b, &c)\n\n        del=math.Pow(b,2)-4*(a*c)\n\n    if del>0 {\n        x1=(-b+math.Sqrt(del))/(2*a) //positivo\n        x2=(-b-+math.Sqrt(del))/(2*a) //negativo\n        fmt.Printf(\"%.2f\\n%.2f\\n\", x1, x2)\n    } else if del==0 {\n        x1=(-b+math.Sqrt(del))/(2*a) //positivo\n        x2=(-b-+math.Sqrt(del))/(2*a) //negativo\n        if x1==0 {\n            fmt.Printf(\"%.2f\\n\", x2)\n        } else {\n            fmt.Printf(\"%.2f\\n\", x1)\n        }\n    } else {\n        fmt.Println(\"nao ha raiz real\")\n    }\n\n\n}\n",
+            "content": "@@ -10,35 +10,76 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n+import %22math%22%0A//programa que calcula se uma raiz %C3%A9 real\n %0Afun\n@@ -89,17 +89,20 @@\n ain() %7B%0A\n-%09\n+    \n var a, b\n@@ -127,17 +127,20 @@\n loat64%0A%0A\n-%09\n+    \n fmt.Scan\n@@ -157,15 +157,20 @@\n c)%0A%0A\n-%09del = \n+        del=\n math\n@@ -180,14 +180,11 @@\n w(b,\n- \n 2)\n- - \n+-\n 4*(a\n@@ -192,102 +192,128 @@\n c)%0A%0A\n-%09\n+    \n if del\n- %3E \n+%3E\n 0 %7B%0A\n-%09%09x1 = (-b + math.Sqrt(del)) / (2 * a)%0A%09%09x2 = (-b - math.Sqrt(del)) / (2 * a)%0A%09%09\n+        x1=(-b+math.Sqrt(del))/(2*a) //positivo%0A        x2=(-b-+math.Sqrt(del))/(2*a) //negativo%0A        \n fmt.\n@@ -343,17 +343,20 @@\n x1, x2)%0A\n-%09\n+    \n %7D else i\n@@ -364,38 +364,196 @@\n  del\n- \n ==\n- \n 0 %7B%0A\n-%09%09x1 = -b / (2 * a)%0A%09%09\n+        x1=(-b+math.Sqrt(del))/(2*a) //positivo%0A        x2=(-b-+math.Sqrt(del))/(2*a) //negativo%0A        if x1==0 %7B%0A            fmt.Printf(%22%25.2f%5Cn%22, x2)%0A        %7D else %7B%0A            \n fmt.\n@@ -573,17 +573,30 @@\n n%22, x1)%0A\n-%09\n+        %7D%0A    \n %7D else %7B\n@@ -600,10 +600,16 @@\n e %7B%0A\n-%09%09\n+        \n fmt.\n@@ -640,9 +640,14 @@\n l%22)%0A\n-%09%7D\n+    %7D%0A%0A\n %0A%7D%0A\n",
             "lines": "29"
+        },
+        {
+            "label": "2026-06-17_02-18-57",
+            "content": "@@ -235,66 +235,8 @@\n  a)%0A\n-%09%09if x1 == 0 %7B%0A%09%09%09x1 = 0%0A%09%09%7D%0A%09%09if x2 == 0 %7B%0A%09%09%09x2 = 0%0A%09%09%7D%0A\n %09%09fm\n@@ -314,37 +314,8 @@\n  a)%0A\n-%09%09if x1 == 0 %7B%0A%09%09%09x1 = 0%0A%09%09%7D%0A\n %09%09fm\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-17_02-19-48",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar a, b, c, del, x1, x2 float64\n\n\tfmt.Scan(&a, &b, &c)\n\n\tdel = math.Pow(b, 2) - 4*(a*c)\n\n\tif del > 0 {\n\t\tx1 = (-b + math.Sqrt(del)) / (2 * a)\n\t\tx2 = (-b - math.Sqrt(del)) / (2 * a)\n\t\tif x1 == 0 {\n\t\t\tx1 = 0\n\t\t}\n\t\tif x2 == 0 {\n\t\t\tx2 = 0\n\t\t}\n\t\tfmt.Printf(\"%.2f\\n%.2f\\n\", x1, x2)\n\t} else if del == 0 {\n\t\tx1 = -b / (2 * a)\n\t\tif x1 == 0 {\n\t\t\tx1 = 0\n\t\t}\n\t\tfmt.Printf(\"%.2f\\n\", x1)\n\t} else {\n\t\tfmt.Println(\"nao ha raiz real\")\n\t}\n}\n",
+            "lines": "34"
         }
     ]
 }

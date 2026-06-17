@@ -67,8 +67,13 @@
         },
         {
             "label": "2026-05-25_23-40-50",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var cb, c, a, qtani int\n    var ani string\n\n    //chico bento chuta primeiro\n    fmt.Scan(&cb, &c, &a)\n    var vet[] string = make([]string, a)\n\n    for i:=0; i<a; i++ {\n        fmt.Scan(&ani)\n        vet[i]=ani\n    }\n    for i := range vet {\n        if vet[i]==\"v\" || vet[i]==\"c\"{\n            qtani+=4\n        } else if vet[i]==\"g\" {\n            qtani+=2\n        }\n    }\n        fmt.Printf(\"%d\\n\", qtani)\n    \n    cb=cb-qtani\n    c=c-qtani\n\n    if cb<0 {\n        cb=cb*(-1)\n    } else if c<0 {\n        c=c*(-1)\n    }\n    \n    if cb<c {\n        fmt.Println(\"Chico Bento\")\n    } else if c<cb{\n        fmt.Println(\"Cebolinha\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n\n}\n",
+            "content": "@@ -517,20 +517,21 @@\n 1)%0A    %7D\n-%0A   \n+ else\n  if c%3C0 \n",
             "lines": "41"
+        },
+        {
+            "label": "2026-06-17_01-23-51",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var cb, c, a, qtani int\n    var ani string\n\n    //chico bento chuta primeiro\n    fmt.Scan(&cb, &c, &a)\n    var vet[] string = make([]string, a)\n\n    for i:=0; i<a; i++ {\n        fmt.Scan(&ani)\n        vet[i]=ani\n    }\n    for i := range vet {\n        if vet[i]==\"v\" || vet[i]==\"c\"{\n            qtani+=4\n        } else if vet[i]==\"g\" {\n            qtani+=2\n        }\n    }\n        fmt.Printf(\"%d\\n\", qtani)\n    \n    cb=cb-qtani\n    c=c-qtani\n\n    if cb<0 {\n        cb=cb*(-1)\n    }\n    if c<0 {\n        c=c*(-1)\n    }\n    \n    if cb<c {\n        fmt.Println(\"Chico Bento\")\n    } else if c<cb{\n        fmt.Println(\"Cebolinha\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n\n}\n",
+            "lines": "42"
         }
     ]
 }

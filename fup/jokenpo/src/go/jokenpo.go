@@ -1,16 +1,17 @@
 package main
+
 import "fmt"
+
 func main() {
-    var jog1, jog2 rune
+	var j1, j2 string
+	fmt.Scan(&j1)
+	fmt.Scan(&j2)
 
-    fmt.Scan(&jog1, &jog2)
-
-    if jog1=='R' && jog2=='S' {
-        fmt.Println("jog1")
-    } else if jog1=='P' && jog2=='R'{
-        fmt.Println("jog1")
-    } else if jog1=='S' && jog2=='P'{
-        fmt.Println("jog1")
-    }
-
+	if j1 == j2 {
+		fmt.Println("empate")
+	} else if (j1 == "R" && j2 == "S") || (j1 == "S" && j2 == "P") || (j1 == "P" && j2 == "R") {
+		fmt.Println("jog1")
+	} else {
+		fmt.Println("jog2")
+	}
 }

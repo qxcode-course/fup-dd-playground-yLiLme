@@ -17,8 +17,48 @@
         },
         {
             "label": "2026-05-19_18-14-33",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, m1, n2, m2, ct int\n    fmt.Scan(&n1, &m1)\n    var vetn [] int = make([]int, n1) \n    var vetm [] int = make([]int, m1)\n\n    for i:=0; i<n1; i++ {\n        fmt.Scan(&n2)\n        vetn[i]=n2\n    }\n    for i:=0; i<m1; i++ {\n        fmt.Scan(&m2)\n        vetm[i]=m2\n    }\n    for i := range vetm {\n        if vetn[i]==vetm[i] {\n            ct+=1\n        }\n    }\n        if ct>0 {\n            fmt.Println(\"sim\")\n        } else {\n            fmt.Println(\"nao\")\n        }\n}\n",
+            "content": "@@ -225,40 +225,72 @@\n     \n-fmt.Scan(&m2)\n+vetn%5Bi%5D=n2\n %0A    \n+%7D%0A\n     \n-vetn%5Bi%5D=n2\n+for i:=0; i%3Cm1; i++ %7B%0A        fmt.Scan(&m2)\n %0A   \n",
             "lines": "27"
+        },
+        {
+            "label": "2026-06-17_01-51-09",
+            "content": "@@ -283,36 +283,8 @@\n   %7D%0A\n-        var anum, aall bool%0A\n     \n@@ -292,198 +292,73 @@\n or i\n+ \n :=\n-0; i%3Cvetn%5Bi%5D; i++ %7B%0A        for i:=0; i%3Cvetm%5Bi%5D; i++%7B%0A            if vetn%5Bi%5D==vetm%5Bi%5D %7B%0A                anum=true%0A            %7D else %7B%0A                anum=false%0A                break%0A    \n+ range vetm %7B%0A        if vetn%5Bi%5D==vetm%5Bi%5D %7B%0A            ct+=1%0A\n     \n@@ -359,28 +359,24 @@\n 1%0A        %7D%0A\n-    \n     %7D%0A      \n@@ -384,82 +384,13 @@\n  if \n-anum==false %7B%0A            aall=false%0A        %7D%0A    %7D%0A        if aall==true\n+ct%3E0 \n %7B%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-17_02-02-13",
+            "content": "@@ -55,16 +55,20 @@\n , n2, m2\n+, ct\n  int%0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-17_02-02-20",
+            "content": "@@ -221,81 +221,40 @@\n     \n-vetn%5Bi%5D=n2%0A        %0A    %7D%0A    for i:=0; i%3Cm1; i++ %7B%0A        fmt.Scan(&m2)\n+fmt.Scan(&m2)%0A        vetn%5Bi%5D=n2\n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-17_02-04-18",
+            "content": "@@ -391,26 +391,26 @@\n for \n-j\n+i\n :=0; \n-j\n+i\n %3Cvetm%5B\n-j%5D; j\n+i%5D; i\n ++%7B%0A\n@@ -442,9 +442,9 @@\n etm%5B\n-j\n+i\n %5D %7B%0A\n@@ -469,16 +469,86 @@\n um=true%0A\n+            %7D else %7B%0A                anum=false%0A                break%0A\n         \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-17_02-06-55",
+            "content": "@@ -333,16 +333,22 @@\n ar a\n-all=true\n+num, aall bool\n %0A   \n@@ -379,31 +379,8 @@\n + %7B%0A\n-        var anum=false%0A\n     \n@@ -473,30 +473,8 @@\n rue%0A\n-                break%0A\n     \n@@ -514,24 +514,24 @@\n um==false %7B%0A\n+\n             \n@@ -545,26 +545,8 @@\n lse%0A\n-            break%0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-17_02-10-29",
+            "content": "@@ -346,34 +346,39 @@\n     for i:=0; i%3C\n-n1\n+vetn%5Bi%5D\n ; i++ %7B%0A        \n@@ -412,18 +412,23 @@\n j:=0; j%3C\n-m1\n+vetm%5Bj%5D\n ; j++%7B%0A \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-17_02-11-54",
+            "content": "@@ -60,21 +60,16 @@\n  m2 int%0A\n-    %0A\n     fmt.\n@@ -76,16 +76,21 @@\n Scan(&n1\n+, &m1\n )%0A    va\n@@ -122,24 +122,58 @@\n t, n1) %0A    \n+var vetm %5B%5D int = make(%5B%5Dint, m1)%0A\n %0A    for i:=\n@@ -241,72 +241,14 @@\n    %0A\n+\n     %7D%0A\n-%0A    fmt.Scan(&m1)%0A    var vetm %5B%5D int = make(%5B%5Dint, m1)%0A%0A\n     \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-17_02-13-55",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, m1, n2, m2 int\n    \n    fmt.Scan(&n1)\n    var vetn [] int = make([]int, n1) \n    \n    for i:=0; i<n1; i++ {\n        fmt.Scan(&n2)\n        vetn[i]=n2\n        \n    }\n\n    fmt.Scan(&m1)\n    var vetm [] int = make([]int, m1)\n\n    for i:=0; i<m1; i++ {\n        fmt.Scan(&m2)\n        vetm[i]=m2\n    }\n        var aall=true\n    for i:=0; i<n1; i++ {\n        var anum=false\n        for j:=0; j<m1; j++{\n            if vetn[i]==vetm[j] {\n                anum=true\n                break\n            }\n        }\n        if anum==false {\n            aall=false\n            break\n        }\n    }\n        if aall==true{\n            fmt.Println(\"sim\")\n        } else {\n            fmt.Println(\"nao\")\n        }\n}\n",
+            "lines": "41"
         }
     ]
 }

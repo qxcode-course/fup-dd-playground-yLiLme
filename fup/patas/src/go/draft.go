@@ -26,7 +26,8 @@ func main() {
 
     if cb<0 {
         cb=cb*(-1)
-    } else if c<0 {
+    }
+    if c<0 {
         c=c*(-1)
     }
     

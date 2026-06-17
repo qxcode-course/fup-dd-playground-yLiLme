@@ -1,14 +1,19 @@
 package main
 import "fmt"
 func main() {
-    var vet[5] int
+    var nums int 
+    var vet[5] int  
 
-    var nums int
-    for i:= range vet {
+    for i:=0; i<5; i++ {
         fmt.Scan(&nums)
         vet[i]=nums
     }
-    for i:= range vet {
+    d:=vet[0]
+    for i:=0; i<5; i++{
+        if vet[i]<d{
+            d=vet[i]
+        }
         
     }
+        fmt.Println(d)
 }
