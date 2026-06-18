@@ -68,3 +68,7 @@
 2026-06-17 02:20:59, EXEC, v:1, k:fup@drone, mode:FULL, rate:100, size:20
 2026-06-17 02:21:00, MOVE, v:1, k:fup@drone, mode:BACK
 2026-06-17 02:21:10, SELF, v:1, k:fup@drone, self:1, rate:100
+2026-06-17 02:19:47, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-06-17 02:19:48, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-06-17 02:20:59, MOVE, v:1, k:fup@drone, mode:EDIT
+2026-06-17 02:20:59, MOVE, v:1, k:fup@drone, mode:EDIT

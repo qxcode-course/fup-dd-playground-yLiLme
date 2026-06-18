@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-06-05_01-09-33",
-            "content": "package main\nimport \"fmt\"\n\n func abs(x int) int{\n    if x<0{\n        return -x\n    }\n    return x\n}\n\nfunc main() {\n    var valorReal int\n    var chuteA int\n    var chuteB int\n    fmt.Scan(&valorReal, &chuteA, &chuteB)\n\n    difA := abs(valorReal - chuteA)\n    difB := abs(valorReal - chuteB)\n\n    if difA < difB{\n        fmt.Println(\"primeiro\")\n    } else if difB < difA{\n        fmt.Println(\"segundo\")\n    } else{\n        fmt.Println(\"empate\")\n    }\n    \n}\n",
+            "content": "@@ -23,145 +23,133 @@\n mt%22%0A\n+%0A \n func \n-m\n a\n+bs(x \n in\n-(\n+t\n ) \n+int\n %7B%0A    \n-var n int%0A    fmt.Scan(&n)%0A%0A    e := make(%5B%5Dint, 70)%0A    d := make(%5B%5Dint, 70)%0A%0A    for i:=0; i%3Cn; i++ %7B%0A   \n+if x%3C0%7B%0A        return -x%0A    %7D%0A    return x%0A%7D%0A%0Afunc main() %7B%0A    var valorReal int%0A\n     \n- \n var \n-tam\n+chuteA\n  int\n@@ -157,34 +157,27 @@\n     \n-    var l string%0A%0A   \n+var chuteB int%0A\n     \n- \n fmt.\n@@ -186,251 +186,232 @@\n an(&\n-tam, &l)%0A%0A        if l==%22E%22%7B%0A            e%5Btam%5D++%0A        %7D else %7B%0A            d%5Btam%5D++%0A        %7D%0A    %7D%0A%0A    p:=0%0A%0A    for i:=0; i%3C70; i++ %7B%0A        if e%5Bi%5D%3Cd%5Bi%5D %7B%0A            p+= e%5Bi%5D%0A   \n+valorReal, &chuteA, &chuteB)%0A%0A    difA := abs(valorReal - chuteA)%0A    difB := abs(valorReal - chuteB)%0A%0A    if difA %3C difB%7B%0A        fmt.Println(%22primeiro%22)%0A\n     \n- \n %7D else \n-%7B%0A            p+= d%5Bi%5D%0A        %7D%0A    %7D%0A    \n+if difB %3C difA%7B%0A        fmt.Println(%22segundo%22)%0A    %7D else%7B\n %0A   \n@@ -431,9 +431,27 @@\n tln(\n-p)\n+%22empate%22)%0A    %7D%0A    \n %0A%7D%0A\n",
             "lines": "28"
+        },
+        {
+            "label": "2026-06-18_02-08-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    e := make([]int, 70)\n    d := make([]int, 70)\n\n    for i:=0; i<n; i++ {\n        var tam int\n        var l string\n\n        fmt.Scan(&tam, &l)\n\n        if l==\"E\"{\n            e[tam]++\n        } else {\n            d[tam]++\n        }\n    }\n\n    p:=0\n\n    for i:=0; i<70; i++ {\n        if e[i]<d[i] {\n            p+= e[i]\n        } else {\n            p+= d[i]\n        }\n    }\n    \n        fmt.Println(p)\n}\n",
+            "lines": "34"
         }
     ]
 }

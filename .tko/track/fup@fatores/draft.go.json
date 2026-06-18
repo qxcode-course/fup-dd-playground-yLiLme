@@ -32,8 +32,23 @@
         },
         {
             "label": "2026-06-04_04-11-25",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var n, c int\n   f:=2\n\n   fmt.Scan(&n)\n\n    for n>1 || n>0 {\n        if n%f==0 {\n            n=n/f\n            c++\n            f++\n        } else {\n            f++\n            c=0\n            fmt.Printf(\"%d %d\\n\", f, c)\n        }\n        fmt.Printf(\"%d %d\\n\", f, c)\n    }\n  \n}\n",
+            "content": "@@ -40,22 +40,24 @@\n %0A   \n- \n var n\n+, c\n  int%0A   \n  div\n@@ -56,17 +56,31 @@\n %0A   \n- div\n+f\n :=2%0A%0A\n+   fmt.Scan(&n)%0A%0A\n     \n@@ -87,16 +87,23 @@\n for n%3E1 \n+%7C%7C n%3E0 \n %7B%0A      \n@@ -108,35 +108,37 @@\n     \n-c:=0%0A        for n%25div==0 %7B\n+if n%25f==0 %7B%0A            n=n/f\n %0A   \n@@ -166,15 +166,11 @@\n     \n-n=n/div\n+f++\n %0A   \n@@ -167,32 +167,39 @@\n    f++%0A        %7D\n+ else %7B\n %0A        if c%3E0%7B\n@@ -195,15 +195,31 @@\n     \n-if c%3E0%7B\n+    f++%0A            c=0\n %0A   \n@@ -248,14 +248,14 @@\n d %25d\n+%5Cn\n %22, \n-div\n+f\n , c)\n@@ -277,23 +277,43 @@\n     \n-div=div+1\n+fmt.Printf(%22%25d %25d%5Cn%22, f, c)\n %0A    %7D%0A\n+  \n %0A%7D%0A\n",
             "lines": "22"
+        },
+        {
+            "label": "2026-06-18_01-59-04",
+            "content": "@@ -63,26 +63,8 @@\n =2%0A%0A\n-    fmt.Scan(&n)%0A%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-18_02-06-19",
+            "content": "@@ -222,10 +222,8 @@\n d %25d\n-%5Cn\n %22, d\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-18_02-06-29",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    div:=2\n\n    fmt.Scan(&n)\n\n    for n>1 {\n        c:=0\n        for n%div==0 {\n            c++\n            n=n/div\n        }\n        if c>0{\n            fmt.Printf(\"%d %d\\n\", div, c)\n        }\n        div=div+1\n    }\n\n}\n",
+            "lines": "21"
         }
     ]
 }

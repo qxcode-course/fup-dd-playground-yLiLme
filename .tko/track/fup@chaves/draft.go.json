@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-06-05_01-12-36",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,181 +41,35 @@\n     \n-var n int64%0A%0A    fmt.Scan(&n)%0A%0A    if n%3E0 %7B%0A        fmt.Println(%22positivo%22)%0A    %7D else if n%3C0 %7B%0A        fmt.Println(%22negativo%22)%0A    %7D else %7B%0A        fmt.Println(%22nulo%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-18_02-07-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int64\n\n    fmt.Scan(&n)\n\n    if n>0 {\n        fmt.Println(\"positivo\")\n    } else if n<0 {\n        fmt.Println(\"negativo\")\n    } else {\n        fmt.Println(\"nulo\")\n    }\n}\n",
+            "lines": "15"
         }
     ]
 }

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-18_01-09-45",
+            "content": "@@ -97,269 +97,7 @@\n     \n-for %7B%0A        f=f+d%0A        if f==16%7B%0A            f=0%0A        %7D%0A        if f==-1%7B%0A            f=15%0A        %7D%0A        if f==p%7B%0A            fmt.Println(%22N%22)%0A            break%0A        %7D%0A        if f==h%7B%0A            fmt.Println(%22S%22)%0A            break%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-18_01-26-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var h, p, f, d int64\n\n    fmt.Scan(&h, &p, &f, &d)\n\n    for {\n        f=f+d\n        if f==16{\n            f=0\n        }\n        if f==-1{\n            f=15\n        }\n        if f==p{\n            fmt.Println(\"N\")\n            break\n        }\n        if f==h{\n            fmt.Println(\"S\")\n            break\n        }\n    }\n}\n",
+            "lines": "25"
+        }
+    ]
+}

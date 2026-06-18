@@ -97,8 +97,48 @@
         },
         {
             "label": "2026-06-03_00-24-26",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, s, e, qts, qte int\n\n    fmt.Scan(&p, &s, &e)\n\n    qts=s\n    fmt.Printf(\"%d %d\\n\", qte, qts)\n    qte=e\n    for i:=0; i<=p; i++ {       \n        qte=qts-qte\n        qts=qte+qts\n        fmt.Printf(\"%d %d\\n\", qte, qts)\n    }\n    \n\n}\n",
+            "content": "@@ -50,20 +50,24 @@\n , s, e, \n-altu\n+qts, qte\n  int%0A%0A  \n@@ -90,16 +90,72 @@\n s, &e)%0A%0A\n+    qts=s%0A    fmt.Printf(%22%25d %25d%5Cn%22, qte, qts)%0A    qte=e%0A\n     for \n@@ -161,24 +161,22 @@\n  i:=\n-altu\n+0\n ; i%3C\n+=\n p; i++ %7B\n %0A   \n@@ -171,16 +171,23 @@\n p; i++ %7B\n+       \n %0A       \n@@ -191,144 +191,90 @@\n     \n-altu=altu+s%0A        if altu%3E=p %7B%0A            fmt.Printf(%22%25d saiu%22, altu)%0A            break%0A        %7D else %7B%0A            %0A        %7D%0A    %7D \n+qte=qts-qte%0A        qts=qte+qts%0A        fmt.Printf(%22%25d %25d%5Cn%22, qte, qts)%0A    %7D%0A    %0A\n %0A%7D%0A\n",
             "lines": "18"
+        },
+        {
+            "label": "2026-06-18_00-52-57",
+            "content": "@@ -118,27 +118,8 @@\n + %7B%0A\n-        zero:=altu%0A\n     \n@@ -152,16 +152,17 @@\n  altu%3E=p\n+ \n %7B%0A      \n@@ -186,22 +186,14 @@\n %22%25d \n-%25d \n saiu%22,\n-zero,\n  alt\n@@ -246,69 +246,18 @@\n     \n-fmt.Printf(%22%25d %25d%22, zero, altu)%0A        %7D%0A        altu=altu-e\n+%0A        %7D\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-18_01-05-24",
+            "content": "@@ -207,18 +207,16 @@\n  %25d saiu\n-%5Cn\n %22,zero, \n@@ -289,10 +289,8 @@\n d %25d\n-%5Cn\n %22, z\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-18_01-05-37",
+            "content": "@@ -133,16 +133,36 @@\n o:=altu%0A\n+        altu=altu+s%0A\n         \n@@ -314,36 +314,16 @@\n       %7D%0A\n-        altu=altu+s%0A\n         \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-18_01-06-38",
+            "content": "@@ -137,28 +137,8 @@\n ltu%0A\n-        altu=altu+s%0A\n     \n@@ -294,16 +294,36 @@\n       %7D%0A\n+        altu=altu+s%0A\n         \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-18_01-07-00",
+            "content": "@@ -200,16 +200,19 @@\n ntf(%22%25d \n+%25d \n saiu%5Cn%22,\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-18_01-08-50",
+            "content": "@@ -208,16 +208,21 @@\n saiu%5Cn%22,\n+zero,\n  altu)%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-18_01-09-06",
+            "content": "@@ -208,20 +208,21 @@\n saiu%5Cn%22,\n-zero\n+ altu\n )%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-18_01-09-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, s, e, altu int\n\n    fmt.Scan(&p, &s, &e)\n\n    for i:=altu; i<p; i++ {\n        zero:=altu\n        altu=altu+s\n        if altu>=p{\n            fmt.Printf(\"%d saiu\\n\",zero)\n            break\n        } else {\n            fmt.Printf(\"%d %d\\n\", zero, altu)\n        }\n        altu=altu-e\n    } \n}\n",
+            "lines": "19"
         }
     ]
 }

@@ -5,7 +5,7 @@ func main() {
 
     fmt.Scan(&c)
 
-    for i:=0; i<c; i++{
+    for {
         fmt.Scan(&m)
         tp+=m
         

@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-18_02-34-40",
+            "content": "@@ -303,33 +303,39 @@\n t.Printf(%22%25d %22, \n-i\n+albu%5Bi%5D\n )%0A            fm\n@@ -444,17 +444,23 @@\n (%22%25d %22, \n-i\n+albu%5Bi%5D\n )%0A      \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-18_02-35-41",
+            "content": "@@ -234,33 +234,33 @@\n    %7D%0A    for i:=\n-1\n+0\n ; i%3Ctalbu; i++%7B%0A\n@@ -316,34 +316,24 @@\n %22, i)%0A      \n-  %7D%0A    %7D%0A\n       fmt.Pr\n@@ -340,16 +340,32 @@\n intln()%0A\n+        %7D%0A    %7D%0A\n     for \n@@ -367,17 +367,17 @@\n  for i:=\n-1\n+0\n ; i%3Ctalb\n@@ -443,34 +443,24 @@\n %22, i)%0A      \n-  %7D%0A    %7D%0A\n       fmt.Pr\n@@ -467,10 +467,26 @@\n intln()%0A\n+        %7D%0A    %7D%0A\n %7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-18_02-36-43",
+            "content": "@@ -235,28 +235,8 @@\n   %7D%0A\n-    fmt.Printf(%22%5B%22)%0A\n     \n@@ -338,63 +338,22 @@\n     \n-fmt.Printf(%22%5D%22)%0A      fmt.Println()%0A    fmt.Printf(%22%5B %22\n+  fmt.Println(\n )%0A  \n@@ -455,28 +455,8 @@\n   %7D%0A\n-    fmt.Printf(%22%5D%22)%0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-18_02-37-32",
+            "content": "@@ -240,33 +240,32 @@\n    fmt.Printf(%22%5B\n- \n %22)%0A    for i:=1;\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-18_02-37-40",
+            "content": "@@ -235,44 +235,28 @@\n   %7D%0A\n-%0A\n     \n-var rep%5B%5D int%0A    var f%5B%5D int %0A\n+fmt.Printf(%22%5B %22)\n %0A   \n@@ -318,22 +318,24 @@\n     \n-rep=append(rep\n+fmt.Printf(%22%25d %22\n , i)\n@@ -351,24 +351,80 @@\n %7D%0A    %7D%0A    \n+fmt.Printf(%22%5D%22)%0A      fmt.Println()%0A    fmt.Printf(%22%5B %22)\n %0A    for i:=\n@@ -481,17 +481,23 @@\n    f\n-=append(f\n+mt.Printf(%22%25d %22\n , i)\n@@ -517,13 +517,8 @@\n   %7D%0A\n-    %0A\n     \n@@ -530,16 +530,17 @@\n rint\n-ln(rep)%0A\n+f(%22%5D%22)%0A  \n     \n@@ -551,13 +551,12 @@\n Println(\n-f\n )%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-18_02-42-40",
+            "content": "@@ -483,26 +483,19 @@\n mt.Print\n-f(%22%5B %25d %5D%22\n+ln(\n rep)%0A   \n@@ -508,18 +508,11 @@\n rint\n-f(%22%5B %25d %5D%22\n+ln(\n f)%0A%7D\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-18_02-43-43",
+            "content": "@@ -493,18 +493,16 @@\n %22%5B %25d %5D%22\n-, \n rep)%0A   \n@@ -521,15 +521,13 @@\n %22%5B %25d %5D%22\n-, \n f)%0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-18_02-43-51",
+            "content": "@@ -486,20 +486,22 @@\n Printf(%22\n+%5B\n  %25d \n+%5D\n %22, rep)%0A\n@@ -516,20 +516,22 @@\n Printf(%22\n+%5B\n  %25d \n+%5D\n %22, f)%0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-18_02-44-03",
+            "content": "@@ -482,24 +482,25 @@\n fmt.Printf(%22\n+ \n %25d %22, rep)%0A \n@@ -514,16 +514,17 @@\n Printf(%22\n+ \n %25d %22, f)\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-18_02-44-11",
+            "content": "@@ -483,19 +483,25 @@\n mt.Print\n-ln(\n+f(%22%25d %22, \n rep)%0A   \n@@ -514,11 +514,17 @@\n rint\n-ln(\n+f(%22%25d %22, \n f)%0A%7D\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-18_02-44-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var talbu, qtdtem, cards int\n    fmt.Scan(&talbu)\n    var albu[]int=make([]int, talbu+1)\n    fmt.Scan(&qtdtem)\n\n    for i:=0; i<qtdtem; i++{\n        fmt.Scan(&cards)\n        albu[cards]++\n    }\n\n    var rep[] int\n    var f[] int \n\n    for i:=1; i<talbu; i++{\n        if albu[i]>1{\n            rep=append(rep, i)\n        }\n    }\n    \n    for i:=1; i<talbu; i++ {\n        if albu[i]==0{\n            f=append(f, i)\n        }\n    }\n    \n    fmt.Println(rep)\n    fmt.Println(f)\n}\n",
+            "lines": "31"
+        }
+    ]
+}
