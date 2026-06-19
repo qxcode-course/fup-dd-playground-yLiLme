@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_02-52-40",
+            "content": "@@ -108,18 +108,18 @@\n for a%3E1 \n-%7C%7C\n+&&\n  b%3E1 %7B%0A%09\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-19_02-55-10",
+            "content": "@@ -88,17 +88,17 @@\n %09%7D%0A%0A%09c:=\n-1\n+0\n %0A%09div:=2\n@@ -128,12 +128,11 @@\n eu:=\n-fals\n+tru\n e%0A%09%09\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-19_02-55-50",
+            "content": "package main\nimport \"fmt\"\n\nfunc mmcDeFator (a, b int) int {\n\tif a==0||b==0{\n\t\treturn 0\n\t}\n\n\tc:=1\n\tdiv:=2\n\n\tfor a>1 || b>1 {\n\t\tdeu:=false\n\t\tif a%div==0{\n\t\t\ta=a/div\n\t\t\tdeu=true\n\t\t}\n\t\tif b%div==0{\n\t\t\tb=b/div\n\t\t\tdeu=true\n\t\t}\n\t\tif deu {\n\t\t\tc=c*div\n\t\t} else {\n\t\t\tdiv++\n\t\t}\n\t\t\n\t}\n\t\treturn c\n}\n\nfunc main() {\n    var n1, n2 int\n\n\tfmt.Scan(&n1, &n2)\n\tfmt.Println(mmcDeFator(n1, n2))\n    \n}\n",
+            "lines": "38"
+        }
+    ]
+}

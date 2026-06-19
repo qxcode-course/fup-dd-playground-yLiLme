@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_03-11-29",
+            "content": "@@ -512,49 +512,8 @@\n %0A%09%09%7D\n-%0A%09%09if c%3E21 && cartas%5Bi%5D==1%7B%0A%09%09%09c=c-10%0A%09%09%7D\n %0A%0A%09%09\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-19_03-12-31",
+            "content": "@@ -349,18 +349,8 @@\n :=0%0A\n-%09qtda:=0%0A%09\n %0A%09fo\n@@ -368,16 +368,30 @@\n cartas%7B%0A\n+%09%09c=cartas%5Bi%5D%0A\n %09%09if car\n@@ -403,74 +403,59 @@\n %5D==1\n+1\n %7B%0A%09%09%09c\n-+\n =1\n-1%0A%09%09%09qtda++%0A%09%09%7D else if cartas%5Bi%5D==11 %7C%7C cartas%5Bi%5D==12 %7C%7C\n+0%0A%09%09%7D%0A%09%09if cartas%5Bi%5D==12%7B%0A%09%09%09c=10%0A%09%09%7D%0A%09%09if\n  car\n@@ -468,58 +468,57 @@\n ==13\n- \n %7B%0A%09%09%09c\n-+\n =10%0A%09%09%7D\n- else %7B%0A%09%09%09c+=cartas%5Bi%5D%0A%09%09%7D%0A\n+%0A%09%09if cartas%5Bi%5D==1%7B%0A%09%09%09c=11%0A%09\n %09%7D%0A%09\n-for\n+%09if\n  c%3E2\n@@ -526,32 +526,39 @@\n  && \n-qtda%3E0%7B%0A%09%09c-=10%0A%09%09qtda--\n+cartas%5Bi%5D==1%7B%0A%09%09%09c=c-10%0A%09%09%7D%0A%0A%09%09\n %0A%09%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-19_03-18-40",
+            "content": "package main\nimport \"fmt\"\n/*\n11, 12 e 13 == 10 pontos\n1 == 11 || o necess\u00e1rio pra fazer 21 (que seja menos de 11 e se a soma de todas as cartas der\nmais de 21 o as vai valer 1)\no resto vale o resto\n*/\nfunc main() {\n\tvar n, nums int\n\tfmt.Scan(&n)\n\tvar cartas[]int=make([]int, n)\n\n\tfor i := range cartas {\n\t\tfmt.Scan(&nums)\n\t\tcartas[i]=nums\n\t}\n\t\t\t\n\tc:=0\n\tqtda:=0\n\t\n\tfor i:=range cartas{\n\t\tif cartas[i]==1{\n\t\t\tc+=11\n\t\t\tqtda++\n\t\t} else if cartas[i]==11 || cartas[i]==12 || cartas[i]==13 {\n\t\t\tc+=10\n\t\t} else {\n\t\t\tc+=cartas[i]\n\t\t}\n\t}\n\tfor c>21 && qtda>0{\n\t\tc-=10\n\t\tqtda--\n\t}\n\n\tfmt.Println(c)\n\n}\n",
+            "lines": "39"
+        }
+    ]
+}

@@ -75,3 +75,34 @@
 2026-06-19 02:29:03, MOVE, v:1, k:fup@linha, mode:EDIT
 2026-06-19 02:29:02, MOVE, v:1, k:fup@linha, mode:EDIT
 2026-06-19 02:29:34, MOVE, v:1, k:fup@mmc, mode:EDIT
+2026-06-19 02:47:28, MOVE, v:1, k:fup@mmc, mode:EDIT
+2026-06-19 02:52:40, EXEC, v:1, k:fup@mmc, mode:FULL, rate:0, size:38
+2026-06-19 02:52:37, MOVE, v:1, k:fup@mmc, mode:EDIT
+2026-06-19 02:52:38, MOVE, v:1, k:fup@mmc, mode:EDIT
+2026-06-19 02:53:49, EXEC, v:1, k:fup@mmc, mode:FULL, rate:0
+2026-06-19 02:55:10, EXEC, v:1, k:fup@mmc, mode:FULL, rate:0, size:38
+2026-06-19 02:55:50, EXEC, v:1, k:fup@mmc, mode:FULL, rate:100, size:38
+2026-06-19 02:55:52, MOVE, v:1, k:fup@mmc, mode:BACK
+2026-06-19 02:55:57, SELF, v:1, k:fup@mmc, self:1, rate:100
+2026-06-19 02:56:18, MOVE, v:1, k:fup@blackjack, mode:PICK
+2026-06-19 02:55:50, MOVE, v:1, k:fup@mmc, mode:EDIT
+2026-06-19 02:55:49, MOVE, v:1, k:fup@mmc, mode:EDIT
+2026-06-19 02:58:31, MOVE, v:1, k:fup@blackjack, mode:BACK
+2026-06-19 02:58:40, MOVE, v:1, k:fup@blackjack, mode:PICK
+2026-06-19 03:02:46, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-06-19 03:07:48, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-06-19 03:11:29, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:12, size:41
+2026-06-19 03:12:31, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:12, size:44
+2026-06-19 03:12:28, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-06-19 03:12:31, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-06-19 03:17:42, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-06-19 03:18:40, EXEC, v:1, k:fup@blackjack, mode:FULL, rate:100, size:39
+2026-06-19 03:18:51, MOVE, v:1, k:fup@blackjack, mode:BACK
+2026-06-19 03:18:55, SELF, v:1, k:fup@blackjack, self:1, rate:100
+2026-06-19 03:19:06, MOVE, v:1, k:fup@troco, mode:PICK
+2026-06-19 03:18:36, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-06-19 03:18:40, MOVE, v:1, k:fup@blackjack, mode:EDIT
+2026-06-19 03:19:28, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-19 03:24:35, MOVE, v:1, k:fup@troco, mode:BACK
+2026-06-19 03:27:28, MOVE, v:1, k:fup@estudante, mode:PICK
+2026-06-19 03:27:50, EXEC, v:1, k:fup@estudante, mode:FULL, size:20, fail:COMP

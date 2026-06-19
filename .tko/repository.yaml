@@ -20,6 +20,9 @@ sources:
   quests: null
 expanded:
 - fup@list
+- fup@string
+- fup@struct
+- fup@mat
 flags:
   inbox: all
   panel: skills
@@ -29,5 +32,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@linha
-selected_index: 37
+selected: fup@struct
+selected_index: 121

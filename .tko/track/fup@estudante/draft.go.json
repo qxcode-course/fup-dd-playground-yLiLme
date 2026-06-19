@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_03-27-50",
+            "content": "package main\nimport \"fmt\"\n\ntype Aluno struct{\n    nome string\n    n1, n2, n3 float64\n}\nfunc m\u00e9dia (n1, n2, n3 float64) float64{\n    var m float64\n    m=(n1+n2+n3)/3\n    return m\n}\n\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    var alu[]int=make([]int, n)\n\n    \n}\n",
+            "lines": "20"
+        }
+    ]
+}
