@@ -52,8 +52,33 @@
         },
         {
             "label": "2026-06-18_02-44-33",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var talbu, qtdtem, cards int\n    fmt.Scan(&talbu)\n    var albu[]int=make([]int, talbu+1)\n    fmt.Scan(&qtdtem)\n\n    for i:=0; i<qtdtem; i++{\n        fmt.Scan(&cards)\n        albu[cards]++\n    }\n\n    var rep[] int\n    var f[] int \n\n    for i:=1; i<talbu; i++{\n        if albu[i]>1{\n            rep=append(rep, i)\n        }\n    }\n    \n    for i:=1; i<talbu; i++ {\n        if albu[i]==0{\n            f=append(f, i)\n        }\n    }\n    \n    fmt.Println(rep)\n    fmt.Println(f)\n}\n",
+            "content": "@@ -17,35 +17,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22strings%22%0A)\n+%22fmt%22\n %0Afun\n@@ -470,26 +470,24 @@\n  %7D%0A    %0A    \n-//\n fmt.Println(\n@@ -499,10 +499,8 @@\n     \n-//\n fmt.\n@@ -513,126 +513,7 @@\n n(f)\n-%0A%0A    repF:=%22%5B %22+strings.Join(rep, %22 %22)+%22%5D%22%0A    fF:=%22%5B %22+strings.Join(f, %22 %22)+%22%5D%22%0A%0A    fmt.Printf(%22%25s%5Cn%25s%5Cn%22, repF, fF)\n %0A%7D%0A\n",
             "lines": "31"
+        },
+        {
+            "label": "2026-06-19_00-51-50",
+            "content": "@@ -541,18 +541,16 @@\n f)%0A%0A    \n-//\n repF:=%22%5B\n@@ -583,18 +583,16 @@\n %22%5D%22%0A    \n-//\n fF:=%22%5B %22\n@@ -618,26 +618,24 @@\n %22)+%22%5D%22%0A%0A    \n-//\n fmt.Printf(%22\n@@ -658,63 +658,7 @@\n  fF)\n-%0A%0A    repF:=fmt.Sprintf(%22%25d%22, rep)%0A    fmt.Println(repF)\n %0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-19_00-55-34",
+            "content": "@@ -695,21 +695,16 @@\n %22, rep)%0A\n-    %0A\n     fmt.\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-19_00-56-31",
+            "content": "@@ -29,18 +29,16 @@\n mt%22%0A    \n-//\n %22strings\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-19_00-56-39",
+            "content": "@@ -25,16 +25,32 @@\n   %22fmt%22%0A\n+    //%22strings%22%0A\n )%0Afunc m\n@@ -494,24 +494,26 @@\n  %7D%0A    %0A    \n+//\n fmt.Println(\n@@ -517,24 +517,26 @@\n ln(rep)%0A    \n+//\n fmt.Println(\n@@ -537,11 +537,197 @@\n intln(f)\n+%0A%0A    //repF:=%22%5B %22+strings.Join(rep, %22 %22)+%22%5D%22%0A    //fF:=%22%5B %22+strings.Join(f, %22 %22)+%22%5D%22%0A%0A    //fmt.Printf(%22%25s%5Cn%25s%5Cn%22, repF, fF)%0A%0A    repF:=fmt.Sprintf(%22%25d%22, rep)%0A    %0A    fmt.Println(repF)\n %0A%7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-19_01-00-30",
+            "content": "package main\nimport (\n    \"fmt\"\n)\nfunc main() {\n    var talbu, qtdtem, cards int\n    fmt.Scan(&talbu)\n    var albu[]int=make([]int, talbu+1)\n    fmt.Scan(&qtdtem)\n\n    for i:=0; i<qtdtem; i++{\n        fmt.Scan(&cards)\n        albu[cards]++\n    }\n\n    var rep[] int\n    var f[] int \n\n    for i:=1; i<talbu; i++{\n        if albu[i]>1{\n            rep=append(rep, i)\n        }\n    }\n    \n    for i:=1; i<talbu; i++ {\n        if albu[i]==0{\n            f=append(f, i)\n        }\n    }\n    \n    fmt.Println(rep)\n    fmt.Println(f)\n}\n",
+            "lines": "33"
         }
     ]
 }

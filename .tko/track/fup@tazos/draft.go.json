@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-18_17-20-24",
+            "content": "@@ -75,17 +75,15 @@\n Scan\n-(\n &qtdtaz\n-)\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-20-38",
+            "content": "@@ -220,17 +220,16 @@\n ar rep%5B%5D\n- \n int%0A%0A   \n@@ -241,16 +241,22 @@\n i:=0; i%3C\n+qtdtaz\n ; i++ %7B%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-22-54",
+            "content": "@@ -242,27 +242,22 @@\n i:=0; i%3C\n-qtdtaz\n ; i++\n+ \n %7B%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-23-50",
+            "content": "@@ -274,17 +274,21 @@\n taz%5Bi%5D==\n-i\n+tazos\n %7B%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-24-27",
+            "content": "@@ -274,21 +274,17 @@\n taz%5Bi%5D==\n-tazos\n+i\n %7B%0A      \n@@ -296,23 +296,17 @@\n  rep\n-=append(rep, i)\n+%5Btazos%5D++\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-31-41",
+            "content": "@@ -346,23 +346,14 @@\n rint\n-f(%22 %22,rep,%22 %5Cn%22\n+ln(rep\n )%0A%0A%7D\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-32-41",
+            "content": "@@ -346,14 +346,23 @@\n rint\n-ln(rep\n+f(%22 %22,rep,%22 %5Cn%22\n )%0A%0A%7D\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-32-59",
+            "content": "@@ -121,10 +121,8 @@\n dtaz\n-+1\n )%0A%0A \n@@ -123,33 +123,33 @@\n az)%0A%0A    for i:=\n-1\n+0\n ; i%3Cqtdtaz; i++ \n@@ -191,16 +191,16 @@\n taz%5B\n+i%5D=\n tazos\n-%5D++\n %0A   \n@@ -237,17 +237,17 @@\n  for i:=\n-1\n+0\n ; i%3Cqtdt\n@@ -276,10 +276,15 @@\n z%5Bi%5D\n-%3E1\n+==tazos\n %7B%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-34-24",
+            "content": "@@ -243,9 +243,9 @@\n  i:=\n-0\n+1\n ; i%3C\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-34-40",
+            "content": "@@ -117,16 +117,18 @@\n , qtdtaz\n++1\n )%0A%0A    f\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-34-46",
+            "content": "@@ -229,33 +229,33 @@\n int%0A%0A    for i:=\n-1\n+0\n ; i%3Cqtdtaz; i++%7B\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-35-10",
+            "content": "@@ -241,9 +241,9 @@\n  i:=\n-0\n+1\n ; i%3C\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-18_17-36-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtdtaz, tazos int\n    fmt.Scan(&qtdtaz)\n    var taz[]int= make([]int, qtdtaz)\n\n    for i:=1; i<qtdtaz; i++ {\n        fmt.Scan(&tazos)\n        taz[tazos]++\n    }\n    \n    var rep[] int\n\n    for i:=0; i<qtdtaz; i++{\n        if taz[i]>1{\n            rep=append(rep, i)\n        }\n    }\n\n    fmt.Println(rep)\n\n}\n",
+            "lines": "23"
+        }
+    ]
+}

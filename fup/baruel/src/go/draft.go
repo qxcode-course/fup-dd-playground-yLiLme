@@ -1,5 +1,7 @@
 package main
-import "fmt"
+import (
+    "fmt"
+)
 func main() {
     var talbu, qtdtem, cards int
     fmt.Scan(&talbu)

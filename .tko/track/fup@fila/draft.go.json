@@ -2,8 +2,58 @@
     "patches": [
         {
             "label": "2026-05-23_19-40-48",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, p int\n    fmt.Scan(&n)\n    var fila[]int=make([]int, n)\n    var par[]int\n\n    for i:=0; i<n; i++ {\n        fmt.Scan(&p)\n        fila[i]=p\n    }\n    for i:= range fila {\n        if fila[i]%2==0 {\n            =fila[i]\n        }\n    }\n}\n",
+            "content": "@@ -45,13 +45,11 @@\n var \n-p\n+n\n , \n-as\n p in\n@@ -64,17 +64,17 @@\n t.Scan(&\n-p\n+n\n )%0A    va\n@@ -75,23 +75,20 @@\n     var \n-pessoas\n+fila\n %5B%5Dint=ma\n@@ -97,18 +97,35 @@\n (%5B%5Dint, \n-p)\n+n)%0A    var par%5B%5Dint\n %0A%0A    fo\n@@ -126,38 +126,39 @@\n     for i:=0; i%3C\n-p\n+n\n ; i++\n+ \n %7B%0A        fmt.Sc\n@@ -161,18 +161,16 @@\n t.Scan(&\n-as\n p)%0A     \n@@ -176,21 +176,16 @@\n     \n-pessoas\n+fila\n %5Bi%5D=\n-as\n p%0A  \n@@ -196,75 +196,27 @@\n     \n-    var sta%5B%5D int%0A        var dis%5B%5D int%0A    %0A    for i:=0; i%3Cp; i++\n+for i:= range fila \n %7B%0A  \n@@ -228,23 +228,20 @@\n  if \n-pessoas\n+fila\n %5Bi%5D%252==0\n %7B%0A  \n@@ -236,16 +236,17 @@\n %5Bi%5D%252==0\n+ \n %7B%0A      \n@@ -255,94 +255,16 @@\n     \n-sta=append(sta, pessoas%5Bi%5D)%0A        %7D else %7B%0A            dis = append(dis, pessoas\n+=fila\n %5Bi%5D\n-)\n %0A   \n@@ -279,52 +279,7 @@\n    %7D\n- %0A%0A    fmt.Println(dis)%0A    fmt.Println(sta)%0A\n %0A%7D%0A\n",
             "lines": "18"
+        },
+        {
+            "label": "2026-06-18_17-43-18",
+            "content": "@@ -412,22 +412,16 @@\n fmt.\n-Sp\n+P\n rint\n-f(%22%25v%22, \n+ln(\n dis)\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-18_17-45-47",
+            "content": "@@ -408,24 +408,30 @@\n     fmt.\n-P\n+Sp\n rint\n-ln(\n+f(%22%25v%22, \n dis)%0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-18_17-47-52",
+            "content": "@@ -17,313 +17,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22strings%22%0A)%0A%0A    func TranformaSlice (slice%5B%5Dint) string %7B%0A        sli:=make(%5B%5Dstring, len(slice))%0A            for i, v:= range slice %7B%0A                sli%5Bi%5D=fmt.Sprintf(%22%25d%22, v)%0A            %7D%0A            resultado:= %22%5B%22+strings.Join(sli, %22 %22)+%22%5D%22%0A        %0A        return resultado%0A    %7D%0A\n+%22fmt%22\n %0Afun\n@@ -400,20 +400,16 @@\n     %7D %0A%0A\n-    \n     fmt.\n@@ -420,33 +420,13 @@\n tln(\n-TranformaSlice(\n dis)\n-)\n %0A\n-    \n     \n@@ -441,28 +441,12 @@\n tln(\n-TranformaSlice(\n sta)\n-)\n %0A%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-18_17-57-14",
+            "content": "@@ -783,11 +783,10 @@\n (sta))%0A%0A\n-%0A\n %7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-18_17-59-23",
+            "content": "@@ -42,16 +42,20 @@\n ngs%22%0A)%0A%0A\n+    \n func Tra\n@@ -88,16 +88,20 @@\n tring %7B%0A\n+    \n     sli:\n@@ -128,16 +128,24 @@\n slice))%0A\n+        \n     for \n@@ -161,24 +161,32 @@\n nge slice %7B%0A\n+        \n         sli%5B\n@@ -209,26 +209,42 @@\n %25d%22, v)%0A    \n-%7D%0A\n+        %7D%0A        \n     resultad\n@@ -283,24 +283,28 @@\n %5D%22%0A        %0A\n+    \n     return r\n@@ -312,16 +312,20 @@\n sultado%0A\n+    \n %7D%0A%0Afunc \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-18_23-38-02",
+            "content": "@@ -209,17 +209,16 @@\n ado:= %22%5B\n- \n %22+string\n@@ -235,17 +235,16 @@\n , %22 %22)+%22\n- \n %5D%22%0A     \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-18_23-39-36",
+            "content": "@@ -124,33 +124,8 @@\n e))%0A\n-    var resultado string%0A\n     \n@@ -199,81 +199,8 @@\n     \n-if len(slice)==0 %7B%0A        resultado=%22%5B %22+%22 %22+ %22 %5D%22%0A    %7D else %7B%0A        \n resu\n@@ -204,16 +204,17 @@\n esultado\n+:\n = %22%5B %22+s\n@@ -244,17 +244,17 @@\n  %5D%22%0A    \n-%7D\n+ \n    %0A    \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-18_23-52-03",
+            "content": "@@ -261,17 +261,20 @@\n ado=%22%5B %22\n- \n++%22 %22\n + %22 %5D%22%0A \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-18_23-52-15",
+            "content": "@@ -259,16 +259,17 @@\n ltado=%22%5B\n+ \n %22 + %22 %5D%22\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-18_23-52-34",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"strings\"\n)\n\nfunc TranformaSlice (slice[]int) string {\n    sli:=make([]string, len(slice))\n    var resultado string\n    for i, v:= range slice {\n        sli[i]=fmt.Sprintf(\"%d\", v)\n    }\n    if len(slice)==0 {\n        resultado=\"[\" + \" ]\"\n    } else {\n        resultado= \"[ \"+strings.Join(sli, \" \")+\" ]\"\n    }   \n    return resultado\n}\n\nfunc main() {\n    var p, asp int\n    fmt.Scan(&p)\n    var pessoas[]int=make([]int, p)\n\n    for i:=0; i<p; i++{\n        fmt.Scan(&asp)\n        pessoas[i]=asp\n    }\n        var sta[] int\n        var dis[] int\n    \n    for i:=0; i<p; i++{\n        if pessoas[i]%2==0{\n            sta=append(sta, pessoas[i])\n        } else {\n            dis = append(dis, pessoas[i])\n        }\n    } \n\n        fmt.Println(TranformaSlice(dis))\n        fmt.Println(TranformaSlice(sta))\n\n\n}\n",
+            "lines": "45"
         }
     ]
 }

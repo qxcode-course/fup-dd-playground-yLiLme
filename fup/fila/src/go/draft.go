@@ -1,18 +1,45 @@
 package main
-import "fmt"
-func main() {
-    var n, p int
-    fmt.Scan(&n)
-    var fila[]int=make([]int, n)
-    var par[]int
+import (
+    "fmt"
+    "strings"
+)
 
-    for i:=0; i<n; i++ {
-        fmt.Scan(&p)
-        fila[i]=p
+func TranformaSlice (slice[]int) string {
+    sli:=make([]string, len(slice))
+    var resultado string
+    for i, v:= range slice {
+        sli[i]=fmt.Sprintf("%d", v)
     }
-    for i:= range fila {
-        if fila[i]%2==0 {
-            =fila[i]
+    if len(slice)==0 {
+        resultado="[" + " ]"
+    } else {
+        resultado= "[ "+strings.Join(sli, " ")+" ]"
+    }   
+    return resultado
+}
+
+func main() {
+    var p, asp int
+    fmt.Scan(&p)
+    var pessoas[]int=make([]int, p)
+
+    for i:=0; i<p; i++{
+        fmt.Scan(&asp)
+        pessoas[i]=asp
+    }
+        var sta[] int
+        var dis[] int
+    
+    for i:=0; i<p; i++{
+        if pessoas[i]%2==0{
+            sta=append(sta, pessoas[i])
+        } else {
+            dis = append(dis, pessoas[i])
         }
-    }
+    } 
+
+        fmt.Println(TranformaSlice(dis))
+        fmt.Println(TranformaSlice(sta))
+
+
 }

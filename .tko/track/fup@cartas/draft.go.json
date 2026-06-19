@@ -2,8 +2,63 @@
     "patches": [
         {
             "label": "2026-06-16_18-35-14",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, nums int\n    fmt.Scan(&n)\n    var cartas[]int = make([]int, n)\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&nums)\n        cartas[i]=nums\n    }\n    for i:=0; i<n; i++{\n        if cartas[i]==1{\n            cartas[i]='A'\n        } else if cartas[i]==11{\n            cartas[i]='J'\n        } else if cartas[i]==12{\n            cartas[i]='Q'\n        } else if cartas[i]==13{\n            cartas[i]='K'\n        }\n    }\n        fmt.Printf(\"[\")\n        fmt.Printf(\"%d \", cartas)\n        fmt.Printf(\"]\")\n}\n",
+            "content": "@@ -17,35 +17,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22strings%22%0A)\n+%22fmt%22\n %0Afun\n@@ -86,22 +86,19 @@\n cartas%5B%5D\n-str\n in\n-g\n+t\n  = make(\n@@ -99,22 +99,19 @@\n  make(%5B%5D\n-str\n in\n-g\n+t\n , n)%0A%0A  \n@@ -169,23 +169,81 @@\n         \n-if nums\n+cartas%5Bi%5D=nums%0A    %7D%0A    for i:=0; i%3Cn; i++%7B%0A        if cartas%5Bi%5D\n ==1%7B%0A   \n@@ -265,11 +265,11 @@\n %5Bi%5D=\n-%22A%22\n+'A'\n %0A   \n@@ -283,20 +283,25 @@\n else if \n-nums\n+cartas%5Bi%5D\n ==11%7B%0A  \n@@ -324,11 +324,11 @@\n %5Bi%5D=\n-%22J%22\n+'J'\n %0A   \n@@ -342,20 +342,25 @@\n else if \n-nums\n+cartas%5Bi%5D\n ==12%7B%0A  \n@@ -383,11 +383,11 @@\n %5Bi%5D=\n-%22Q%22\n+'Q'\n %0A   \n@@ -401,20 +401,25 @@\n else if \n-nums\n+cartas%5Bi%5D\n ==13%7B%0A  \n@@ -442,11 +442,11 @@\n %5Bi%5D=\n-%22K%22\n+'K'\n %0A   \n@@ -455,15 +455,14 @@\n    %7D\n- else %7B\n+%0A    %7D\n %0A   \n@@ -470,146 +470,80 @@\n     \n-    numtext:=\n fmt.\n-Sp\n+P\n rintf(%22\n-%25s%22, cartas%5Bi%5D)%0A            cartas%5Bi%5D=numtext%0A        %7D%0A    %7D%0A%0A    cards:=%22%5B %22+strings.Join(cartas, %22,%22)+%22%5D%22%0A    \n+%5B%22)%0A        fmt.Printf(%22%25d %22, cartas)%0A        fmt.Printf(%22%5D%22)\n %0A%7D%0A\n",
             "lines": "26"
+        },
+        {
+            "label": "2026-06-19_00-36-10",
+            "content": "@@ -561,31 +561,8 @@\n %22%5D%22%0A\n-    fmt.Println(cards)%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-19_00-36-20",
+            "content": "@@ -549,17 +549,16 @@\n artas, %22\n- \n ,%22)+%22%5D%22%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-19_00-36-40",
+            "content": "@@ -549,16 +549,17 @@\n artas, %22\n+ \n ,%22)+%22%5D%22%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-19_00-37-02",
+            "content": "@@ -550,17 +550,16 @@\n rtas, %22,\n- \n %22)+%22%5D%22%0A \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-19_00-37-11",
+            "content": "@@ -43,22 +43,8 @@\n gs%22%0A\n-    %22strconv%22%0A\n )%0Afu\n@@ -430,10 +430,8 @@\n     \n-//\n numt\n@@ -468,80 +468,8 @@\n i%5D)%0A\n-            var strig string %0A            strig=strconv.Itoa(cartas%5Bi%5D)%0A\n     \n@@ -490,13 +490,15 @@\n %5Bi%5D=\n-strig\n+numtext\n %0A   \n@@ -511,21 +511,16 @@\n %0A    %7D%0A%0A\n-    %0A\n     card\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-19_00-42-16",
+            "content": "@@ -39,16 +39,30 @@\n trings%22%0A\n+    %22strconv%22%0A\n )%0Afunc m\n@@ -440,16 +440,18 @@\n         \n+//\n numtext:\n@@ -480,16 +480,88 @@\n tas%5Bi%5D)%0A\n+            var strig string %0A            strig=strconv.Itoa(cartas%5Bi%5D)%0A\n         \n@@ -574,16 +574,21 @@\n rtas%5Bi%5D=\n+strig\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-19_00-42-31",
+            "content": "@@ -486,23 +486,16 @@\n rtas%5Bi%5D=\n-numtext\n %0A       \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-19_00-42-44",
+            "content": "@@ -529,16 +529,17 @@\n ards:=%22%5B\n+ \n %22+string\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-19_00-43-01",
+            "content": "@@ -449,17 +449,17 @@\n rintf(%22%25\n-d\n+s\n %22, carta\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-19_00-44-56",
+            "content": "@@ -453,20 +453,25 @@\n f(%22%25d%22, \n-nums\n+cartas%5Bi%5D\n )%0A      \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-19_00-46-27",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"strings\"\n)\nfunc main() {\n    var n, nums int\n    fmt.Scan(&n)\n    var cartas[]string = make([]string, n)\n\n    for i := 0; i < n; i++ {\n        fmt.Scan(&nums)\n        if nums==1{\n            cartas[i]=\"A\"\n        } else if nums==11{\n            cartas[i]=\"J\"\n        } else if nums==12{\n            cartas[i]=\"Q\"\n        } else if nums==13{\n            cartas[i]=\"K\"\n        } else {\n            numtext:=fmt.Sprintf(\"%d\", nums)\n            cartas[i]=numtext\n        }\n    }\n\n    \n    cards:=\"[\"+strings.Join(cartas, \", \")+\"]\"\n    fmt.Println(cards)\n    \n}\n",
+            "lines": "31"
         }
     ]
 }
