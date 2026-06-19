@@ -2,8 +2,53 @@
     "patches": [
         {
             "label": "2026-05-20_13-24-33",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -37,275 +37,39 @@\n ) %7B%0A\n-%09var vet%5B%5Dint%0A%09var num int%0A%09var c rune%0A%0A%09for %7B%0A%09%09_, err:=fmt.Scanf(%22%25d%25c%22, num, c)%0A%09%09if err!=nil%7B%0A%09%09%09break%0A%09%09%7D%0A%09%09vet=append(vet, num)%0A%09%09if c=='%5Cn'%7B%0A%09%09%09break%0A%0A%09%09%7D%0A%09%7D%0A%09for i:=len(vet) -1; i%3E= 0; i--%7B%0A%09%09fmt.Print(vet%5Bi%5D)%0A%09%09if i%3E0%7B%0A%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A%09%7D%0A%09fmt.Println()%0A\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-19_02-14-41",
+            "content": "@@ -59,13 +59,24 @@\n  num\n-s\n  int\n+%0A%09var c rune\n %0A%0A%09f\n@@ -102,14 +102,24 @@\n Scan\n-(&nums\n+f(%22%25d%25c%22, num, c\n )%0A%09%09\n@@ -169,11 +169,38 @@\n  num\n-s\n )%0A\n+%09%09if c=='%5Cn'%7B%0A%09%09%09break%0A%0A%09%09%7D%0A\n %09%7D%0A%09\n@@ -218,21 +218,23 @@\n vet)\n+ \n -1; i%3E\n+= \n 0; i--\n- \n %7B%0A%09%09\n@@ -252,13 +252,60 @@\n et%5Bi%5D)%0A%09\n-%7D\n+%09if i%3E0%7B%0A%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A%09%7D%0A%09fmt.Println()\n %0A%0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-19_02-25-29",
+            "content": "@@ -196,16 +196,9 @@\n rint\n-f(%22%25d %22,\n+(\n vet%5B\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-19_02-25-56",
+            "content": "@@ -154,26 +154,8 @@\n %0A%09%7D%0A\n-%09fmt.Printf(%22%5B %22)%0A\n %09for\n@@ -214,25 +214,8 @@\n )%0A%09%7D\n-%0A%09fmt.Printf(%22%5D%22)\n %0A%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-19_02-26-21",
+            "content": "@@ -247,10 +247,8 @@\n f(%22%5D\n-%5Cn\n %22)%0A%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_02-26-30",
+            "content": "@@ -184,16 +184,18 @@\n len(vet)\n+-1\n ; i%3E0; i\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_02-26-37",
+            "content": "@@ -188,17 +188,16 @@\n vet); i%3E\n-=\n 0; i-- %7B\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_02-26-45",
+            "content": "@@ -188,14 +188,13 @@\n vet)\n--1\n ; i%3E\n+=\n 0; i\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_02-26-52",
+            "content": "@@ -190,17 +190,16 @@\n t)-1; i%3E\n-=\n 0; i-- %7B\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_02-29-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar vet[]int\n\tvar nums int\n\n\tfor {\n\t\t_, err:=fmt.Scan(&nums)\n\t\tif err!=nil{\n\t\t\tbreak\n\t\t}\n\t\tvet=append(vet, nums)\n\t}\n\tfmt.Printf(\"[ \")\n\tfor i:=len(vet)-1; i>=0; i-- {\n\t\tfmt.Printf(\"%d \",vet[i])\n\t}\n\tfmt.Printf(\"]\\n\")\n\n}\n",
+            "lines": "20"
         }
     ]
 }

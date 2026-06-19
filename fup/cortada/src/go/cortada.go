@@ -4,5 +4,6 @@ import "fmt"
 //felix é de esquerda
 //c=160cm e a=70cm
 func main() {
-    var b, t int64
+    
+
 }
