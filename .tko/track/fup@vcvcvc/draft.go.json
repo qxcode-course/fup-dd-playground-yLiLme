@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_03-46-28",
+            "content": "@@ -187,17 +187,17 @@\n Scanf(%22%25\n-s\n+c\n %22, &pala\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-20_03-47-41",
+            "content": "@@ -183,18 +183,17 @@\n fmt.Scan\n-ln\n+f\n (%22%25s%22, &\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-20_03-48-36",
+            "content": "@@ -248,25 +248,23 @@\n or i\n+ \n :=\n-0; i%3Cchars; i++\n+ range frase\n %7B%0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-20_03-49-31",
+            "content": "@@ -263,16 +263,70 @@\n s; i++%7B%0A\n+        if len(frase)%3E50%7B%0A            break%0A        %7D%0A\n         \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-20_03-49-50",
+            "content": "@@ -187,12 +187,12 @@\n Scan\n-f\n+ln\n (%22\n- \n %25s%22,\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-20_03-50-20",
+            "content": "@@ -183,18 +183,17 @@\n fmt.Scan\n-ln\n+f\n (%22 %25s%22, \n@@ -240,39 +240,41 @@\n  %7D%0A    for i\n- \n :=\n- range frase\n+0; i%3Cchars; i++\n %7B%0A        if\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-20_03-52-22",
+            "content": "@@ -183,17 +183,18 @@\n fmt.Scan\n-f\n+ln\n (%22 %25s%22, \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-20_03-53-36",
+            "content": "@@ -183,17 +183,25 @@\n fmt.Scan\n-(\n+f(%22 %25s%22, \n &palavra\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-20_03-53-53",
+            "content": "@@ -187,16 +187,9 @@\n Scan\n-f(%22%25s%22, \n+(\n &pal\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-20_03-54-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var palavras string\n    var chars int\n    fmt.Scan(&chars)\n    var frase[]string=make([]string, chars)\n\n    for i := range frase{\n        fmt.Scanf(\"%s\", &palavras)\n        frase[i]=palavras\n    }\n    for i := range frase{\n        if frase[i]==\" \"{\n            continue\n        }\n        if frase[i]==\"a\" || frase[i]==\"e\" || frase[i]==\"i\" || frase[i]==\"o\" || frase[i]==\"u\"{\n            frase[i]=\"v\"\n        } else {\n            frase[i]=\"c\"\n        }\n    }\n\n    fmt.Println(frase)\n}\n",
+            "lines": "25"
+        }
+    ]
+}

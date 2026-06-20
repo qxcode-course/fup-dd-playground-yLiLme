@@ -107,3 +107,12 @@
 2026-06-19 03:27:28, MOVE, v:1, k:fup@estudante, mode:PICK
 2026-06-19 03:27:50, EXEC, v:1, k:fup@estudante, mode:FULL, size:20, fail:COMP
 2026-06-19 03:29:17, MOVE, v:1, k:fup@estudante, mode:BACK
+2026-06-19 03:28:11, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-19 23:41:06, MOVE, v:1, k:fup@xuxa, mode:DOWN
+2026-06-19 23:41:07, MOVE, v:1, k:fup@xuxa, mode:PICK
+2026-06-19 23:41:11, MOVE, v:1, k:fup@xuxa, mode:BACK
+2026-06-19 23:41:21, MOVE, v:1, k:fup@permutacao, mode:DOWN
+2026-06-19 23:41:23, MOVE, v:1, k:fup@permutacao, mode:PICK
+2026-06-19 23:41:06, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-06-19 23:41:21, MOVE, v:1, k:fup@permutacao, mode:EDIT
+2026-06-19 23:44:06, MOVE, v:1, k:fup@permutacao, mode:EDIT

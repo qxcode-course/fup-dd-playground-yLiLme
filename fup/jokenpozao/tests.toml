@@ -1,0 +1,125 @@
+[[tests]]
+input = '''
+sponge
+gun
+'''
+output = '''
+jog1
+'''
+
+[[tests]]
+input = '''
+air
+scissors
+'''
+output = '''
+jog2
+'''
+
+[[tests]]
+input = '''
+gun
+gun
+'''
+output = '''
+empate
+'''
+
+[[tests]]
+input = '''
+air
+gun
+'''
+output = '''
+jog1
+'''
+
+[[tests]]
+input = '''
+fire
+air
+'''
+output = '''
+jog2
+'''
+
+[[tests]]
+input = '''
+water
+human
+'''
+output = '''
+jog2
+'''
+
+[[tests]]
+input = '''
+scissors
+paper
+'''
+output = '''
+jog1
+'''
+
+[[tests]]
+input = '''
+sponge
+human
+'''
+output = '''
+jog2
+'''
+
+[[tests]]
+input = '''
+human
+fire
+'''
+output = '''
+jog2
+'''
+
+[[tests]]
+input = '''
+air
+water
+'''
+output = '''
+jog1
+'''
+
+[[tests]]
+input = '''
+water
+paper
+'''
+output = '''
+jog2
+'''
+
+[[tests]]
+input = '''
+human
+scissors
+'''
+output = '''
+jog2
+'''
+
+[[tests]]
+input = '''
+paper
+sponge
+'''
+output = '''
+jog2
+'''
+
+[[tests]]
+input = '''
+water
+gun
+'''
+output = '''
+jog1
+'''
