@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_04-42-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, nums int\n     fmt.Scan(&n1, &n2)\n    var matriz[][]int=make([][]int, n1, n2)\n\n    for i:=0; i<n1; i++{\n        for j:=0; j<n2; j++{\n            fmt.Scan(&nums)\n        }\n    }\n\n    fmt.Println(matriz)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

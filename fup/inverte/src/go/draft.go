@@ -1,5 +1,20 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+	"unicode"
+)
 func main() {
-    fmt.Println("Hello, World!")
+    var l rune
+
+    fmt.Scan(&l)
+
+    if unicode.IsUpper(l){
+        minuscula:=unicode.ToLower(l)
+        fmt.Println(minuscula)
+    } 
+    if unicode.IsLower(l) {
+        maiuscula:=unicode.ToUpper(l)
+        fmt.Println(maiuscula)
+    }
 }

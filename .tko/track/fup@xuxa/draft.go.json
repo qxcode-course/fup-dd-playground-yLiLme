@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_04-15-13",
+            "content": "@@ -108,14 +108,25 @@\n     \n+var \n frase\n-:\n+%5B%5Dstring\n =mak\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-20_04-16-13",
+            "content": "@@ -95,22 +95,9 @@\n Scan\n-f(%22chars!=%5Cn%22,\n+(\n &cha\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-20_04-19-33",
+            "content": "@@ -98,13 +98,19 @@\n nf(%22\n-%25s\n+chars!=%5Cn\n %22,\n- \n &cha\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-20_04-19-55",
+            "content": "@@ -91,19 +91,24 @@\n fmt.Scan\n-ln(\n+f(%22%25s%22, \n &chars)%0A\n@@ -187,17 +187,9 @@\n Scan\n-f(%22 %25s%22, \n+(\n &pal\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-20_04-21-37",
+            "content": "@@ -63,18 +63,22 @@\n var \n-letra rune\n+palavra string\n %0A   \n@@ -185,72 +185,23 @@\n nf(%22\n-%25c\n+ %25s\n %22, &\n-letra)%0A        if letra=='%5Cn'%7B%0A            break%0A        %7D\n+palavra)\n %0A   \n@@ -218,21 +218,15 @@\n %5Bi%5D=\n-string(let\n+palav\n ra\n-)\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-20_04-24-17",
+            "content": "@@ -230,30 +230,13 @@\n     \n-fmt.Scanf(%22%25c%22, letra)\n+break\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-20_04-24-51",
+            "content": "@@ -1,6 +1,4 @@\n-/*\n pack\n@@ -323,835 +323,6 @@\n se)%0A\n-%7D*/%0A%0Apackage main%0A%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09var chars int%0A%09// Lemos o n%C3%BAmero de caracteres normalmente%0A%09fmt.Scanln(&chars)%0A%0A%09// Criamos um leitor para pegar a linha do texto inteira de forma segura%0A%09leitor := bufio.NewReader(os.Stdin)%0A%09fraseCompleta, _ := leitor.ReadString('%5Cn')%0A%09fraseCompleta = strings.TrimSpace(fraseCompleta) // Limpa espa%C3%A7os e Enters doidos%0A%0A%09// Criamos o seu vetor com o tamanho que voc%C3%AA pediu%0A%09frase := make(%5B%5Dstring, chars)%0A%0A%09// Preenchemos o vetor pegando cada letra do texto lido%0A%09for i := 0; i %3C chars; i++ %7B%0A%09%09// Se o usu%C3%A1rio digitou menos letras do que o tamanho do vetor,%0A%09%09// paramos para n%C3%A3o dar erro de %22index out of range%22%0A%09%09if i %3E= len(fraseCompleta) %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09frase%5Bi%5D = string(fraseCompleta%5Bi%5D)%0A%09%7D%0A%0A%09// Printa o vetor preenchido%0A%09fmt.Println(frase)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-20_04-26-01",
+            "content": "@@ -446,16 +446,28 @@\n racteres\n+ normalmente\n %0A%09fmt.Sc\n@@ -496,501 +496,529 @@\n mos \n-o\n+um\n  leitor\n-%0A%09leitor := bufio.NewReader(os.Stdin)%0A%0A%09// O PULO DO GATO: Se sobrou algum Enter ou espa%C3%A7o depois do n%C3%BAmero, %0A%09// isso aqui limp\n+ para pegar a linh\n a \n+d\n o te\n-clado antes\n+xto inteira\n  de \n-ler a frase de verdade%0A%09for leitor.Buffered() %3E 0 %7B%0A%09%09leitor.ReadByte()%0A%09%7D%0A%0A%09// Agora sim, l%C3%AA a frase real digitada%0A%09fraseCompleta, _ := leitor.ReadString('%5Cn')%0A%09fraseCompleta = strings.TrimSpace(fraseCompleta)%0A%0A%09// Criamos o seu vetor%0A%09frase := make(%5B%5Dstring, chars)%0A%0A%09// Preenchemos o vetor com as letras%0A%09for i := 0; i %3C chars; i++ %7B\n+forma segura%0A%09leitor := bufio.NewReader(os.Stdin)%0A%09fraseCompleta, _ := leitor.ReadString('%5Cn')%0A%09fraseCompleta = strings.TrimSpace(fraseCompleta) // Limpa espa%C3%A7os e Enters doidos%0A%0A%09// Criamos o seu vetor com o tamanho que voc%C3%AA pediu%0A%09frase := make(%5B%5Dstring, chars)%0A%0A%09// Preenchemos o vetor pegando cada letra do texto lido%0A%09for i := 0; i %3C chars; i++ %7B%0A%09%09// Se o usu%C3%A1rio digitou menos letras do que o tamanho do vetor,%0A%09%09// paramos para n%C3%A3o dar erro de %22index out of range%22\n %0A%09%09i\n@@ -1123,15 +1123,18 @@\n tor \n-na tela\n+preenchido\n %0A%09fm\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-20_04-26-42",
+            "content": "@@ -1,8 +1,10 @@\n+/*\n package \n@@ -8,16 +8,16 @@\n ge main%0A\n-\n import %22\n@@ -322,10 +322,795 @@\n frase)%0A%7D\n-%0A\n+*/%0A%0Apackage main%0A%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09var chars int%0A%09// Lemos o n%C3%BAmero de caracteres%0A%09fmt.Scanln(&chars)%0A%0A%09// Criamos o leitor%0A%09leitor := bufio.NewReader(os.Stdin)%0A%0A%09// O PULO DO GATO: Se sobrou algum Enter ou espa%C3%A7o depois do n%C3%BAmero, %0A%09// isso aqui limpa o teclado antes de ler a frase de verdade%0A%09for leitor.Buffered() %3E 0 %7B%0A%09%09leitor.ReadByte()%0A%09%7D%0A%0A%09// Agora sim, l%C3%AA a frase real digitada%0A%09fraseCompleta, _ := leitor.ReadString('%5Cn')%0A%09fraseCompleta = strings.TrimSpace(fraseCompleta)%0A%0A%09// Criamos o seu vetor%0A%09frase := make(%5B%5Dstring, chars)%0A%0A%09// Preenchemos o vetor com as letras%0A%09for i := 0; i %3C chars; i++ %7B%0A%09%09if i %3E= len(fraseCompleta) %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09frase%5Bi%5D = string(fraseCompleta%5Bi%5D)%0A%09%7D%0A%0A%09// Printa o vetor na tela%0A%09fmt.Println(frase)%0A%7D\n %0A\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-06-20_04-27-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var chars int\n    var letra rune\n    \n    fmt.Scanln(&chars)\n    frase:=make([]string, chars)\n\n    for i:= range frase {\n        fmt.Scanf(\"%c\", &letra)\n        if letra=='\\n'{\n            fmt.Scanf(\"%c\", letra)\n        }\n        frase[i]=string(letra)\n    }\n    fmt.Println(frase)\n}\n\n",
+            "lines": "19"
+        }
+    ]
+}
