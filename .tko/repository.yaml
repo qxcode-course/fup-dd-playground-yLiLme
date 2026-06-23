@@ -19,9 +19,9 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@mat
+- fup@list
 flags:
-  inbox: all
+  inbox: inbox
   panel: skills
   task_graph_mode: executions
   show_time: 'true'
@@ -29,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@soldados
-selected_index: 13
+selected: fup@list
+selected_index: 2

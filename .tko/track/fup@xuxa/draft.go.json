@@ -47,8 +47,38 @@
         },
         {
             "label": "2026-06-20_04-27-10",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var chars int\n    var letra rune\n    \n    fmt.Scanln(&chars)\n    frase:=make([]string, chars)\n\n    for i:= range frase {\n        fmt.Scanf(\"%c\", &letra)\n        if letra=='\\n'{\n            fmt.Scanf(\"%c\", letra)\n        }\n        frase[i]=string(letra)\n    }\n    fmt.Println(frase)\n}\n\n",
+            "content": "@@ -10,217 +10,200 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22text/scanner%22%0A)%0Afunc main() %7B%0A    verificaIxpa%C3%A7o:=bufio.NewScanner(os.Stdin)\n+%22fmt%22%0Afunc main() %7B%0A    var chars int\n %0A    \n-%0A    if verificaIxpa%C3%A7o.Scan()%7B%0A        frase:=scanner.text()%0A        tam:=len(frase\n+var letra rune%0A    %0A    fmt.Scanln(&chars)%0A    frase:=make(%5B%5Dstring, chars)%0A%0A    for i:= range frase %7B%0A        fmt.Scanf(%22%25c%22, &letra\n )%0A\n-%0A\n         \n for \n@@ -202,31 +202,22 @@\n     \n-for i:=tam-1; i%3E=0; i++\n+if letra=='%5Cn'\n %7B%0A  \n@@ -234,21 +234,20 @@\n fmt.\n-Print\n+Scan\n f(%22%25c%22, \n fras\n@@ -246,16 +246,13 @@\n c%22, \n-frase%5Bi%5D\n+letra\n )%0A  \n@@ -259,24 +259,57 @@\n       %7D%0A    \n+    frase%5Bi%5D=string(letra)%0A    %7D%0A\n     fmt.Prin\n@@ -312,19 +312,18 @@\n Println(\n-)%0A    %7D\n+frase)\n %0A%7D%0A%0A\n",
             "lines": "19"
+        },
+        {
+            "label": "2026-06-23_01-15-25",
+            "content": "@@ -179,9 +179,9 @@\n ner.\n-T\n+t\n ext(\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-23_01-16-56",
+            "content": "@@ -38,16 +38,32 @@\n %22%0A%09%22os%22%0A\n+%09%22text/scanner%22%0A\n )%0Afunc m\n@@ -74,23 +74,30 @@\n ) %7B%0A    \n-scanner\n+verificaIxpa%C3%A7o\n :=bufio.\n@@ -129,23 +129,30 @@\n %0A    if \n-scanner\n+verificaIxpa%C3%A7o\n .Scan()%7B\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-23_01-20-58",
+            "content": "@@ -195,16 +195,18 @@\n r i:=tam\n+-1\n ; i%3E=0; \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-23_01-23-13",
+            "content": "@@ -199,14 +199,13 @@\n =tam\n--1\n ; i%3E\n+=\n 0; i\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-23_01-23-23",
+            "content": "@@ -205,15 +205,14 @@\n ; i%3E\n-=\n 0; i\n---\n+++\n %7B%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-23_01-23-53",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n    scanner:=bufio.NewScanner(os.Stdin)\n    \n    if scanner.Scan(){\n        frase:=scanner.Text()\n        tam:=len(frase)\n\n        for i:=tam-1; i>=0; i--{\n            fmt.Printf(\"%c\", frase[i])\n        }\n        fmt.Println()\n    }\n}\n\n",
+            "lines": "21"
         }
     ]
 }

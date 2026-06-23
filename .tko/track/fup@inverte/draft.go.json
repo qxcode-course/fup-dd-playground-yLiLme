@@ -12,8 +12,53 @@
         },
         {
             "label": "2026-06-20_04-36-00",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"unicode\"\n)\nfunc main() {\n    var l rune\n\n    fmt.Scan(&l)\n\n    if unicode.IsUpper(l){\n        minuscula:=unicode.ToLower(l)\n        fmt.Println(minuscula)\n    } \n    if unicode.IsLower(l) {\n        maiuscula:=unicode.ToUpper(l)\n        fmt.Println(maiuscula)\n    }\n}\n",
+            "content": "@@ -64,14 +64,12 @@\n r l \n-string\n+rune\n %0A%0A  \n@@ -82,37 +82,11 @@\n Scan\n-f(%22%25s%22, &l)%0A    ll:=rune(l%5B0%5D\n+(&l\n )%0A%0A \n@@ -108,17 +108,16 @@\n sUpper(l\n-l\n )%7B%0A     \n@@ -143,25 +143,24 @@\n de.ToLower(l\n-l\n )%0A        fm\n@@ -166,26 +166,19 @@\n mt.Print\n-f(%22%25c%5Cn%22, \n+ln(\n minuscul\n@@ -211,17 +211,16 @@\n sLower(l\n-l\n ) %7B%0A    \n@@ -251,17 +251,16 @@\n oUpper(l\n-l\n )%0A      \n@@ -274,18 +274,11 @@\n rint\n-f(%22%25c%5Cn%22, \n+ln(\n maiu\n",
             "lines": "20"
+        },
+        {
+            "label": "2026-06-23_01-29-50",
+            "content": "@@ -224,16 +224,20 @@\n %0A    %7D %0A\n+    \n if unico\n@@ -340,11 +340,6 @@\n   %7D%0A\n-    %0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-23_01-30-54",
+            "content": "@@ -223,21 +223,17 @@\n )%0A    %7D \n-else \n+%0A\n if unico\n@@ -330,43 +330,8 @@\n la)%0A\n-    %7D else %7B%0A        fmt.Println()%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-23_01-32-59",
+            "content": "@@ -367,10 +367,8 @@\n tln(\n-%22%22\n )%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-23_01-33-13",
+            "content": "@@ -223,20 +223,20 @@\n )%0A    %7D \n-%0A   \n+else\n  if unic\n@@ -339,36 +339,14 @@\n    %7D\n-%0A    if unicode.IsLetter(ll)\n+ else \n %7B%0A  \n@@ -367,14 +367,16 @@\n tln(\n+%22%22\n )%0A    %7D%0A\n %7D%0A\n@@ -373,10 +373,15 @@\n )%0A    %7D%0A\n+    %0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-23_01-34-34",
+            "content": "@@ -347,9 +347,8 @@\n  if \n-!\n unic\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-23_01-35-10",
+            "content": "@@ -386,18 +386,16 @@\n Println(\n-ll\n )%0A    %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-23_01-35-26",
+            "content": "@@ -387,16 +387,17 @@\n rintln(l\n+l\n )%0A    %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-23_01-35-55",
+            "content": "@@ -340,25 +340,8 @@\n   %7D%0A\n-    l=string(ll)%0A\n     \n@@ -387,17 +387,16 @@\n rintln(l\n-l\n )%0A    %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-23_01-36-22",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"unicode\"\n)\nfunc main() {\n    var l string\n\n    fmt.Scanf(\"%s\", &l)\n    ll:=rune(l[0])\n\n    if unicode.IsUpper(ll){\n        minuscula:=unicode.ToLower(ll)\n        fmt.Printf(\"%c\\n\", minuscula)\n    } \n    if unicode.IsLower(ll) {\n        maiuscula:=unicode.ToUpper(ll)\n        fmt.Printf(\"%c\\n\", maiuscula)\n    }\n    l=string(ll)\n    if !unicode.IsLetter(ll){\n        fmt.Println(ll)\n    }\n}\n",
+            "lines": "25"
         }
     ]
 }

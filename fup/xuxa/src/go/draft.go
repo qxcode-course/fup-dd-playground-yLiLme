@@ -1,19 +1,21 @@
 package main
-import "fmt"
-func main() {
-    var chars int
-    var letra rune
-    
-    fmt.Scanln(&chars)
-    frase:=make([]string, chars)
 
-    for i:= range frase {
-        fmt.Scanf("%c", &letra)
-        if letra=='\n'{
-            fmt.Scanf("%c", letra)
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
+func main() {
+    scanner:=bufio.NewScanner(os.Stdin)
+    
+    if scanner.Scan(){
+        frase:=scanner.Text()
+        tam:=len(frase)
+
+        for i:=tam-1; i>=0; i--{
+            fmt.Printf("%c", frase[i])
         }
-        frase[i]=string(letra)
+        fmt.Println()
     }
-    fmt.Println(frase)
 }
 

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_01-06-14",
+            "content": "@@ -360,17 +360,16 @@\n       ds\n-+\n =matriz%5B\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-23_01-07-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var matriz[5][5]int\n\n    for i:=0; i<5; i++{\n        for j:=0; j<5; j++{\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n        dp:=0\n    for i:=0; i<5; i++{\n        for j:=0; j<5; j++{\n            if i==j{\n                dp+=matriz[i][j]\n            }\n        }\n    }\n        ds:=0\n    for i:=0; i<5; i++{\n        ds+=matriz[i][5-1-i]\n    }\n        result:=dp-ds\n        fmt.Println(result)\n\n}\n",
+            "lines": "26"
+        }
+    ]
+}

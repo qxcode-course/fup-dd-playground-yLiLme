@@ -5,16 +5,20 @@ import (
 	"unicode"
 )
 func main() {
-    var l rune
+    var l string
 
-    fmt.Scan(&l)
+    fmt.Scanf("%s", &l)
+    ll:=rune(l[0])
 
-    if unicode.IsUpper(l){
-        minuscula:=unicode.ToLower(l)
-        fmt.Println(minuscula)
+    if unicode.IsUpper(ll){
+        minuscula:=unicode.ToLower(ll)
+        fmt.Printf("%c\n", minuscula)
     } 
-    if unicode.IsLower(l) {
-        maiuscula:=unicode.ToUpper(l)
-        fmt.Println(maiuscula)
+    if unicode.IsLower(ll) {
+        maiuscula:=unicode.ToUpper(ll)
+        fmt.Printf("%c\n", maiuscula)
+    }
+    if !unicode.IsLetter(ll){
+        fmt.Println(ll)
     }
 }

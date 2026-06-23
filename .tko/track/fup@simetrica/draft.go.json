@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_00-28-11",
+            "content": "@@ -237,21 +237,54 @@\n i%5D%5Bj%5D%0A%09%09\n-%7D%0A%09%7D%0A\n+%09if transposta%5Bi%5D%5Bj%5D!=matriz%5Bi%5D%5Bj%5D%7B%0A%09%09\n %09%09fmt.Pr\n@@ -293,19 +293,38 @@\n tln(\n-transposta)%0A\n+%22nao%22)%0A%09%09%09%09break%0A%09%09%09%7D %0A%09%09%7D%0A%09%7D%0A%09\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-23_00-28-34",
+            "content": "@@ -220,12 +220,12 @@\n sta%5B\n-j%5D%5Bi\n+i%5D%5Bj\n %5D=ma\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-23_00-29-12",
+            "content": "@@ -247,159 +247,32 @@\n %09%7D%0A%09\n-for i:=0; i%3C3; i++%7B%0A%09%09for j:=0; j%3C3; j++%7B%0A%09%09%09if transposta%5Bj%5D%5Bi%5D!=matriz%5Bi%5D%5Bj%5D%7B%0A%09%09%09%09fmt.Println(%22nao%22)%0A%09%09%09%09break%0A%09%09%09%7D else %7B%0A%09%09%09%09continue%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09\n+%09fmt.Println(transposta)\n %0A%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-23_00-31-14",
+            "content": "@@ -307,17 +307,17 @@\n ta%5Bj%5D%5Bi%5D\n-=\n+!\n =matriz%5B\n@@ -344,11 +344,11 @@\n ln(%22\n-sim\n+nao\n %22)%0A%09\n@@ -356,16 +356,41 @@\n %09%09break%0A\n+%09%09%09%7D else %7B%0A%09%09%09%09continue%0A\n %09%09%09%7D%0A%09%09%7D\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-23_00-32-46",
+            "content": "@@ -302,20 +302,20 @@\n nsposta%5B\n-i%5D%5Bj\n+j%5D%5Bi\n %5D==matri\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-23_00-33-00",
+            "content": "@@ -246,26 +246,8 @@\n %0A%09%7D%0A\n-%09%09sim%C3%A9triki:=true%0A\n %09for\n@@ -295,22 +295,8 @@\n %09if \n-matriz%5Bi%5D%5Bj%5D!=\n tran\n@@ -311,74 +311,25 @@\n %5D%5Bj%5D\n-%7B%0A%09%09%09%09sim%C3%A9triki=false%0A%09%09%09%09break%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09%09if sim%C3%A9triki==true\n+==matriz%5Bi%5D%5Bj%5D\n %7B%0A\n+%09\n %09%09%09f\n@@ -352,40 +352,25 @@\n )%0A%09%09\n-%7D else %7B%0A%09%09%09fmt.Println(%22nao%22)%0A%09\n+%09%09break%0A%09%09%09%7D%0A%09%09%7D%0A\n %09%7D%0A%09\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-23_00-38-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar transposta[3][3] int\n\tvar matriz[3][3] int\n\n\tfor i:=0; i<3; i++{\n\t\tfor j:=0; j<3; j++{\n\t\t\tfmt.Scan(&matriz[i][j])\n\t\t}\n\t}\n\tfor j:=0; j<3; j++{\n\t\tfor i:=0; i<3; i++{\n\t\t\ttransposta[j][i]=matriz[i][j]\n\t\t}\n\t}\n\t\tsim\u00e9triki:=true\n\tfor i:=0; i<3; i++{\n\t\tfor j:=0; j<3; j++{\n\t\t\tif matriz[i][j]!=transposta[i][j]{\n\t\t\t\tsim\u00e9triki=false\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\t}\n\t\tif sim\u00e9triki==true{\n\t\t\tfmt.Println(\"sim\")\n\t\t} else {\n\t\t\tfmt.Println(\"nao\")\n\t\t}\n\t\n\n}\n",
+            "lines": "33"
+        }
+    ]
+}
