@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_17-23-37",
+            "content": "@@ -276,11 +276,10 @@\n    s\n-=s\n +\n+=\n matr\n@@ -303,20 +303,16 @@\n %7D%0A    %7D%0A\n-    \n     fmt.\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-22_17-26-12",
+            "content": "@@ -214,36 +214,35 @@\n %0A    for i:=\n-range matriz\n+0; i%3C2; i++\n %7B%0A        fo\n@@ -242,36 +242,35 @@\n      for j:=\n-range matriz\n+0; j%3C3; j++\n %7B%0A          \n@@ -276,10 +276,11 @@\n    s\n-+\n =\n+s+\n matr\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-22_17-27-14",
+            "content": "@@ -222,19 +222,20 @@\n  i:=\n-0; i%3C2; i++\n+range matriz\n %7B%0A  \n@@ -251,19 +251,20 @@\n  j:=\n-0; j%3C3; j++\n+range matriz\n %7B%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-22_17-28-56",
+            "content": "@@ -86,35 +86,36 @@\n %0A    for i:=\n-0; i%3C2; i++\n+range matriz\n %7B%0A        fo\n@@ -115,35 +115,36 @@\n      for j:=\n-0; j%3C3; j++\n+range matriz\n %7B%0A          \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-22_18-15-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nums, s int\n    var matriz[2][3] int\n\n    for i:=0; i<2; i++{\n        for j:=0; j<3; j++{\n            fmt.Scan(&nums)\n            matriz[i][j]=nums\n        }\n    }\n    for i:=0; i<2; i++{\n        for j:=0; j<3; j++{\n            s+=matriz[i][j]\n        }\n    }\n        fmt.Println(s)\n\n}\n",
+            "lines": "20"
+        }
+    ]
+}

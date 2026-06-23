@@ -1,0 +1,129 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_02-29-59",
+            "content": "@@ -41,327 +41,35 @@\n     \n-var nums int%0A    var matriz%5B3%5D%5B3%5Dint%0A%0A    for i:=range matriz%7B%0A        for j:= range matriz%7B%0A            fmt.Scan(&nums)%0A            matriz%5Bi%5D%5Bj%5D=nums%0A        %7D%0A    %7D%0A    l:=0%0A    c:=0%0A    dp:=0%0A    ds:=0%0A    for i:=0; i%3C3; i++%7B%0A        for j:=0; j%3C3; j++%7B%0A            l+=matriz%5Bi%5D%5Bj%5D%0A        %7D%0A    %7D%0A    fmt.Println(l)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-22_16-44-21",
+            "content": "@@ -221,10 +221,8 @@\n     \n-/*\n c:=0\n@@ -245,10 +245,8 @@\n s:=0\n-*/\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-22_16-44-32",
+            "content": "@@ -212,19 +212,12 @@\n     \n-var l%5B3%5Dint\n+l:=0\n %0A   \n@@ -311,19 +311,16 @@\n        l\n-%5Bj%5D\n +=matriz\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-22_16-49-43",
+            "content": "@@ -280,19 +280,8 @@\n i++%7B\n- /*coluna*/\n %0A   \n@@ -340,90 +340,8 @@\n %5Bj%5D%0A\n-            if l%5B0%5D != l%5B1%5D && l%5B1%5D != l%5B2%5D %7B%0A                break%0A            %7D%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-22_16-53-14",
+            "content": "@@ -351,32 +351,24 @@\n %5Bj%5D%0A        \n-%7D%0A    %7D%0A\n     if l%5B0%5D \n@@ -405,39 +405,56 @@\n     \n-fmt.Println(%22nao%22)%0A    %7D%0A    //\n+        break%0A            %7D%0A        %7D%0A    %7D%0A    \n fmt.\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-22_16-54-26",
+            "content": "@@ -228,26 +228,19 @@\n     \n-var c%5B3%5Dint\n+/*c:=0\n %0A    \n-/*\n dp:=\n@@ -371,109 +371,8 @@\n     \n-for j:=0; j%3C3; j++%7B%0A        for i:=0; i%3C3; i++%7B%0A            c%5Bi%5D+=matriz%5Bi%5D%5Bj%5D%0A        %7D%0A    %7D%0A    /*\n if l\n@@ -433,23 +433,23 @@\n %22)%0A    %7D\n-*/\n %0A    \n+//\n fmt.Prin\n@@ -452,14 +452,14 @@\n Println(\n-c\n+l\n )%0A%0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-22_16-56-12",
+            "content": "@@ -244,27 +244,20 @@\n     \n-var dp%5B3%5Dint\n+/*dp:=0\n %0A    \n-/*\n ds:=\n@@ -292,17 +292,16 @@\n /*coluna\n-s\n */%0A     \n@@ -397,19 +397,8 @@\n j++%7B\n- /*linhas*/\n %0A   \n@@ -473,143 +473,8 @@\n   %7D%0A\n-    for i:=0; i%3C3; i++%7B%0A        for j:=0; j%3C3; j++%7B%0A            if i==j%7B%0A            dp%5Bi%5D+=matriz%5Bi%5D%5Bj%5D%0A            %7D%0A        %7D%0A    %7D%0A\n     \n@@ -560,15 +560,14 @@\n Println(\n-dp\n+c\n )%0A%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-22_17-02-09",
+            "content": "@@ -246,17 +246,19 @@\n   var dp\n- \n+%5B3%5D\n int%0A    \n@@ -575,16 +575,19 @@\n       dp\n+%5Bi%5D\n +=matriz\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-22_17-02-41",
+            "content": "@@ -200,28 +200,24 @@\n     %7D%0A    %7D%0A\n-    \n     var l%5B3%5D\n@@ -216,28 +216,24 @@\n var l%5B3%5Dint%0A\n-    \n     var c%5B3%5D\n@@ -244,32 +244,32 @@\n     \n-    dp:=0\n+var dp int\n %0A    \n-    \n+/*\n ds:=0\n-%0A\n+*/\n %0A   \n@@ -513,31 +513,8 @@\n i++%7B\n- /*diagonal principal*/\n %0A   \n@@ -571,20 +571,16 @@\n         \n-    \n dp+=matr\n@@ -622,105 +622,8 @@\n   %7D%0A\n-    for j:=3; j%3E0; j--%7B%0A        for i:=0; i%3C3; i++%7B%0A            ds+=matriz%5Bi%5D%5Bj%5D%0A        %7D%0A    %7D%0A\n     \n@@ -710,14 +710,14 @@\n rintln(d\n-s\n+p\n )%0A%0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-22_17-07-13",
+            "content": "@@ -657,38 +657,38 @@\n   %7D%0A    for \n-i:=0; i%3C3; i++\n+j:=3; j%3E0; j--\n %7B%0A        fo\n@@ -685,38 +685,38 @@\n         for \n-j:=3; j%3E0; j--\n+i:=0; i%3C3; i++\n %7B%0A          \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-22_17-08-12",
+            "content": "@@ -668,44 +668,20 @@\n  i:=\n-3; i%3E0; i--%7B /*diagonal secundaria*/\n+0; i%3C3; i++%7B\n %0A   \n@@ -721,35 +721,10 @@\n     \n-if i==j%7B%0A                dp\n+ds\n +=ma\n@@ -746,34 +746,15 @@\n     \n-    \n %7D%0A    \n-    %7D%0A    %7D%0A    \n+%7D\n %0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-22_17-08-57",
+            "content": "@@ -767,17 +767,17 @@\n        d\n-s\n+p\n +=matriz\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-06-22_17-09-21",
+            "content": "@@ -660,37 +660,60 @@\n %0A    for i:=\n-range matriz%7B\n+3; i%3E0; i--%7B /*diagonal secundaria*/\n %0A        for\n@@ -716,28 +716,27 @@\n  for j:=\n-range matriz\n+3; j%3E0; j--\n %7B%0A      \n@@ -741,16 +741,41 @@\n         \n+if i==j%7B%0A                \n ds+=matr\n@@ -786,24 +786,8 @@\n %5D%5Bj%5D\n-%0A            i++\n %0A   \n@@ -795,19 +795,17 @@\n         \n-j--\n+%7D\n %0A       \n@@ -889,130 +889,8 @@\n o%22)%0A\n-    %7D%0A    if c%5B0%5D != c%5B1%5D && c%5B1%5D != c%5B2%5D %7B%0A        fmt.Println(%22nao%22)%0A    %7D%0A    if dp != ds %7B%0A        fmt.Println(%22nao%22)%0A\n     \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-06-22_17-15-42",
+            "content": "@@ -728,32 +728,48 @@\n s+=matriz%5Bi%5D%5Bj%5D%0A\n+            i++%0A\n             j--%0A\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-22_17-15-56",
+            "content": "@@ -657,26 +657,138 @@\n   %7D%0A    \n-%0A    %0A    \n+for i:=range matriz%7B%0A        for j:=range matriz%7B%0A            ds+=matriz%5Bi%5D%5Bj%5D%0A            j--%0A        %7D%0A    %7D%0A    %0A    /*\n if l%5B0%5D \n@@ -840,24 +840,26 @@\n (%22nao%22)%0A    \n+%7D%0A\n     if c%5B0%5D \n@@ -884,36 +884,32 @@\n  c%5B2%5D %7B%0A        \n-    \n fmt.Println(%22nao\n@@ -911,28 +911,26 @@\n (%22nao%22)%0A    \n- \n-   \n+%7D%0A\n     if dp !=\n@@ -939,32 +939,24 @@\n s %7B%0A        \n- \n-       \n fmt.Println(\n@@ -970,93 +970,31 @@\n     \n-        %7D else %7B%0A                fmt.Println(%22sim%22)%0A            %7D%0A        %7D %0A    %7D%0A   \n+%7D*/%0A    fmt.Println(ds)%0A\n %0A%7D%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-06-22_17-18-36",
+            "content": "@@ -661,166 +661,18 @@\n     \n-for i:=range matriz%7B /*diagonal secundaria*/%0A        for j:=range matriz%7B%0A            ds+=matriz%5Bi%5D%5Bj%5D%0A            j--%0A        %7D%0A        i++%0A    %7D%0A    %0A    /*\n+%0A    %0A    \n if l\n@@ -728,26 +728,24 @@\n (%22nao%22)%0A    \n-%7D%0A\n     if c%5B0%5D \n@@ -770,32 +770,36 @@\n  c%5B2%5D %7B%0A        \n+    \n fmt.Println(%22nao\n@@ -801,26 +801,28 @@\n (%22nao%22)%0A    \n+   \n-%7D%0A\n+ \n     if dp !=\n@@ -827,32 +827,40 @@\n != ds %7B%0A        \n+    \n+    \n fmt.Println(%22nao\n@@ -870,31 +870,93 @@\n     \n-%7D*/%0A%0A    fmt.Println(c)%0A\n+        %7D else %7B%0A                fmt.Println(%22sim%22)%0A            %7D%0A        %7D %0A    %7D%0A   \n %0A%7D%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-22_17-43-37",
+            "content": "@@ -1023,14 +1023,14 @@\n Println(\n-l\n+c\n )%0A%0A%7D%0A\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-06-22_17-44-18",
+            "content": "@@ -349,17 +349,17 @@\n         \n-c\n+l\n %5Bj%5D+=mat\n@@ -459,17 +459,17 @@\n         \n-l\n+c\n %5Bi%5D+=mat\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-06-22_17-45-04",
+            "content": "@@ -1023,14 +1023,14 @@\n Println(\n-c\n+l\n )%0A%0A%7D%0A\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-06-22_17-45-33",
+            "content": "@@ -664,37 +664,93 @@\n  for i:=\n-0; i%3C3; i++%7B%0A\n+range matriz%7B /*diagonal secundaria*/%0A        for j:=range matriz%7B%0A  \n         \n ds+=matr\n@@ -741,16 +741,18 @@\n         \n+  \n ds+=matr\n@@ -761,14 +761,48 @@\n %5Bi%5D%5B\n-3-1-i%5D\n+j%5D%0A            j--%0A        %7D%0A        i++\n %0A   \n@@ -1023,15 +1023,14 @@\n Println(\n-ds\n+c\n )%0A%0A%7D%0A\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-06-22_18-11-19",
+            "content": "@@ -721,16 +721,18 @@\n    %0A    \n+/*\n if l%5B0%5D \n@@ -915,21 +915,16 @@\n    %7D\n-%0A    \n+*/\n %0A%0A    \n-//\n fmt.\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-22_18-12-06",
+            "content": "@@ -791,13 +791,12 @@\n    %7D\n- else\n+%0A   \n  if \n@@ -910,16 +910,20 @@\n )%0A    %7D%0A\n+    \n %0A%0A    //\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-06-22_18-12-14",
+            "content": "@@ -855,29 +855,28 @@\n %22nao%22)%0A    %7D\n- else\n+%0A   \n  if dp != ds\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-22_18-12-22",
+            "content": "@@ -915,56 +915,10 @@\n    %7D\n- else %7B%0A        fmt.Println(%22sim%22)%0A    %7D   %0A    \n+%0A%0A\n %0A   \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-22_18-12-50",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nums int\n    var matriz[3][3]int\n\n    for i:=range matriz{\n        for j:= range matriz{\n            fmt.Scan(&nums)\n            matriz[i][j]=nums\n        }\n    }\n        var l[3]int\n        var c[3]int\n        dp:=0\n        ds:=0\n\n    for i:=0; i<3; i++{ /*colunas*/\n        for j:=0; j<3; j++{\n            c[j]+=matriz[i][j]\n        }\n    }\n    for j:=0; j<3; j++{ /*linhas*/\n        for i:=0; i<3; i++{\n            l[i]+=matriz[i][j]\n        }\n    }\n    for i:=0; i<3; i++{ /*diagonal principal*/\n        for j:=0; j<3; j++{\n            if i==j{\n                dp+=matriz[i][j]\n            }\n        }\n    }\n    for i:=0; i<3; i++{\n        ds+=matriz[i][3-1-i]\n    }\n    \n    if l[0] != l[1] && l[1] != l[2] {\n        fmt.Println(\"nao\")\n    } else if c[0] != c[1] && c[1] != c[2] {\n        fmt.Println(\"nao\")\n    } else if dp != ds {\n        fmt.Println(\"nao\")\n    } else {\n        fmt.Println(\"sim\")\n    }   \n    \n    //fmt.Println(ds)\n\n}\n",
+            "lines": "51"
+        }
+    ]
+}

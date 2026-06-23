@@ -2,8 +2,53 @@
     "patches": [
         {
             "label": "2026-06-20_04-42-45",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, nums int\n     fmt.Scan(&n1, &n2)\n    var matriz[][]int=make([][]int, n1, n2)\n\n    for i:=0; i<n1; i++{\n        for j:=0; j<n2; j++{\n            fmt.Scan(&nums)\n        }\n    }\n\n    fmt.Println(matriz)\n}\n",
+            "content": "@@ -45,39 +45,92 @@\n var \n-bingo%5B4%5D%5B4%5Dint%0A    var nums int\n+n1, n2, nums int%0A     fmt.Scan(&n1, &n2)%0A    var matriz%5B%5D%5B%5Dint=make(%5B%5D%5B%5Dint, n1, n2)\n %0A%0A  \n@@ -147,15 +147,15 @@\n ; i%3C\n-4\n+n1\n ; i++\n- \n %7B%0A  \n@@ -176,15 +176,15 @@\n ; j%3C\n-4\n+n2\n ; j++\n- \n %7B%0A  \n@@ -213,37 +213,8 @@\n ms)%0A\n-            bingo%5Bi%5D%5Bj%5D=nums%0A\n     \n@@ -246,14 +246,14 @@\n tln(\n-bingo)%0A\n+matriz)\n %0A%7D%0A\n",
             "lines": "15"
+        },
+        {
+            "label": "2026-06-20_14-40-13",
+            "content": "@@ -185,32 +185,41 @@\n j%5D=nums%0A        \n+%7D%0A    %7D%0A%0A\n     fmt.Println(\n@@ -229,25 +229,7 @@\n go)%0A\n-        %7D%0A    %7D%0A%0A%0A\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-20_14-41-10",
+            "content": "@@ -193,21 +193,8 @@\n     \n-    %7D%0A    %7D%0A%0A\n     \n@@ -216,11 +216,29 @@\n (bingo)%0A\n+        %7D%0A    %7D%0A%0A%0A\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-20_14-41-20",
+            "content": "@@ -223,27 +223,11 @@\n rint\n-f(%22%25d %25d %25d %25d%5Cn%22, \n+ln(\n bing\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-20_14-41-47",
+            "content": "@@ -225,16 +225,24 @@\n ntf(%22%25d \n+%25d %25d %25d\n %5Cn%22, bin\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-20_14-41-58",
+            "content": "@@ -223,11 +223,19 @@\n rint\n-ln(\n+f(%22%25d %5Cn%22, \n bing\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-20_14-42-13",
+            "content": "@@ -41,16 +41,17 @@\n     \n+var \n bingo\n-:= \n %5B4%5D%5B\n@@ -59,240 +59,26 @@\n %5Dint\n-%7B%0A        %7B1, 9, 27, 23%7D,%0A        %7B34, 20, 37, 47%7D,%0A        %7B30, 87, 55, 69%7D,%0A        %7B13, 60, 99, 66%7D,%0A    %7D%0A%0A    var chutes%5B6%5Dint%0A    nums:=0%0A    c:=0%0A%0A    for i:= range chutes%7B%0A        fmt.Scan(&nums)%0A        chutes%5Bi%5D=nums%0A    %7D\n+%0A    var nums int%0A\n %0A   \n@@ -94,14 +94,15 @@\n ; i%3C\n-6\n+4\n ; i++\n+ \n %7B%0A  \n@@ -123,14 +123,15 @@\n ; j%3C\n-6\n+4\n ; j++\n+ \n %7B%0A  \n@@ -144,68 +144,52 @@\n     \n-if chutes%5Bi%5D==bingo%5Bi%5D%5Bj%5D%7B%0A                c++%0A            %7D\n+fmt.Scan(&nums)%0A            bingo%5Bi%5D%5Bj%5D=nums\n %0A   \n@@ -226,9 +226,14 @@\n tln(\n-c)\n+bingo)%0A\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-20_14-51-44",
+            "content": "@@ -303,17 +303,17 @@\n i:=0; i%3C\n-4\n+6\n ; i++%7B%0A \n@@ -331,17 +331,17 @@\n j:=0; j%3C\n-4\n+6\n ; j++%7B%0A \n@@ -350,16 +350,77 @@\n         \n+ if chutes%5Bi%5D==bingo%5Bi%5D%5Bj%5D%7B%0A                c++%0A            %7D\n %0A       \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-20_14-53-15",
+            "content": "@@ -291,62 +291,8 @@\n   %7D%0A\n-    for _,  numSorteado:= range chutes %7B%0A        %0A    \n     \n@@ -319,20 +319,16 @@\n         \n- \n-   \n for j:=0\n@@ -354,97 +354,8 @@\n     \n-     if bingo%5Bi%5D%5Bj%5D==numSorteado%7B%0A                    c++%0A                %7D%0A            %7D\n %0A   \n@@ -362,24 +362,25 @@\n      %7D%0A    %7D\n+%0A\n %0A        fmt\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-20_15-04-18",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    bingo:= [4][4]int{\n        {1, 9, 27, 23},\n        {34, 20, 37, 47},\n        {30, 87, 55, 69},\n        {13, 60, 99, 66},\n    }\n\n    var chutes[6]int\n    nums:=0\n    c:=0\n\n    for i:= range chutes{\n        fmt.Scan(&nums)\n        chutes[i]=nums\n    }\n    for _,  numSorteado:= range chutes {\n        \n        for i:=0; i<4; i++{\n            for j:=0; j<4; j++{\n                if bingo[i][j]==numSorteado{\n                    c++\n                }\n            }\n        }\n    }\n        fmt.Println(c)\n}\n",
+            "lines": "30"
         }
     ]
 }

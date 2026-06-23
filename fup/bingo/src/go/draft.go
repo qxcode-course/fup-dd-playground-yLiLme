@@ -1,15 +1,30 @@
 package main
 import "fmt"
 func main() {
-    var n1, n2, nums int
-     fmt.Scan(&n1, &n2)
-    var matriz[][]int=make([][]int, n1, n2)
-
-    for i:=0; i<n1; i++{
-        for j:=0; j<n2; j++{
-            fmt.Scan(&nums)
-        }
+    bingo:= [4][4]int{
+        {1, 9, 27, 23},
+        {34, 20, 37, 47},
+        {30, 87, 55, 69},
+        {13, 60, 99, 66},
     }
 
-    fmt.Println(matriz)
+    var chutes[6]int
+    nums:=0
+    c:=0
+
+    for i:= range chutes{
+        fmt.Scan(&nums)
+        chutes[i]=nums
+    }
+
+    for _,  numSorteado:= range chutes {
+        for i:=0; i<4; i++{
+            for j:=0; j<4; j++{
+                if bingo[i][j]==numSorteado{
+                    c++
+                }
+            }
+        }
+    }
+        fmt.Println(c)
 }

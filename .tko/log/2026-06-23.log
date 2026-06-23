@@ -1,0 +1,22 @@
+2026-06-23 00:00:44, MOVE, v:1, k:fup@soldados, mode:BACK
+2026-06-23 00:01:19, MOVE, v:1, k:fup@soldados, mode:PICK
+2026-06-23 00:01:20, MOVE, v:1, k:fup@soldados, mode:BACK
+2026-06-23 00:01:29, MOVE, v:1, k:fup@soldados, mode:PICK
+2026-06-23 00:04:27, MOVE, v:1, k:fup@soldados, mode:BACK
+2026-06-23 00:04:35, MOVE, v:1, k:fup@boletim, mode:PICK
+2026-06-23 00:04:37, EXEC, v:1, k:fup@boletim, mode:FULL, rate:100
+2026-06-23 00:04:38, MOVE, v:1, k:fup@boletim, mode:BACK
+2026-06-23 00:04:40, MOVE, v:1, k:fup@soldados, mode:PICK
+2026-06-23 00:04:25, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-06-23 00:04:37, MOVE, v:1, k:fup@boletim, mode:EDIT
+2026-06-23 00:09:13, EXEC, v:1, k:fup@soldados, mode:FULL, rate:0, size:26
+2026-06-23 00:09:12, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-06-23 00:09:13, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-06-23 00:11:34, EXEC, v:1, k:fup@soldados, mode:FULL, rate:0, size:25
+2026-06-23 00:13:34, EXEC, v:1, k:fup@soldados, mode:FULL, rate:0, size:25
+2026-06-23 00:13:42, EXEC, v:1, k:fup@soldados, mode:FULL, rate:100, size:25
+2026-06-23 00:13:44, MOVE, v:1, k:fup@soldados, mode:BACK
+2026-06-23 00:13:48, SELF, v:1, k:fup@soldados, self:1, rate:100
+2026-06-23 00:13:53, MOVE, v:1, k:fup@simetrica, mode:PICK
+2026-06-23 00:13:42, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-06-23 00:13:42, MOVE, v:1, k:fup@soldados, mode:EDIT
