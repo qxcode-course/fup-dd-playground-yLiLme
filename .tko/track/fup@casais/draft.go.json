@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-05-23_03-40-19",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nvet,  ani, ct int\n    fmt.Scan(&nvet)\n    var vet [] int = make([]int, nvet)\n\n    for i:=0; i<nvet; i++ {\n        fmt.Scan(&ani)\n        vet[i]=ani\n    }\n    for i:= range vet {\n        if vet[i]==ani>0 && vet[i]==ani<0 {\n            ct+=1\n        }\n    }\n    fmt.Println(ct)\n}\n",
+            "content": "@@ -63,10 +63,8 @@\n  int\n-64\n %0A   \n@@ -231,16 +231,47 @@\n      if \n+vet%5Bi%5D==ani%3E0 && vet%5Bi%5D==ani%3C0 \n %7B%0A      \n",
             "lines": "18"
+        },
+        {
+            "label": "2026-06-23_22-17-44",
+            "content": "@@ -46,24 +46,32 @@\n ar n\n+vet,  ani\n , c\n+t\n  int\n-%0A  \n+64%0A\n     \n-  \n fmt.\n@@ -77,16 +77,19 @@\n .Scan(&n\n+vet\n )%0A    va\n@@ -94,21 +94,21 @@\n var \n-animais\n+vet \n %5B%5D\n+ \n int\n-=\n+ = \n make\n@@ -116,16 +116,19 @@\n %5B%5Dint, n\n+vet\n )%0A%0A    f\n@@ -143,13 +143,17 @@\n  i%3Cn\n+vet\n ; i++\n+ \n %7B%0A  \n@@ -171,19 +171,32 @@\n can(\n+&\n ani\n-mais%5Bi%5D)\n+)%0A        vet%5Bi%5D=ani\n %0A   \n@@ -213,21 +213,18 @@\n  i:=\n+ \n range \n-animais\n+vet\n  %7B%0A \n@@ -237,37 +237,8 @@\n  if \n-animais%5Bi%5D+(-animais%5Bi+1%5D)==0\n %7B%0A  \n@@ -248,18 +248,20 @@\n        c\n-++\n+t+=1\n %0A       \n@@ -269,20 +269,16 @@\n %7D%0A    %7D%0A\n-    \n     fmt.\n@@ -286,12 +286,13 @@\n rintln(c\n+t\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_22-23-35",
+            "content": "@@ -216,16 +216,18 @@\n mais%5Bi%5D+\n+(-\n animais%5B\n@@ -230,16 +230,17 @@\n ais%5Bi+1%5D\n+)\n ==0%7B%0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-23_22-25-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, c int\n        fmt.Scan(&n)\n    var animais[]int=make([]int, n)\n\n    for i:=0; i<n; i++{\n        fmt.Scan(animais[i])\n    }\n    for i:=range animais {\n        if animais[i]+animais[i+1]==0{\n            c++\n        }\n    }\n        fmt.Println(c)\n}\n",
+            "lines": "17"
         }
     ]
 }

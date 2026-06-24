@@ -145,3 +145,41 @@
 2026-06-23 22:15:21, MOVE, v:1, k:fup@troco, mode:PICK
 2026-06-23 22:15:46, MOVE, v:1, k:fup@troco, mode:BACK
 2026-06-23 22:15:50, MOVE, v:1, k:fup@casais, mode:PICK
+2026-06-23 22:14:57, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-23 22:15:03, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-23 22:17:44, EXEC, v:1, k:fup@casais, mode:FULL, size:18, fail:COMP
+2026-06-23 22:22:09, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 22:23:35, EXEC, v:1, k:fup@casais, mode:FULL, rate:0, size:17
+2026-06-23 22:25:30, EXEC, v:1, k:fup@casais, mode:FULL, rate:0, size:17
+2026-06-23 22:25:27, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 22:25:29, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-06-23 22:47:47, MOVE, v:1, k:fup@casais, mode:BACK
+2026-06-23 22:49:19, MOVE, v:1, k:fup@codigo, mode:PICK
+2026-06-23 22:57:04, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-23 23:01:18, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-23 23:04:08, EXEC, v:1, k:fup@codigo, mode:FULL, rate:13, size:21
+2026-06-23 23:05:46, EXEC, v:1, k:fup@codigo, mode:FULL, rate:13, size:23
+2026-06-23 23:07:09, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-23 23:05:45, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-23 23:08:31, EXEC, v:1, k:fup@codigo, mode:FULL, rate:0, size:23
+2026-06-23 23:10:15, EXEC, v:1, k:fup@codigo, mode:FULL, rate:0, size:23
+2026-06-23 23:11:54, EXEC, v:1, k:fup@codigo, mode:FULL, rate:20, size:23
+2026-06-23 23:12:11, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-23 23:11:53, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-23 23:12:15, EXEC, v:1, k:fup@codigo, mode:FULL, rate:20, size:21
+2026-06-23 23:12:33, EXEC, v:1, k:fup@codigo, mode:FULL, rate:40, size:19
+2026-06-23 23:12:57, EXEC, v:1, k:fup@codigo, mode:FULL, rate:100, size:19
+2026-06-23 23:12:59, MOVE, v:1, k:fup@codigo, mode:BACK
+2026-06-23 23:13:04, SELF, v:1, k:fup@codigo, self:1, rate:100
+2026-06-23 23:13:12, MOVE, v:1, k:fup@minado, mode:PICK
+2026-06-23 23:14:28, MOVE, v:1, k:fup@minado, mode:BACK
+2026-06-23 23:12:56, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-23 23:12:53, MOVE, v:1, k:fup@codigo, mode:EDIT
+2026-06-23 23:17:59, MOVE, v:1, k:fup@primo_rec, mode:PICK
+2026-06-23 23:34:41, MOVE, v:1, k:fup@primo_rec, mode:BACK
+2026-06-23 23:34:52, MOVE, v:1, k:fup@primo_rec, mode:PICK
+2026-06-23 23:36:08, MOVE, v:1, k:fup@primo_rec, mode:BACK
+2026-06-23 23:36:36, MOVE, v:1, k:fup@primo_rec, mode:PICK
+2026-06-23 23:35:19, MOVE, v:1, k:fup@primo_rec, mode:EDIT
+2026-06-23 23:38:40, MOVE, v:1, k:fup@primo_rec, mode:BACK
+2026-06-23 23:47:10, MOVE, v:1, k:fup@primo_rec, mode:PICK

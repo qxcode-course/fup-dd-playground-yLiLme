@@ -1,18 +1,17 @@
 package main
 import "fmt"
 func main() {
-    var nvet,  ani, ct int64
-    fmt.Scan(&nvet)
-    var vet [] int = make([]int, nvet)
+    var n, c int
+        fmt.Scan(&n)
+    var animais[]int=make([]int, n)
 
-    for i:=0; i<nvet; i++ {
-        fmt.Scan(&ani)
-        vet[i]=ani
+    for i:=0; i<n; i++{
+        fmt.Scan(animais[i])
     }
-    for i:= range vet {
-        if {
-            ct+=1
+    for i:=range animais {
+        if animais[i]+animais[i+1]==0{
+            c++
         }
     }
-    fmt.Println(ct)
+        fmt.Println(c)
 }
