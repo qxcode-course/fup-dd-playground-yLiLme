@@ -1,0 +1,40 @@
+2026-06-24 12:32:54, MOVE, v:1, k:fup@primo_rec, mode:EDIT
+2026-06-24 12:40:31, MOVE, v:1, k:fup@primo_rec, mode:PICK
+2026-06-24 12:40:38, EXEC, v:1, k:fup@primo_rec, mode:FULL, rate:0, size:23
+2026-06-24 12:40:28, MOVE, v:1, k:fup@primo_rec, mode:EDIT
+2026-06-24 12:40:37, MOVE, v:1, k:fup@primo_rec, mode:EDIT
+2026-06-24 12:41:15, EXEC, v:1, k:fup@primo_rec, mode:FULL, rate:50, size:23
+2026-06-24 12:41:56, EXEC, v:1, k:fup@primo_rec, mode:FULL, rate:50, size:23
+2026-06-24 12:42:22, EXEC, v:1, k:fup@primo_rec, mode:FULL, rate:50, size:23
+2026-06-24 12:45:20, EXEC, v:1, k:fup@primo_rec, mode:FULL, rate:0, size:24
+2026-06-24 12:45:30, MOVE, v:1, k:fup@primo_rec, mode:EDIT
+2026-06-24 12:45:13, MOVE, v:1, k:fup@primo_rec, mode:EDIT
+2026-06-24 12:50:47, MOVE, v:1, k:fup@primo_rec, mode:EDIT
+2026-06-24 12:51:14, EXEC, v:1, k:fup@primo_rec, mode:FULL, rate:50, size:25
+2026-06-24 12:52:02, EXEC, v:1, k:fup@primo_rec, mode:FULL, rate:16, size:25
+2026-06-24 12:53:19, EXEC, v:1, k:fup@primo_rec, mode:FULL, rate:50, size:25
+2026-06-24 12:53:56, EXEC, v:1, k:fup@primo_rec, mode:FULL, rate:16, size:25
+2026-06-24 12:54:04, EXEC, v:1, k:fup@primo_rec, mode:FULL, rate:100, size:24
+2026-06-24 12:54:05, MOVE, v:1, k:fup@primo_rec, mode:BACK
+2026-06-24 12:54:09, SELF, v:1, k:fup@primo_rec, self:1, rate:100
+2026-06-24 12:54:02, MOVE, v:1, k:fup@primo_rec, mode:EDIT
+2026-06-24 12:54:04, MOVE, v:1, k:fup@primo_rec, mode:EDIT
+2026-06-24 13:06:49, MOVE, v:1, k:fup@primo_rec, mode:PICK
+2026-06-24 13:06:54, MOVE, v:1, k:fup@primo_rec, mode:BACK
+2026-06-24 13:07:26, MOVE, v:1, k:fup@sopa_dict, mode:PICK
+2026-06-24 13:15:52, MOVE, v:1, k:fup@sopa_dict, mode:EDIT
+2026-06-24 13:19:00, MOVE, v:1, k:fup@sopa_dict, mode:PICK
+2026-06-24 13:21:45, MOVE, v:1, k:fup@sopa_dict, mode:PICK
+2026-06-24 13:22:57, MOVE, v:1, k:fup@spok_rec, mode:PICK
+2026-06-24 13:23:03, MOVE, v:1, k:fup@spok_rec, mode:BACK
+2026-06-24 13:23:23, MOVE, v:1, k:fup@spok_rec, mode:PICK
+2026-06-24 13:25:18, MOVE, v:1, k:fup@spok_rec, mode:EDIT
+2026-06-24 13:35:27, MOVE, v:1, k:fup@spok_rec, mode:BACK
+2026-06-24 13:36:17, MOVE, v:1, k:fup@antimateria, mode:PICK
+2026-06-24 13:38:15, MOVE, v:1, k:fup@antimateria, mode:BACK
+2026-06-24 13:38:20, MOVE, v:1, k:fup@krueguer, mode:PICK
+2026-06-24 13:41:25, MOVE, v:1, k:fup@krueguer, mode:EDIT
+2026-06-24 13:46:40, MOVE, v:1, k:fup@krueguer, mode:BACK
+2026-06-24 13:43:38, MOVE, v:1, k:fup@krueguer, mode:EDIT
+2026-06-24 13:48:52, MOVE, v:1, k:fup@krueguer, mode:PICK
+2026-06-24 13:52:04, MOVE, v:1, k:fup@krueguer, mode:EDIT
