@@ -62,8 +62,33 @@
         },
         {
             "label": "2026-06-18_17-36-28",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtdtaz, tazos int\n    fmt.Scan(&qtdtaz)\n    var taz[]int= make([]int, qtdtaz)\n\n    for i:=1; i<qtdtaz; i++ {\n        fmt.Scan(&tazos)\n        taz[tazos]++\n    }\n    \n    var rep[] int\n\n    for i:=0; i<qtdtaz; i++{\n        if taz[i]>1{\n            rep=append(rep, i)\n        }\n    }\n\n    fmt.Println(rep)\n\n}\n",
+            "content": "@@ -327,28 +327,8 @@\n   %7D%0A\n-    fmt.Printf(%22%5B %22)\n %0A   \n@@ -349,29 +349,7 @@\n ep)%0A\n-    fmt.Printf(%22 %5D%5Cn%22)\n %0A%7D%0A\n",
             "lines": "23"
+        },
+        {
+            "label": "2026-06-23_22-03-35",
+            "content": "@@ -23,209 +23,8 @@\n mt%22%0A\n-%0Afunc formata (vet %5B%5Dint) %7B%0A    if len(vet)==0%7B%0A        fmt.Println(%22%5B %5D%22)%0A    %7D else %7B%0A%0A    fmt.Printf(%22%5B %22)%0A    for _, v:=range vet %7B%0A        fmt.Printf(%22%25d %22, v)%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)%0A    %7D%0A%7D%0A%0A\n func\n@@ -331,25 +331,67 @@\n     \n-%0A    formata(rep)%0A\n+fmt.Printf(%22%5B %22)%0A    fmt.Println(rep)%0A    fmt.Printf(%22 %5D%5Cn%22)\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-23_22-04-23",
+            "content": "@@ -91,18 +91,16 @@\n tln(%22%5B %5D\n-%5Cn\n %22)%0A    %7D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-23_22-04-34",
+            "content": "@@ -91,16 +91,18 @@\n tln(%22%5B %5D\n+%5Cn\n %22)%0A    %7D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-23_22-04-47",
+            "content": "@@ -248,16 +248,23 @@\n r qtdtaz\n+, tazos\n  int%0A   \n@@ -332,17 +332,17 @@\n  for i:=\n-0\n+1\n ; i%3Cqtdt\n@@ -376,156 +376,32 @@\n &taz\n-%5Bi%5D\n+os\n )%0A    \n-%7D%0A    %0A    f:=make(map%5Bint%5Dint)%0A    mrep:=0%0A%0A    for _, v:=range taz %7B%0A        f%5Bv%5D++%0A        if f%5Bv%5D%3Emrep%7B%0A            mrep=f%5Bv%5D%0A        %7D\n+    taz%5Btazos%5D++\n %0A   \n@@ -420,14 +420,14 @@\n var \n-win \n+rep\n %5B%5D\n+ \n int%0A\n@@ -439,236 +439,48 @@\n for \n-_, v:=range taz%7B%0A        if f%5Bv%5D==mrep%7B%0A            add:=false%0A            for _, w:=range win %7B%0A                if w==v%7B%0A                    add=true%0A                    break%0A                %7D%0A            %7D%0A            if !add\n+i:=0; i%3Cqtdtaz; i++%7B%0A        if taz%5Bi%5D%3E1\n %7B%0A  \n@@ -493,23 +493,19 @@\n     \n-    win\n+rep\n =append(\n win,\n@@ -504,14 +504,14 @@\n end(\n-win, v\n+rep, i\n )%0A  \n@@ -516,26 +516,18 @@\n         \n-    %7D%0A    \n+%7D%0A\n     %7D%0A  \n@@ -528,22 +528,17 @@\n   %7D%0A    \n-%7D%0A    \n+%0A\n     form\n@@ -545,11 +545,12 @@\n ata(\n-win)\n+rep)%0A\n %0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-23_22-15-04",
+            "content": "package main\nimport \"fmt\"\n\nfunc formata (vet []int) {\n    if len(vet)==0{\n        fmt.Println(\"[ ]\")\n    } else {\n\n    fmt.Printf(\"[ \")\n    for _, v:=range vet {\n        fmt.Printf(\"%d \", v)\n    }\n    fmt.Print(\"]\\n\")\n    }\n}\n\nfunc main() {\n    var qtdtaz int\n    fmt.Scan(&qtdtaz)\n    var taz[]int= make([]int, qtdtaz)\n\n    for i:=0; i<qtdtaz; i++ {\n        fmt.Scan(&taz[i])\n    }\n    \n    f:=make(map[int]int)\n    mrep:=0\n\n    for _, v:=range taz {\n        f[v]++\n        if f[v]>mrep{\n            mrep=f[v]\n        }\n    }\n    \n    var win []int\n\n    for _, v:=range taz{\n        if f[v]==mrep{\n            add:=false\n            for _, w:=range win {\n                if w==v{\n                    add=true\n                    break\n                }\n            }\n            if !add{\n                win=append(win, v)\n            }\n        }\n    }\n        formata(win)\n}\n",
+            "lines": "53"
         }
     ]
 }

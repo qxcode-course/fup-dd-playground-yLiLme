@@ -77,8 +77,23 @@
         },
         {
             "label": "2026-06-19_01-00-30",
-            "content": "package main\nimport (\n    \"fmt\"\n)\nfunc main() {\n    var talbu, qtdtem, cards int\n    fmt.Scan(&talbu)\n    var albu[]int=make([]int, talbu+1)\n    fmt.Scan(&qtdtem)\n\n    for i:=0; i<qtdtem; i++{\n        fmt.Scan(&cards)\n        albu[cards]++\n    }\n\n    var rep[] int\n    var f[] int \n\n    for i:=1; i<talbu; i++{\n        if albu[i]>1{\n            rep=append(rep, i)\n        }\n    }\n    \n    for i:=1; i<talbu; i++ {\n        if albu[i]==0{\n            f=append(f, i)\n        }\n    }\n    \n    fmt.Println(rep)\n    fmt.Println(f)\n}\n",
+            "content": "@@ -31,194 +31,8 @@\n %22%0A)%0A\n-%0Afunc formata (vet %5B%5Dint) %7B%0A    if len(vet)==0%7B%0A        fmt.Println(%22%5B %5D%22)%0A    %7D%0A%0A    fmt.Printf(%22%5B %22)%0A    for _, v:=range vet %7B%0A        fmt.Printf(%22%25d %22, v)%0A    %7D%0A    fmt.Print(%22%5D%22)%0A%7D%0A%0A\n func\n@@ -95,17 +95,16 @@\n &talbu)%0A\n-%0A\n     var \n@@ -284,33 +284,32 @@\n     for i:=1; i%3C\n-=\n talbu; i++%7B%0A    \n@@ -330,92 +330,8 @@\n %3E1%7B%0A\n-            VezesRep:=albu%5Bi%5D-1%0A                for j:=0; j%3CVezesRep; j++ %7B%0A        \n     \n@@ -361,29 +361,8 @@\n  i)%0A\n-                %7D   %0A\n     \n@@ -394,17 +394,16 @@\n i:=1; i%3C\n-=\n talbu; i\n@@ -483,22 +483,26 @@\n   %0A    f\n-ormata\n+mt.Println\n (rep)%0A  \n@@ -508,14 +508,18 @@\n    f\n-ormata\n+mt.Println\n (f)%0A\n",
             "lines": "33"
+        },
+        {
+            "label": "2026-06-23_21-51-57",
+            "content": "@@ -211,10 +211,8 @@\n t(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-23_21-52-34",
+            "content": "@@ -111,15 +111,8 @@\n    %7D\n- else %7B\n %0A%0A  \n@@ -212,22 +212,16 @@\n (%22%5D%5Cn%22)%0A\n-    %7D%0A\n %7D%0A%0Afunc \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-23_21-55-46",
+            "content": "package main\nimport (\n    \"fmt\"\n)\n\nfunc formata (vet []int) {\n    if len(vet)==0{\n        fmt.Println(\"[ ]\")\n    } else {\n\n    fmt.Printf(\"[ \")\n    for _, v:=range vet {\n        fmt.Printf(\"%d \", v)\n    }\n    fmt.Print(\"]\\n\")\n    }\n}\n\nfunc main() {\n    var talbu, qtdtem, cards int\n    fmt.Scan(&talbu)\n\n    var albu[]int=make([]int, talbu+1)\n    fmt.Scan(&qtdtem)\n\n    for i:=0; i<qtdtem; i++{\n        fmt.Scan(&cards)\n        albu[cards]++\n    }\n\n    var rep[] int\n    var f[] int \n\n    for i:=1; i<=talbu; i++{\n        if albu[i]>1{\n            VezesRep:=albu[i]-1\n                for j:=0; j<VezesRep; j++ {\n                    rep=append(rep, i)\n                }   \n        }\n    }\n    \n    for i:=1; i<=talbu; i++ {\n        if albu[i]==0{\n            f=append(f, i)\n        }\n    }\n    \n    formata(rep)\n    formata(f)\n}\n",
+            "lines": "51"
         }
     ]
 }
