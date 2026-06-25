@@ -1,20 +1,30 @@
-package main
-import "fmt"
+    package main
+    import "fmt"
 
-func fibonacci (n int) int {
-    if n==0 {
-        return 0
-    } 
-    if n==1{
-        return 1
-    } 
-        return fibonacci(n-1)+fibonacci(n-2)       
-}
+    func fibonacci (n int, cache map[int] int) int {
+            valor , existe := cache[n]
+        if existe { 
+            return valor
+        }
+        if n == 0 {
+            return 0
+        }
+        if n == 1 {
+            return 1
+        }
+        resultado:=fibonacci(n-1, cache)+fibonacci(n-2, cache)
+        cache[n]=resultado
 
-func main() {
-    var n int
+        return resultado
 
-    fmt.Scan(&n)
-    fmt.Println(fibonacci(n))
+    }
 
-}
+    func main() {
+        var n int
+
+        cache:=make(map[int]int)
+
+        fmt.Scan(&n)
+        fmt.Println(fibonacci(n, cache))
+
+    }

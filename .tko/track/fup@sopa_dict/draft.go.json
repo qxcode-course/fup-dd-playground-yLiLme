@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-25_08-33-37",
+            "content": "    package main\n    import \"fmt\"\n\n    func fibonacci (n int, cache map[int] int) int {\n            valor , existe := cache[n]\n        if existe { \n            return valor\n        }\n        if n == 0 {\n            return 0\n        }\n        if n == 1 {\n            return 1\n        }\n        resultado:=fibonacci(n-1, cache)+fibonacci(n-2, cache)\n        cache[n]=resultado\n\n        return resultado\n\n    }\n\n    func main() {\n        var n int\n\n        cache:=make(map[int]int)\n\n        fmt.Scan(&n)\n        fmt.Println(fibonacci(n, cache))\n\n    }\n",
+            "lines": "30"
+        }
+    ]
+}
