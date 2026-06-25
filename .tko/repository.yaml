@@ -18,10 +18,9 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- fup@string
+expanded: []
 flags:
-  inbox: all
+  inbox: inbox
   panel: graph
   task_graph_mode: executions
   show_time: 'true'
@@ -29,5 +28,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@string
-selected_index: 6
+selected: fup@if2
+selected_index: 0
