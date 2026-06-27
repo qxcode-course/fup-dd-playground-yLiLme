@@ -19,7 +19,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@rec
+- fup@if2
 flags:
   inbox: all
   panel: skills
@@ -29,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@sopa_dict
-selected_index: 12
+selected: fup@goiabas
+selected_index: 11

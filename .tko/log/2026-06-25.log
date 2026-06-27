@@ -8,3 +8,23 @@
 2026-06-25 08:32:57, MOVE, v:1, k:fup@sopa_dict, mode:EDIT
 2026-06-25 08:33:35, MOVE, v:1, k:fup@sopa_dict, mode:EDIT
 2026-06-25 08:39:09, SELF, v:1, k:fup@sopa_dict, self:1, rate:100, study:44
+2026-06-25 08:53:19, MOVE, v:1, k:fup@hanoi, mode:PICK
+2026-06-25 08:55:01, MOVE, v:1, k:fup@hanoi, mode:BACK
+2026-06-25 08:55:04, MOVE, v:1, k:fup@fatores_rec, mode:PICK
+2026-06-25 08:57:54, MOVE, v:1, k:fup@fatores_rec, mode:BACK
+2026-06-25 08:58:28, MOVE, v:1, k:fup@fatores_rec, mode:PICK
+2026-06-25 08:58:39, EXEC, v:1, k:fup@fatores_rec, mode:FULL, size:11, fail:COMP
+2026-06-25 08:58:41, MOVE, v:1, k:fup@fatores_rec, mode:BACK
+2026-06-25 08:59:15, MOVE, v:1, k:fup@fatores_rec, mode:PICK
+2026-06-25 09:01:37, MOVE, v:1, k:fup@fatores_rec, mode:EDIT
+2026-06-25 09:08:59, MOVE, v:1, k:fup@fatores_rec, mode:EDIT
+2026-06-25 09:09:27, MOVE, v:1, k:fup@fatores_rec, mode:EDIT
+2026-06-25 09:21:43, MOVE, v:1, k:fup@fatores_rec, mode:EDIT
+2026-06-25 09:28:59, MOVE, v:1, k:fup@fatores_rec, mode:EDIT
+2026-06-25 09:34:08, MOVE, v:1, k:fup@fatores_rec, mode:EDIT
+2026-06-25 09:36:49, MOVE, v:1, k:fup@fatores_rec, mode:EDIT
+2026-06-25 09:44:09, MOVE, v:1, k:fup@fatores_rec, mode:EDIT
+2026-06-25 09:49:08, MOVE, v:1, k:fup@fatores_rec, mode:EDIT
+2026-06-25 09:49:27, EXEC, v:1, k:fup@fatores_rec, mode:FULL, rate:0, size:33
+2026-06-25 09:49:27, MOVE, v:1, k:fup@fatores_rec, mode:BACK
+2026-06-25 09:50:20, SELF, v:1, k:fup@sopa_dict, self:1, rate:100, study:60

@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-06-24_15-08-57",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,114 +41,35 @@\n     \n-var c, a int%0A%0A    fmt.Scan(&c, &a)%0A        capM:=c-1%0A%0A    if capM%25c==0 %7B%0A        fmt.Println(capM/c)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-27_16-12-40",
+            "content": "@@ -103,17 +103,17 @@\n if capM%25\n-a\n+c\n ==0 %7B%0A  \n@@ -135,17 +135,17 @@\n ln(capM/\n-a\n+c\n )%0A    %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-27_16-12-58",
+            "content": "@@ -102,14 +102,14 @@\n  if \n-a%25\n capM\n+%25a\n ==0 \n@@ -134,14 +134,14 @@\n tln(\n-a/\n capM\n+/a\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-27_16-13-27",
+            "content": "@@ -147,66 +147,8 @@\n    %7D\n- else if a%25capM!=0 %7B%0A        fmt.Println((a/capM)+1)%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-27_16-15-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c, a int\n\n    fmt.Scan(&c, &a)\n        capM:=c-1\n\n    if a%capM==0 {\n        fmt.Println(a/capM)\n    } else if a%capM!=0 {\n        fmt.Println((a/capM)+1)\n    }\n\n}\n",
+            "lines": "15"
         }
     ]
 }

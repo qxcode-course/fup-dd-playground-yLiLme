@@ -1,10 +1,16 @@
 package main
 import "fmt"
 func main() {
-    var c, ban, goi, man int64
+    var c, b, g, m, count int
 
-    fmt.Scan(&c, &ban, &goi, &man)
+    fmt.Scan(&c, &b, &g, &m)
 
-    if 
+    count=b+g+m
+
+    if count%c==0 {
+        fmt.Println(count/c)
+    } else if count%c!=0 {
+        fmt.Println((count/c)+1)
+    } 
 
 }

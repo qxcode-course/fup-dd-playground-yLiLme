@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-25_08-58-39",
+            "content": "@@ -42,489 +42,42 @@\n es (\n-n int, div int, resp map%5Bint%5Dint) int %7B%0A    if n==1%7B%0A        return 1%0A    %7D%0A    if n%25div==0%7B%0A        resp%5Bdiv%5D+=1%0A        return calcFatores(n, div, resp)%0A    %7D%0A    if n%25div!=0%7B%0A        div++%0A        return calcFatores(n, div, resp)%0A    %7D%0A%0A        return calcFatores(n, div, resp)%0A%7D%0A%0Afunc main() %7B%0A    var num int%0A    div:=2%0A    %0A    cache:=make(map%5Bint%5Dint)%0A%0A    fmt.Scan(&num)%0A    calcFatores(num, div, cache)%0A%0A    for i:= range cache %7B%0A        fmt.Printf(%22%25d%5Cn%22, cache%5Bi%5D)%0A    %7D%0A\n+) int %7B%0A%0A    %0A%7D%0A%0Afunc main() %7B%0A    \n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-25_09-49-27",
+            "content": "package main\nimport \"fmt\"\n\nfunc calcFatores (n int, div int, resp map[int]int) int {\n    if n==1{\n        return 1\n    }\n    if n%div==0{\n        resp[div]+=1\n        return calcFatores(n, div, resp)\n    }\n    if n%div!=0{\n        div++\n        return calcFatores(n, div, resp)\n    }\n\n        return calcFatores(n, div, resp)\n}\n\nfunc main() {\n    var num int\n    div:=2\n    \n    cache:=make(map[int]int)\n\n    fmt.Scan(&num)\n    calcFatores(num, div, cache)\n\n    for i:= range cache {\n        fmt.Printf(\"%d\\n\", cache[i])\n    }\n\n}\n",
+            "lines": "33"
+        }
+    ]
+}
