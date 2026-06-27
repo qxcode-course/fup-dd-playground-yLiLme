@@ -32,8 +32,43 @@
         },
         {
             "label": "2026-04-14_17-31-58",
-            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var a, b, i, p int64\n    p=0\n\n    fmt.Scan(&a, &b)\n\n    if a<b {\n        for i=0 ; a<b ; i++ {\n            if a%2==0 {\n                p+=a\n            } \n        } \n        if b%2==0 {\n            p+=b\n        }\n    } else {\n        fmt.Println(\"invalido\")\n    } \n            fmt.Println(p)\n}\n",
+            "content": "@@ -51,14 +51,27 @@\n , b,\n+ i,\n  p int\n+64%0A    p=0\n %0A%0A  \n@@ -89,17 +89,16 @@\n &a, &b)%0A\n- \n %0A    if \n@@ -102,10 +102,9 @@\n if a\n-%3E=\n+%3C\n b %7B%0A\n@@ -116,40 +116,50 @@\n    f\n-mt.Println(%22ivalido%22)%0A    %7D else\n+or i=0 ; a%3Cb ; i++ %7B%0A            if a%252==0\n  %7B%0A \n@@ -169,34 +169,47 @@\n     \n+  \n-for i:=0; i%3C=b; i++ %7B\n+      p+=a%0A            %7D \n %0A    \n+    %7D %0A\n     \n@@ -221,19 +221,15 @@\n f b%25\n-a\n+2\n ==0 %7B%0A\n-    \n     \n@@ -245,29 +245,38 @@\n +=b%0A        \n+%7D%0A\n     %7D\n+ else %7B\n %0A        %7D%0A \n@@ -268,26 +268,59 @@\n e %7B%0A        \n-%7D%0A\n+fmt.Println(%22invalido%22)%0A    %7D %0A    \n         fmt.\n@@ -334,13 +334,6 @@\n (p)%0A\n-    %7D%0A%0A\n %7D%0A\n",
             "lines": "23"
+        },
+        {
+            "label": "2026-06-27_17-33-16",
+            "content": "@@ -114,17 +114,16 @@\n intln(%22i\n-n\n valido%22)\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-27_17-33-29",
+            "content": "@@ -152,17 +152,17 @@\n  for i:=\n-a\n+0\n ; i%3C=b; \n@@ -186,11 +186,11 @@\n  if \n-a%25b\n+b%25a\n ==0 \n@@ -210,17 +210,17 @@\n      p+=\n-a\n+b\n %0A       \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-27_17-34-50",
+            "content": "@@ -188,9 +188,9 @@\n f a%25\n-2\n+b\n ==0 \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-27_17-35-04",
+            "content": "@@ -87,16 +87,17 @@\n    if a%3E\n+=\n b %7B%0A    \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-27_17-35-31",
+            "content": "@@ -151,17 +151,17 @@\n  for i:=\n-0\n+a\n ; i%3C=b; \n@@ -181,17 +181,17 @@\n      if \n-i\n+a\n %252==0 %7B%0A\n@@ -209,17 +209,17 @@\n      p+=\n-i\n+a\n %0A       \n@@ -231,28 +231,24 @@\n %7D%0A        %7D%0A\n-    \n         fmt.\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-27_17-41-20",
+            "content": "@@ -151,17 +151,17 @@\n  for i:=\n-a\n+0\n ; i%3C=b; \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-27_17-41-57",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var a, b, p int\n\n    fmt.Scan(&a, &b)\n \n    if a>b {\n        fmt.Println(\"invalido\")\n    } else {\n        for i:=a; i<=b; i++ {\n            if i%2==0 {\n                p+=i\n            }\n        }\n            fmt.Println(p)\n    }\n\n}\n",
+            "lines": "20"
         }
     ]
 }

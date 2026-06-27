@@ -1,12 +1,12 @@
 package main
 import "fmt"
 func main() {
-    var n, i int64
+    var n int
 
     fmt.Scan(&n)
-    
-    for i=0; n<10; i++ {
-        if 
 
+    for i:=0; i<=10; i++ {
+        if 
     }
+    
 }

@@ -12,8 +12,78 @@
         },
         {
             "label": "2026-04-13_17-20-10",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nome string\n    var age int64\n\n    fmt.Scanf(\"%c\", &nome)\n    fmt.Scan(&age)\n\n    if nome==\"crianca\" && age<=12 {\n        fmt.Printf(\"%c eh crianca\", nome)\n    }\n}\n",
+            "content": "@@ -88,17 +88,17 @@\n Scanf(%22%25\n-s\n+c\n %22, &nome\n@@ -149,16 +149,17 @@\n  && age%3C\n+=\n 12 %7B%0A   \n",
             "lines": "13"
+        },
+        {
+            "label": "2026-06-27_17-21-33",
+            "content": "@@ -175,17 +175,17 @@\n rintf(%22%25\n-s\n+c\n  eh cria\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-27_17-21-39",
+            "content": "@@ -191,10 +191,8 @@\n anca\n-%5Cn\n %22, n\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-27_17-21-53",
+            "content": "@@ -125,16 +125,35 @@\n %0A%0A    if\n+ nome==%22crianca%22 &&\n  age%3C12 \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-27_17-22-35",
+            "content": "@@ -183,284 +183,8 @@\n me)%0A\n-    %7D else if age%3E12 && age%3C18 %7B%0A        fmt.Printf(%22%25s eh jovem%22, nome)%0A    %7D else if age%3E18 && age %3C65 %7B%0A        fmt.Printf(%22%25s eh adulto%22, nome)%0A    %7D else if age%3E65 && age%3C1000 %7B%0A        fmt.Printf(%22%25s eh idoso%22, nome)%0A    %7D else %7B%0A        fmt.Printf(%22%25s eh mumia%22, nome)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-27_17-25-09",
+            "content": "@@ -211,14 +211,13 @@\n age%3C\n-=\n 18 %7B%0A\n+\n     \n@@ -281,17 +281,16 @@\n && age %3C\n-=\n 65 %7B%0A   \n@@ -319,32 +319,32 @@\n  adulto%22, nome)%0A\n+\n     %7D else if ag\n@@ -360,9 +360,8 @@\n ge%3C1\n-=\n 000 \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-27_17-25-29",
+            "content": "@@ -357,18 +357,18 @@\n  && age%3C\n-=\n 1\n+=\n 000 %7B%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-27_17-25-39",
+            "content": "@@ -280,16 +280,17 @@\n 8 && age\n+ \n %3C=65 %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-27_17-26-15",
+            "content": "@@ -281,16 +281,17 @@\n  && age%3C\n+=\n 65 %7B%0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-27_17-26-26",
+            "content": "@@ -244,18 +244,16 @@\n eh jovem\n-%5Cn\n %22, nome)\n@@ -318,18 +318,16 @@\n h adulto\n-%5Cn\n %22, nome)\n@@ -394,18 +394,16 @@\n eh idoso\n-%5Cn\n %22, nome)\n@@ -447,18 +447,16 @@\n eh mumia\n-%5Cn\n %22, nome)\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-27_17-26-48",
+            "content": "@@ -207,16 +207,17 @@\n  && age%3C\n+=\n 18 %7B%0A   \n@@ -359,16 +359,17 @@\n  && age%3C\n+=\n 1000 %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-27_17-27-04",
+            "content": "@@ -211,14 +211,13 @@\n age%3C\n-=\n 18 %7B%0A\n+\n     \n@@ -282,17 +282,16 @@\n  && age%3C\n-=\n 65 %7B%0A   \n@@ -322,32 +322,32 @@\n dulto%5Cn%22, nome)%0A\n+\n     %7D else if ag\n@@ -362,9 +362,8 @@\n age%3C\n-=\n 1000\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-27_17-27-30",
+            "content": "@@ -197,17 +197,16 @@\n  if age%3E\n-=\n 12 && ag\n@@ -213,16 +213,16 @@\n e%3C=18 %7B%0A\n+\n         \n@@ -273,17 +273,16 @@\n  if age%3E\n-=\n 18 && ag\n@@ -324,32 +324,32 @@\n dulto%5Cn%22, nome)%0A\n+\n     %7D else if ag\n@@ -350,17 +350,16 @@\n  if age%3E\n-=\n 65 && ag\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-27_17-27-46",
+            "content": "@@ -212,13 +212,14 @@\n age%3C\n+=\n 18 %7B%0A\n-\n     \n@@ -285,16 +285,17 @@\n  && age%3C\n+=\n 65 %7B%0A   \n@@ -326,32 +326,32 @@\n dulto%5Cn%22, nome)%0A\n-\n     %7D else if ag\n@@ -363,16 +363,17 @@\n  && age%3C\n+=\n 1000 %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-27_17-28-04",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nome string\n    var age int64\n\n    fmt.Scanf(\"%s\", &nome)\n    fmt.Scan(&age)\n\n    if age<12 {\n        fmt.Printf(\"%s eh crianca\\n\", nome)\n    } else if age>=12 && age<18 {\n        fmt.Printf(\"%s eh jovem\\n\", nome)\n    } else if age>=18 && age<65 {\n        fmt.Printf(\"%s eh adulto\\n\", nome)\n    } else if age>=65 && age<1000 {\n        fmt.Printf(\"%s eh idoso\\n\", nome)\n    } else {\n        fmt.Printf(\"%s eh mumia\\n\", nome)\n    }\n}\n",
+            "lines": "21"
         }
     ]
 }
