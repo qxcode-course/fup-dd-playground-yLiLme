@@ -31,3 +31,5 @@
 2026-06-27 16:34:28, EXEC, v:1, k:fup@goiabas, mode:FULL, rate:100, size:16
 2026-06-27 16:34:29, MOVE, v:1, k:fup@goiabas, mode:BACK
 2026-06-27 16:34:33, SELF, v:1, k:fup@goiabas, self:1, rate:100
+2026-06-27 16:35:28, MOVE, v:1, k:fup@quadrado, mode:PICK
+2026-06-27 16:35:55, EXEC, v:1, k:fup@quadrado, mode:FULL, rate:100

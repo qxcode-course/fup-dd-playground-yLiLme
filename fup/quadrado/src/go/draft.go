@@ -45,7 +45,5 @@ func main() {
     } else {
         fmt.Println("sim")
     }   
-    
-    //fmt.Println(ds)
 
 }
