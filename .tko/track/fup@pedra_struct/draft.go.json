@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_19-06-17",
+            "content": "@@ -62,10 +62,8 @@\n %0A%7D%0A%0A\n-/*\n func\n@@ -103,10 +103,8 @@\n %7B%0A%0A%7D\n-*/\n %0A%0Afu\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-02_19-06-50",
+            "content": "@@ -100,17 +100,16 @@\n  int %7B%0A%0A\n-%0A\n %7D*/%0A%0Afun\n@@ -253,20 +253,16 @@\n %0A    %7D%0A%0A\n-    \n     fmt.\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-02_19-12-35",
+            "content": "@@ -275,18 +275,11 @@\n rint\n-f(%22%25d%5Cn%22, \n+ln(\n jogs\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-02_19-12-58",
+            "content": "@@ -262,78 +262,35 @@\n     \n-for i:=range jogs %7B%0A        fmt.Print(jogs)%0A        fmt.Println()%0A    %7D\n+    fmt.Printf(%22%25d%5Cn%22, jogs)\n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-02_19-13-38",
+            "content": "@@ -262,16 +262,19 @@\n     for \n+i:=\n range jo\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-02_19-13-51",
+            "content": "@@ -58,16 +58,18 @@\n  int%0A%7D%0A%0A\n+/*\n func cal\n@@ -96,230 +96,20 @@\n das)\n- (bool,\n  int\n-)\n  %7B%0A\n-    if jogada.a%3C10 %7C%7C jogada.b%3C10%7B%0A        return false, 0%0A    %7D%0A%0A    var d int%0A    if jogada.a%3Ejogada.b%7B%0A        d=jogada.a-jogada.b%0A    %7D else %7B%0A        d=jogada.b-jogada.a%0A    %7D%0A        return true, d%0A%7D%0A%0A\n+%0A%0A%7D*/\n %0A%0Afu\n@@ -254,11 +254,83 @@\n %0A    %7D%0A%0A\n+    for range jogs %7B%0A        fmt.Print(jogs)%0A        fmt.Println()%0A    %7D\n %0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-02_19-30-58",
+            "content": "package main\nimport \"fmt\"\n\ntype Jogadas struct {\n    a, b int\n}\n\nfunc calcPontos (jogada Jogadas) (bool, int) {\n    if jogada.a<10 || jogada.b<10{\n        return false, 0\n    }\n\n    var d int\n    if jogada.a>jogada.b{\n        d=jogada.a-jogada.b\n    } else {\n        d=jogada.b-jogada.a\n    }\n        return true, d\n}\n\n\n\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    jogs:=make([]Jogadas, n)\n\n    for i:=0; i<n; i++{\n        fmt.Scan(&jogs[i].a, &jogs[i].b)\n    }\n\n\n}\n",
+            "lines": "35"
+        }
+    ]
+}
