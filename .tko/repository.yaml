@@ -18,8 +18,7 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- fup@string
+expanded: []
 flags:
   inbox: all
   panel: skills
@@ -29,5 +28,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@alcaparras
-selected_index: 32
+selected: fup@string
+selected_index: 6

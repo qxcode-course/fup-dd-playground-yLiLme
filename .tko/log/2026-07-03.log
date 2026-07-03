@@ -1,0 +1,47 @@
+2026-07-03 00:28:11, MOVE, v:1, k:fup@traficantes, mode:BACK
+2026-07-03 00:44:32, MOVE, v:1, k:fup@traficantes, mode:PICK
+2026-07-03 00:45:10, MOVE, v:1, k:fup@traficantes, mode:EDIT
+2026-07-03 00:49:11, MOVE, v:1, k:fup@traficantes, mode:EDIT
+2026-07-03 00:56:09, MOVE, v:1, k:fup@traficantes, mode:PICK
+2026-07-03 00:56:42, EXEC, v:1, k:fup@traficantes, mode:FULL, rate:0, size:33
+2026-07-03 00:56:41, MOVE, v:1, k:fup@traficantes, mode:EDIT
+2026-07-03 01:05:30, EXEC, v:1, k:fup@traficantes, mode:FULL, rate:0
+2026-07-03 01:07:52, MOVE, v:1, k:fup@traficantes, mode:BACK
+2026-07-03 01:07:58, MOVE, v:1, k:fup@pedra_struct, mode:PICK
+2026-07-03 01:08:07, EXEC, v:1, k:fup@pedra_struct, mode:FULL, rate:100, size:57
+2026-07-03 01:08:10, MOVE, v:1, k:fup@pedra_struct, mode:BACK
+2026-07-03 01:08:16, SELF, v:1, k:fup@pedra_struct, self:1, rate:100
+2026-07-03 01:08:51, MOVE, v:1, k:fup@fresco, mode:PICK
+2026-07-03 01:05:28, MOVE, v:1, k:fup@traficantes, mode:EDIT
+2026-07-03 01:08:06, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-03 01:10:09, MOVE, v:1, k:fup@fresco, mode:EDIT
+2026-07-03 01:15:10, MOVE, v:1, k:fup@fresco, mode:EDIT
+2026-07-03 01:16:32, EXEC, v:1, k:fup@fresco, mode:FULL, rate:100, size:34
+2026-07-03 01:16:33, MOVE, v:1, k:fup@fresco, mode:BACK
+2026-07-03 01:16:37, SELF, v:1, k:fup@fresco, self:1, rate:100
+2026-07-03 01:16:37, MOVE, v:1, k:fup@fresco, mode:PICK
+2026-07-03 01:16:43, EXEC, v:1, k:fup@fresco, mode:FULL, rate:100
+2026-07-03 01:16:47, EXEC, v:1, k:fup@fresco, mode:FULL, rate:100
+2026-07-03 01:16:47, MOVE, v:1, k:fup@fresco, mode:BACK
+2026-07-03 01:17:07, MOVE, v:1, k:fup@gamados, mode:PICK
+2026-07-03 01:21:09, EXEC, v:1, k:fup@gamados, mode:FULL, rate:100, size:22
+2026-07-03 01:21:11, MOVE, v:1, k:fup@gamados, mode:BACK
+2026-07-03 01:21:16, SELF, v:1, k:fup@gamados, self:1, rate:100
+2026-07-03 01:21:19, MOVE, v:1, k:fup@mario, mode:PICK
+2026-07-03 01:20:55, MOVE, v:1, k:fup@gamados, mode:EDIT
+2026-07-03 01:21:08, MOVE, v:1, k:fup@gamados, mode:EDIT
+2026-07-03 01:21:53, MOVE, v:1, k:fup@mario, mode:EDIT
+2026-07-03 01:26:56, MOVE, v:1, k:fup@mario, mode:EDIT
+2026-07-03 01:27:26, EXEC, v:1, k:fup@mario, mode:FULL, rate:100, size:31
+2026-07-03 01:27:27, MOVE, v:1, k:fup@mario, mode:BACK
+2026-07-03 01:27:31, SELF, v:1, k:fup@mario, self:1, rate:100
+2026-07-03 01:27:41, MOVE, v:1, k:fup@vcvcvc, mode:PICK
+2026-07-03 01:28:09, EXEC, v:1, k:fup@vcvcvc, mode:FULL, rate:0
+2026-07-03 01:27:08, MOVE, v:1, k:fup@mario, mode:EDIT
+2026-07-03 01:27:25, MOVE, v:1, k:fup@mario, mode:EDIT
+2026-07-03 01:28:08, MOVE, v:1, k:fup@vcvcvc, mode:EDIT
+2026-07-03 01:31:56, MOVE, v:1, k:fup@vcvcvc, mode:EDIT
+2026-07-03 01:33:56, EXEC, v:1, k:fup@vcvcvc, mode:FULL, size:33, fail:COMP
+2026-07-03 01:34:37, EXEC, v:1, k:fup@vcvcvc, mode:FULL, rate:100, size:33
+2026-07-03 01:34:38, MOVE, v:1, k:fup@vcvcvc, mode:BACK
+2026-07-03 01:34:41, SELF, v:1, k:fup@vcvcvc, self:1, rate:100

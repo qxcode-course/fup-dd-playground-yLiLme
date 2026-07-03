@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_01-16-32",
+            "content": "package main\nimport \"fmt\"\n\nfunc ehVogal (c byte) bool {\n    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || \n    c == 'E' || c == 'I' || c == 'O' || c == 'U' \n\n}\n\nfunc main() {\n    var p, resul string\n\n    if n, _ := fmt.Scan(&p); n == 1 {\n        resul=p\n    }\n\n    for {\n        n, _ := fmt.Scan(&p)\n        if n!=1 {\n            break\n        }\n        tamRes := len(resul)\n\n        if tamRes > 0 && ehVogal(resul[tamRes-1]) && ehVogal(p[0]) {\n            resul= resul[:tamRes-1]\n            resul+=p\n        } else {\n            resul += \" \" + p\n        }    \n    }\n\n        fmt.Println(resul)\n\n}\n",
+            "lines": "34"
+        }
+    ]
+}

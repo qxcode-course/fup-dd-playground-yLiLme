@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_23-01-00",
+            "content": "@@ -41,501 +41,35 @@\n     \n-var frase string%0A    var char byte%0A%0A    for %7B%0A        n, err := fmt.Scanf(%22%25c%22, &char)%0A%0A        if n!= 1 %7C%7C err != nil %7C%7C char == '%5Cn' %7B%0A            break%0A        %7D%0A        if char !='%5Cn'%7B%0A            frase+=string(char)%0A        %7D%0A    %7D%0A    var trecho string%0A    fmt.Scan(&trecho)%0A%0A    count := 0 %0A    tamFrase, tamTrecho := len(frase), len(trecho)%0A%0A    for i:=0; i%3C=tamFrase-tamTrecho; i++%7B%0A        if frase%5Bi:i+tamTrecho%5D == trecho %7B%0A            count++%0A        %7D%0A    %7D%0A    fmt.Println(count\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-02_23-33-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var frase string\n    var char byte\n\n    for {\n        n, err := fmt.Scanf(\"%c\", &char)\n\n        if n!= 1 || err != nil || char == '\\n' {\n            break\n        }\n        if char !='\\n'{\n            frase+=string(char)\n        }\n    }\n    var trecho string\n    fmt.Scan(&trecho)\n\n    count := 0 \n    tamFrase, tamTrecho := len(frase), len(trecho)\n\n    for i:=0; i<=tamFrase-tamTrecho; i++{\n        if frase[i:i+tamTrecho] == trecho {\n            count++\n        }\n    }\n    fmt.Println(count)\n}\n",
+            "lines": "29"
+        }
+    ]
+}

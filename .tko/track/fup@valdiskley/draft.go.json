@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_22-41-24",
+            "content": "@@ -328,24 +328,26 @@\n l, rot)%0A    \n+//\n fmt.Printf(%22\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-07-02_22-47-05",
+            "content": "@@ -124,17 +124,16 @@\n rot ) %25 \n-2\n 6%0A%0A    i\n@@ -336,10 +336,8 @@\n     \n-//\n fmt.\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-07-02_22-47-47",
+            "content": "@@ -329,24 +329,26 @@\n l, rot)%0A    \n+//\n fmt.Printf(%22\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-07-02_22-48-23",
+            "content": "@@ -108,17 +108,16 @@\n t(letra)\n- \n - 'a' + \n@@ -325,19 +325,52 @@\n ria(l, rot)%0A\n+    fmt.Printf(%22%25c%5Cn%25d%22, l, rot)%0A\n     %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-07-02_22-48-47",
+            "content": "@@ -145,17 +145,16 @@\n ormaliza\n- \n %3C 0 %7B%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-02_22-49-39",
+            "content": "@@ -305,13 +305,11 @@\n d%22, \n-&\n l, \n-&\n rot)\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-02_22-53-27",
+            "content": "package main\nimport \"fmt\"\n\nfunc Rotatoria (letra rune, rot int) {\n    var normaliza int\n    normaliza = (int(letra) - 'a' + rot ) % 26\n\n    if normaliza < 0 {\n        normaliza += 26\n    }\n    fmt.Printf(\"%c\\n\", rune(normaliza) + 'a')\n}\n\nfunc main() {\n    var l rune\n    var rot int\n\n    fmt.Scanf(\"%c\\n%d\", &l, &rot)\n    Rotatoria(l, rot)\n    \n}\n",
+            "lines": "21"
+        }
+    ]
+}

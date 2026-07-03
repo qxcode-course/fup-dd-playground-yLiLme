@@ -57,8 +57,18 @@
         },
         {
             "label": "2026-06-23_01-36-22",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"unicode\"\n)\nfunc main() {\n    var l string\n\n    fmt.Scanf(\"%s\", &l)\n    ll:=rune(l[0])\n\n    if unicode.IsUpper(ll){\n        minuscula:=unicode.ToLower(ll)\n        fmt.Printf(\"%c\\n\", minuscula)\n    } \n    if unicode.IsLower(ll) {\n        maiuscula:=unicode.ToUpper(ll)\n        fmt.Printf(\"%c\\n\", maiuscula)\n    }\n    l=string(ll)\n    if !unicode.IsLetter(ll){\n        fmt.Println(ll)\n    }\n}\n",
+            "content": "@@ -336,16 +336,33 @@\n )%0A    %7D%0A\n+    l=string(ll)%0A\n     if !\n",
             "lines": "25"
+        },
+        {
+            "label": "2026-07-02_22-54-28",
+            "content": "@@ -29,42 +29,29 @@\n %22%0A%09%22\n-strings\n+unicode\n %22%0A)%0A\n-%0A\n func \n-inver (letra rune\n+main(\n ) %7B%0A\n@@ -62,19 +62,17 @@\n var \n-ver\n+l\n  string%0A\n     \n@@ -71,243 +71,232 @@\n ing%0A\n+%0A\n     \n-if letra %3E= 'a' && letra %3C= 'z' %7B%0A        ver = strings.ToUpper(string(letra))%0A        fmt.Println(ver)%0A    %7D else if letra %3E= 'A' && letra %3C= 'Z' %7B%0A        ver = strings.ToLower(string(letra))%0A        fmt.Println(ver)%0A    %7D else %7B\n+fmt.Scanf(%22%25s%22, &l)%0A    ll:=rune(l%5B0%5D)%0A%0A    if unicode.IsUpper(ll)%7B%0A        minuscula:=unicode.ToLower(ll)%0A        fmt.Printf(%22%25c%5Cn%22, minuscula)%0A    %7D %0A    if unicode.IsLower(ll) %7B%0A        maiuscula:=unicode.ToUpper(ll)\n %0A   \n@@ -323,12 +323,16 @@\n n%22, \n-letr\n+maiuscul\n a)%0A \n@@ -340,76 +340,66 @@\n   %7D%0A\n-%7D%0A%0Afunc main() %7B%0A    var l rune%0A%0A    fmt.Scanf(%22%25c%22, &l)%0A    inver(l)\n+    if !unicode.IsLetter(ll)%7B%0A        fmt.Println(ll)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-02_23-00-28",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"strings\"\n)\n\nfunc inver (letra rune) {\n    var ver string\n    if letra >= 'a' && letra <= 'z' {\n        ver = strings.ToUpper(string(letra))\n        fmt.Println(ver)\n    } else if letra >= 'A' && letra <= 'Z' {\n        ver = strings.ToLower(string(letra))\n        fmt.Println(ver)\n    } else {\n        fmt.Printf(\"%c\\n\", letra)\n    }\n}\n\nfunc main() {\n    var l rune\n\n    fmt.Scanf(\"%c\", &l)\n    inver(l)\n}\n",
+            "lines": "26"
         }
     ]
 }

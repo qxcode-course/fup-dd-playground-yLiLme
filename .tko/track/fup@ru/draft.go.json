@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-07-02_20-04-29",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -10,570 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc tratamento(frase string) %7B%0A%09for i := 0; i %3C len(frase); i++ %7B%0A%09%09if frase%5Bi%5D == 'a' %7C%7C frase%5Bi%5D == 'e' %7C%7C frase%5Bi%5D == 'i' %7C%7C frase%5Bi%5D == 'o' %7C%7C frase%5Bi%5D == 'u' %7B%0A%09%09%09fmt.Printf(%22%25c%22, frase%5Bi%5D)%0A%09%09%7D%0A%09%7D%0A%09fmt.Println()%0A%09for i := range frase %7B%0A%09%09if frase%5Bi%5D != 'a' && frase%5Bi%5D != 'e' && frase%5Bi%5D != 'i' && frase%5Bi%5D != 'o' && frase%5Bi%5D != 'u' && frase%5Bi%5D == ' ' %7B%0A%09%09%09fmt.Printf(%22%25c%22, frase%5Bi%5D)%0A%09%09%7D%0A%09%7D%0A%0A%7D%0A%0Afunc main() %7B%0A%09var frase string%0A%0A%09leitor := bufio.NewScanner(os.Stdin)%0A%09leitor.Scan()%0A%09frase = leitor.Text()%0A%09tratamento(frase\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-02_22-32-25",
+            "content": "@@ -441,26 +441,8 @@\n %7D%0A%09%7D\n-%0A    fmt.Println()\n %0A%0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-02_22-35-12",
+            "content": "@@ -273,28 +273,19 @@\n  := \n-0; i%3Clen(frase); i++\n+range frase\n  %7B%0A%09\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-02_22-36-31",
+            "content": "@@ -401,17 +401,17 @@\n rase%5Bi%5D \n-!\n+=\n = ' ' %7B%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-02_22-36-51",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc tratamento(frase string) {\n\tfor i := 0; i < len(frase); i++ {\n\t\tif frase[i] == 'a' || frase[i] == 'e' || frase[i] == 'i' || frase[i] == 'o' || frase[i] == 'u' {\n\t\t\tfmt.Printf(\"%c\", frase[i])\n\t\t}\n\t}\n\tfmt.Println()\n\tfor i := 0; i<len(frase); i++ {\n\t\tif frase[i] != 'a' && frase[i] != 'e' && frase[i] != 'i' && frase[i] != 'o' && frase[i] != 'u' && frase[i] != ' ' {\n\t\t\tfmt.Printf(\"%c\", frase[i])\n\t\t}\n\t}\n    fmt.Println()\n\n}\n\nfunc main() {\n\tvar frase string\n\n\tleitor := bufio.NewScanner(os.Stdin)\n\tleitor.Scan()\n\tfrase = leitor.Text()\n\ttratamento(frase)\n}\n",
+            "lines": "32"
         }
     ]
 }
