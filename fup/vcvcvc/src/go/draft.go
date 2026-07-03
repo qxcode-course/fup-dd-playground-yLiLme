@@ -1,25 +1,33 @@
 package main
 import "fmt"
 func main() {
-    var palavras string
-    var chars int
-    fmt.Scan(&chars)
-    var frase[]string=make([]string, chars)
+    var char byte
 
-    for i := range frase{
-        fmt.Scanf("%s", &palavras)
-        frase[i]=palavras
-    }
-    for i := range frase{
-        if frase[i]==" "{
+    for {
+        n, err := fmt.Scanf("%c", &char)
+
+        if err != nil || n != 1 || char == '\n' {
+            break
+        }
+
+        if char == '\r' {
             continue
         }
-        if frase[i]=="a" || frase[i]=="e" || frase[i]=="i" || frase[i]=="o" || frase[i]=="u"{
-            frase[i]="v"
+
+        if char == ' ' {
+            fmt.Print(" ")
         } else {
-            frase[i]="c"
+            letra := char
+            if letra >= 'A' && letra <= 'Z' {
+                letra = letra + 32 
+            }
+
+            if letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' {
+                fmt.Print("v")
+            } else if letra >= 'a' && letra <= 'z' {
+                fmt.Print("c")
+            }
         }
     }
-
-    fmt.Println(frase)
+        fmt.Println()
 }

@@ -47,8 +47,18 @@
         },
         {
             "label": "2026-06-20_03-54-32",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var palavras string\n    var chars int\n    fmt.Scan(&chars)\n    var frase[]string=make([]string, chars)\n\n    for i := range frase{\n        fmt.Scanf(\"%s\", &palavras)\n        frase[i]=palavras\n    }\n    for i := range frase{\n        if frase[i]==\" \"{\n            continue\n        }\n        if frase[i]==\"a\" || frase[i]==\"e\" || frase[i]==\"i\" || frase[i]==\"o\" || frase[i]==\"u\"{\n            frase[i]=\"v\"\n        } else {\n            frase[i]=\"c\"\n        }\n    }\n\n    fmt.Println(frase)\n}\n",
+            "content": "@@ -45,231 +45,132 @@\n var \n-char byte%0A%0A    for %7B%0A        n, err := fmt.Scanf(%22%25c%22, \n+palavras string%0A    var chars int%0A    fmt.Scan(\n &char\n+s\n )%0A\n-%0A \n     \n-   if err != nil %7C%7C n != 1 %7C%7C char == '%5Cn' %7B%0A            break%0A        %7D%0A%0A        if char == '%5Cr' %7B%0A            continue%0A        %7D%0A%0A        if char == ' ' \n+var frase%5B%5Dstring=make(%5B%5Dstring, chars)%0A%0A    for i := range frase\n %7B%0A  \n@@ -179,178 +179,158 @@\n     \n- \n-   \n fmt.\n-Print(%22 %22)%0A        %7D else %7B\n+Scanf(%22%25s%22, &palavras)%0A        frase%5Bi%5D=palavras\n %0A    \n+%7D%0A\n     \n-    letra := char%0A            if letra %3E= 'A' && letra %3C= 'Z' %7B%0A                letra = letra + 32 %0A            %7D%0A%0A   \n+for i := range frase%7B%0A        if frase%5Bi%5D==%22 %22%7B%0A            continue%0A        %7D%0A\n         \n  if \n@@ -329,135 +329,127 @@\n     \n- \n if \n-letra == 'a' %7C%7C letra == 'e' %7C%7C letra == 'i' %7C%7C letra == 'o' %7C%7C letra == 'u' %7C%7C %7B%0A                fmt.Print(%22v%22)%0A  \n+frase%5Bi%5D==%22a%22 %7C%7C frase%5Bi%5D==%22e%22 %7C%7C frase%5Bi%5D==%22i%22 %7C%7C frase%5Bi%5D==%22o%22 %7C%7C frase%5Bi%5D==%22u%22%7B%0A            frase%5Bi%5D=%22v%22%0A\n         \n   %7D \n@@ -448,116 +448,59 @@\n     \n-  \n %7D else \n-if letra %3E= 'a' && letra %3C= 'z' %7B%0A                fmt.Print(%22c%22)%0A            %7D%0A        %7D%0A    %7D%0A    \n+%7B%0A            frase%5Bi%5D=%22c%22%0A        %7D%0A    %7D%0A%0A\n     \n@@ -511,12 +511,17 @@\n Println(\n+frase\n )%0A%7D%0A\n",
             "lines": "25"
+        },
+        {
+            "label": "2026-07-03_01-33-56",
+            "content": "@@ -524,16 +524,19 @@\n a == 'u'\n+ %7C%7C\n  %7B%0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-03_01-34-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var char byte\n\n    for {\n        n, err := fmt.Scanf(\"%c\", &char)\n\n        if err != nil || n != 1 || char == '\\n' {\n            break\n        }\n\n        if char == '\\r' {\n            continue\n        }\n\n        if char == ' ' {\n            fmt.Print(\" \")\n        } else {\n            letra := char\n            if letra >= 'A' && letra <= 'Z' {\n                letra = letra + 32 \n            }\n\n            if letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' {\n                fmt.Print(\"v\")\n            } else if letra >= 'a' && letra <= 'z' {\n                fmt.Print(\"c\")\n            }\n        }\n    }\n        fmt.Println()\n}\n",
+            "lines": "33"
         }
     ]
 }
